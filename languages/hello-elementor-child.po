@@ -1,0 +1,130 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Hello Elementor Child\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-24 10:35+0200\n"
+"PO-Revision-Date: 2023-05-24 10:50+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Loco-Version: 2.6.4; wp-6.1.1\n"
+"X-Domain: hello-elementor-child\n"
+
+#. Description of the theme
+msgid "A plain-vanilla &amp; lightweight theme for Elementor page builder"
+msgstr ""
+
+#: ovabrw-templates/single/booking-form.php:53
+msgid "Book now"
+msgstr ""
+
+#: ovabrw-templates/single/booking-form.php:68
+msgid "Contact us"
+msgstr ""
+
+#: woocommerce/single-product/rating.php:47
+msgid "download tour pdf"
+msgstr ""
+
+#: ovabrw-templates/single/features.php:70
+#: ovabrw-templates/single/booking-form/fields.php:282
+msgid "Duration"
+msgstr ""
+
+#: ovabrw-templates/single/features.php:90
+msgid "Features"
+msgstr ""
+
+#. Name of the theme
+msgid "Hello Elementor Child"
+msgstr ""
+
+#. Author URI of the theme
+msgid ""
+"https://elementor.com/?utm_source=wp-themes&utm_campaign=author-"
+"uri&utm_medium=wp-dash"
+msgstr ""
+
+#. URI of the theme
+msgid ""
+"https://elementor.com/hello-theme/?utm_source=wp-"
+"themes&utm_campaign=theme-uri&utm_medium=wp-dash"
+msgstr ""
+
+#. Author of the theme
+msgid "Inol3"
+msgstr ""
+
+#: woocommerce/single-product/short-description.php:39
+msgid "Read more"
+msgstr ""
+
+#: ovabrw-templates/single/features.php:29
+msgid "Operation days"
+msgstr ""
+
+#: ovabrw-templates/single/features.php:81
+#: ovabrw-templates/single/booking-form/fields.php:174
+msgid "Pick up location"
+msgstr ""
+
+#: ovabrw-templates/single/booking-form/ajax_total.php:3
+msgid "Price"
+msgstr ""
+
+#: ovabrw-templates/single/booking-form/fields.php:308
+msgid "Select"
+msgstr ""
+
+#: ovabrw-templates/shortcode/searchHome.php:37
+msgid "Select a feature"
+msgstr ""
+
+#: ovabrw-templates/single/booking-form/services.php:34
+#: ovabrw-templates/single/booking-form/services.php:73
+#: ovabrw-templates/single/booking-form/fields.php:384
+msgid "Select people"
+msgstr ""
+
+#: ovabrw-templates/single/calendar.php:72
+#: ovabrw-templates/single/booking-form/fields.php:239
+msgid "Select the date"
+msgstr ""
+
+msgid "Saruccia"
+msgstr ""
+
+msgid "You might also be interested in"
+msgstr ""
+
+msgid "Do you need informations about tours?"
+msgstr ""
+
+msgid "Contact our team with the Live Chat!"
+msgstr ""
+
+msgid "BOOK THIS TOUR"
+msgstr ""
+
+msgid "Back home"
+msgstr ""
+
+msgid "ORDER DETAILS"
+msgstr ""
+
+msgid "Thank you for chosing our tours!"
+msgstr "Thank you for chosing our tours!"
+
+msgid "We have finished processing your order"
+msgstr "We have finished processing your order"
+
+msgid "PLEASE NOTE: Your Tour will be confirmed within 24h, you will receive the booking code by email."
+msgstr "PLEASE NOTE: Your Tour will be confirmed within 24h, you will receive the booking code by email."
+
+msgid "Prenota"
+msgstr ""

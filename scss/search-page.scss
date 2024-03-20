@@ -1,0 +1,217 @@
+.search-result {
+    .site-main {
+        flex-wrap: var(--flex-wrap);
+        justify-content: var(--justify-content);
+        align-items: var(--align-items);
+        align-content: var(--align-content);
+        gap: var(--gap);
+        width: 100%;
+        max-width: 1600px !important;
+        margin: 0 auto;
+        padding-inline: 0;
+        flex-basis: auto;
+        flex-grow: 1;
+        flex-shrink: 1;
+        align-self: auto;
+        padding-top: 60px;
+        padding-bottom: 70px;
+        background-color: #fff;
+
+        .woocommerce-products-header__title.page-title {
+            color: #000;
+            font-family: "Poppins", Sans-serif;
+            font-size: 29px;
+            font-weight: 600;
+            line-height: 1.1em;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .products {
+            margin: 0 -5px !important;
+
+            .product {
+                position: relative;
+                width: 33.333% !important;
+                margin: 0 !important;
+                padding: 5px !important;
+
+                @media screen and (max-width: 768px) {
+                    width: 100% !important;
+                }
+
+                img.main {
+                    width: 100%;
+                }
+
+                h2 {
+                    position: absolute;
+                    bottom: 114px;
+                    font-family: "Poppins", Sans-serif;
+                    color: #fff;
+                    font-size: 21px;
+                    font-weight: 400;
+                    left: 48px;
+                    text-shadow: 0 0 60px #000, 0 0 40px #000, 0 0 20px #000;
+                }
+                .searchCat {
+                    position: absolute;
+                    bottom: 100px;
+                    font-family: "Poppins", Sans-serif;
+                    color: #fff;
+                    font-size: .875em !important;
+                    font-weight: 400;
+                    left: 48px;
+                    text-shadow: 0 0 60px #000, 0 0 40px #000, 0 0 20px #000;
+                }
+                .info {
+                    height: 38px;
+                    position: absolute;
+
+                    bottom: 50px;
+                    right: 50px;
+                }
+
+                .shopengine_add_to_list_action {
+                    display: none;
+                }
+
+                .button.wp-element-button,
+                .button.product_type_ovabrw_car_rental {
+                    position: absolute;
+                    bottom: 51px;
+                    left: 54px;
+                    padding: 10px 15px 10px 15px;
+
+                    -webkit-transition-duration: 0.4s;
+                    transition-duration: 0.4s;
+                    -webkit-animation-duration: 0.4s;
+                    animation-duration: 0.4s;
+                    background-color: var(--e-global-color-primary);
+                    border-color: #E8E8E8;
+                    border-style: none;
+                    border-radius: 50px 50px 50px 50px;
+                    font-family: "Poppins", Sans-serif;
+                    font-size: 12px;
+                    font-weight: 600;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    color: #ffffff;
+                    text-transform: uppercase;
+                    transition: all .3s;
+
+                    &:hover {
+                        background-color: #FBDC03;
+                        color: #114C70;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// da aggiungere in custom.scss \/\/\/
+
+@media (max-width: 767px) {
+    .shopengine-template .woocommerce-notices-wrapper {
+        padding: 0;
+    }
+}
+
+.nf-form-layout {
+
+    @media (max-width: 767px) {
+        margin: 0 10px;
+    }
+    
+    .nf-error-msg {
+        color: $red-alert;
+    }
+
+    .ninja-forms-req-symbol {
+        color: $red-alert;
+    }
+
+    .nf-form-content {
+        margin: 0;
+        padding: 30px 0px;
+
+
+        nf-fields-wrap {
+            display: grid;
+            grid-template-rows: 1fr -3fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            gap: 0px 20px;
+            height: 100%;
+
+            @media (max-width: 767px) {
+                grid-template-columns: 1fr;
+            }
+
+            .ninja-forms-req-symbol,
+            .nf-error-msg {
+                color: $red-alert;
+            }
+            
+            .nf-error.field-wrap {
+                .nf-field-element:after {
+                    background: none;
+                    color: $red-alert;
+                }
+            }
+
+            .ninja-forms-field {
+                font-size: 14px;
+            }
+
+            label,
+            .nf-label-span {
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            input,
+            textarea {
+                background: $bg-gray;
+                border-color: $bg-gray;
+            }
+
+            .nf-field-element {
+                label:after {
+                    background: none;
+                    top: 2px;
+                    width: 15px;
+                    height: 15px;
+                }
+
+                ul {
+                    display: grid;
+                    grid-template-rows: 1fr -3fr 1fr 1fr 1fr;
+                    grid-template-columns: 1fr 1fr;
+                    height: 100%;
+                }
+            }
+
+            .submit-wrap {
+                input {
+                    text-transform: uppercase;
+                    color: $color-white;
+                    background-color: $color-secondary;
+                    padding: 0px 50px;
+                    border: none;
+                    border-radius: 30px;
+                    font-weight: $typography-bolder;
+                    margin-top: 10px;
+
+                    &:hover {
+                        background-color: $color-accent;
+                        color: $color-secondary;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,54 @@
+.archive {
+
+    .shopengine-product-filters {
+        .shopengine-filter-price-reset {
+            border-radius: 30px;
+            padding: 10px 20px;
+        }
+    }
+
+    .shopengine-filter-group-toggle-wrapper {
+        button:focus {
+            background-color: $color-accent;
+        }
+    }
+
+    .shopengine-archive-mode-grid {
+        .loop-product--btns-inner {
+            width: 50%;
+        }
+    }
+
+    .shopengine-grid {
+        ul.products {
+            @media (max-width: 767px) {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+        }
+    }
+}
+
+
+/// WHISHLIST
+.shopengine-wishlist {
+
+    th {
+        border-width: 0px;
+        border-top: none;
+    }
+
+    tbody {
+        tr {
+            td {
+                border: 0px;
+
+                img {
+                    margin: 0px 0px 10px 0px;
+                }
+            }
+        }
+
+    }
+
+}

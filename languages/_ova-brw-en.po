@@ -1,0 +1,4162 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BRW - Booking & Rental Plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-17 10:31+0000\n"
+"PO-Revision-Date: 2023-05-12 15:52+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Loco-Version: 2.6.2; wp-6.0.2\n"
+"X-Domain: ova-brw\n"
+
+#: inc/ovabrw-get-data.php:254 inc/ovabrw-get-data.php:368
+msgid " 00:00"
+msgstr ""
+
+#: inc/ovabrw_hooks.php:1041
+msgid " Define day"
+msgstr ""
+
+#: inc/ovabrw_hooks.php:397 inc/ovabrw_hooks.php:472
+msgid " Define day "
+msgstr ""
+
+#: inc/ovabrw_hooks.php:384 inc/ovabrw_hooks.php:1035
+msgid " Drop-off date "
+msgstr ""
+
+#: inc/ovabrw_hooks.php:449
+msgid " Drop-off date  "
+msgstr ""
+
+#: inc/ovabrw_hooks.php:394
+msgid " Drop-off date real "
+msgstr ""
+
+#: inc/ovabrw_hooks.php:362 inc/ovabrw_hooks.php:447 inc/ovabrw_hooks.php:1033
+msgid " Drop-off Location "
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:232
+msgid ""
+" For example: if the car is delivered at 9:00, I set 60 minutes to prepare "
+"the car so the car is available again to book at 10:00"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:245
+msgid ""
+" For example: if the car is delivered on 01/01/2021, I set 1 day to prepare "
+"the car so the car is available again to book on 03/01/2021"
+msgstr ""
+
+#: inc/ovabrw_hooks.php:400 inc/ovabrw_hooks.php:406 inc/ovabrw_hooks.php:452
+msgid " ID Vehicle "
+msgstr ""
+
+#: inc/ovabrw-taxonomy.php:26 inc/ovabrw-taxonomy.php:76
+msgid " Name"
+msgstr ""
+
+#: inc/ovabrw_hooks.php:1039
+msgid " Package"
+msgstr " Ticket type"
+
+#: inc/ovabrw_hooks.php:417 inc/ovabrw_hooks.php:470
+msgid " Package "
+msgstr " Ticket type "
+
+#: inc/ovabrw_hooks.php:1040
+msgid " Package Type"
+msgstr ""
+
+#: inc/ovabrw_hooks.php:418 inc/ovabrw_hooks.php:471
+msgid " Package Type "
+msgstr ""
+
+#: inc/ovabrw_hooks.php:372 inc/ovabrw_hooks.php:448 inc/ovabrw_hooks.php:1034
+msgid " Pick-up date "
+msgstr ""
+
+#: inc/ovabrw_hooks.php:391
+msgid " Pick-up date real"
+msgstr ""
+
+#: inc/ovabrw_hooks.php:361 inc/ovabrw_hooks.php:446 inc/ovabrw_hooks.php:1032
+msgid " Pick-up Location "
+msgstr ""
+
+#: inc/ovabrw_hooks.php:410 inc/ovabrw_hooks.php:451 inc/ovabrw_hooks.php:1037
+msgid " Price Detail "
+msgstr ""
+
+#: inc/ovabrw_hooks.php:360
+msgid " Quantity "
+msgstr ""
+
+#: inc/ovabrw_hooks.php:1038
+msgid " Rental Type"
+msgstr ""
+
+#: inc/ovabrw_hooks.php:416 inc/ovabrw_hooks.php:469
+msgid " Rental Type "
+msgstr ""
+
+#: inc/ovabrw-get-data.php:1108 inc/ovabrw-get-data.php:1127
+#: inc/ovabrw-get-data.php:1258 inc/ovabrw-get-data.php:1270
+msgid " Special Hour(s)"
+msgstr ""
+
+#: inc/ovabrw_deposit.php:504
+msgid " Total Insurance Amount"
+msgstr ""
+
+#: inc/ovabrw_hooks.php:387 inc/ovabrw_hooks.php:450 inc/ovabrw_hooks.php:1036
+msgid " Total Time "
+msgstr ""
+
+#: inc/ovabrw_hooks.php:126
+msgid " ×"
+msgstr ""
+
+#: inc/ovabrw_hooks.php:106 inc/ovabrw_hooks.php:138
+msgid " × Day(s)"
+msgstr ""
+
+#: ovabrw-templates/loop/price.php:64
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: ovabrw-templates/loop/price.php:66
+#, php-format
+msgid "%s - %s"
+msgstr ""
+
+#: inc/ovabrw-get-data.php:1458 inc/ovabrw_hooks.php:253
+#, php-format
+msgid "%s payable in total"
+msgstr ""
+
+#: inc/ovabrw_ajax.php:904 ovabrw-templates/single/search_map.php:210
+#, php-format
+msgid "%s Result Found"
+msgstr ""
+
+#: inc/ovabrw_ajax.php:908 ovabrw-templates/single/search_map.php:214
+#, php-format
+msgid "%s Results Found"
+msgstr ""
+
+#: inc/ovabrw_deposit.php:48 inc/ovabrw_deposit.php:97
+#, php-format
+msgid "(%s %s)"
+msgstr ""
+
+#: inc/ovabrw_deposit.php:462 inc/ovabrw_hooks.php:348
+msgid "(excl. tax)"
+msgstr ""
+
+#: inc/ovabrw_deposit.php:462 inc/ovabrw_hooks.php:348
+msgid "(incl. tax)"
+msgstr ""
+
+#: inc/ovabrw_ajax.php:914 inc/ovabrw_ajax.php:920
+#: ovabrw-templates/single/search_map.php:220
+#: ovabrw-templates/single/search_map.php:226
+#, php-format
+msgid "(Showing 1-%s)"
+msgstr ""
+
+#: ovabrw-templates/single/request_booking.php:95
+msgid "+66-4545688"
+msgstr ""
+
+#: admin/order/class_display_table_order.php:53
+msgid "-- All --"
+msgstr ""
+
+#: admin/class_ovabrw_check_product.php:17
+#: admin/class_ovabrw_check_product.php:158
+#: admin/import/ovabrw_import_locaitons.php:18
+#: admin/import/ovabrw_import_locaitons.php:58
+#: admin/import/ovabrw_import_locaitons.php:99
+#: admin/order/class_display_table_order.php:104
+msgid "-- Choose Product --"
+msgstr ""
+
+#: admin/order/class_display_table_order.php:92
+msgid "-- Drop-off Location --"
+msgstr ""
+
+#: admin/class_ovabrw_check_product.php:133
+#: admin/order/class_display_table_order.php:80
+msgid "-- Pick-up Location --"
+msgstr ""
+
+#: admin/order/class_display_table_order.php:67
+msgid "-- Vehicle --"
+msgstr ""
+
+#: admin/order/class_display_table_order.php:116
+msgid "--Order Status--"
+msgstr ""
+
+#: ovabrw-templates/loop/price.php:79 ovabrw-templates/loop/price.php:89
+#: ovabrw-templates/single/price.php:54 ovabrw-templates/single/price.php:64
+msgid "/ Day"
+msgstr ""
+
+#: ovabrw-templates/loop/price.php:74 ovabrw-templates/loop/price.php:85
+#: ovabrw-templates/single/price.php:49 ovabrw-templates/single/price.php:60
+msgid "/ Hour"
+msgstr ""
+
+#: inc/ovabrw_hooks.php:521
+msgid "/Day"
+msgstr ""
+
+#: inc/ovabrw-get-data.php:1835
+msgid "/day"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_resources.php:56
+#: admin/metabox/fields/ovabrw_resources.php:68
+#: admin/metabox/fields/ovabrw_resources_field.php:20
+#: admin/metabox/fields/ovabrw_service.php:93
+#: admin/metabox/fields/ovabrw_service.php:105
+#: admin/metabox/fields/ovabrw_service_field.php:20
+msgid "/Days"
+msgstr ""
+
+#: inc/ovabrw-get-data.php:1835
+msgid "/hour - "
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_resources.php:62
+#: admin/metabox/fields/ovabrw_resources.php:67
+#: admin/metabox/fields/ovabrw_resources_field.php:19
+#: admin/metabox/fields/ovabrw_service.php:99
+#: admin/metabox/fields/ovabrw_service.php:104
+#: admin/metabox/fields/ovabrw_service_field.php:19
+msgid "/Hours"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_resources.php:57
+#: admin/metabox/fields/ovabrw_resources.php:63
+#: admin/metabox/fields/ovabrw_resources.php:69
+#: admin/metabox/fields/ovabrw_resources.php:72
+#: admin/metabox/fields/ovabrw_resources_field.php:21
+#: admin/metabox/fields/ovabrw_service.php:94
+#: admin/metabox/fields/ovabrw_service.php:100
+#: admin/metabox/fields/ovabrw_service.php:106
+#: admin/metabox/fields/ovabrw_service.php:109
+#: admin/metabox/fields/ovabrw_service_field.php:21
+msgid "/Total"
+msgstr ""
+
+#: inc/ovabrw_ajax.php:830
+msgid "0 Result Found"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:338
+msgid "0,6"
+msgstr ""
+
+#: inc/ovabrw-get-data.php:232 inc/ovabrw-get-data.php:256
+#: inc/ovabrw-get-data.php:342 inc/ovabrw-get-data.php:370
+msgid "00:00"
+msgstr ""
+
+#: inc/ovabrw-get-data.php:275 inc/ovabrw-get-data.php:391
+msgid "00:00 24:00 "
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:405
+#: admin/metabox/ovabrw-custom-fields.php:458
+msgid "07:00, 07:30, 13:00, 18:00"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:430
+#: admin/metabox/ovabrw-custom-fields.php:482
+msgid "09:00"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:270
+msgid ""
+"0: Sunday, 1: Monday, 2: Tuesday, 3: Wednesday, 4: Thursday, 5: Friday, 6: "
+"Saturday . Example: 0"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:342
+#: admin/setting/ovabrw-settings-tab.php:252
+msgid ""
+"0: Sunday, 1: Monday, 2: Tuesday, 3: Wednesday, 4: Thursday, 5: Friday, 6: "
+"Saturday . Example: 0,6"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_global_discount.php:30
+#: admin/metabox/fields/ovabrw_global_discount.php:69
+#: admin/metabox/fields/ovabrw_rent_time_min.php:9
+#: admin/metabox/fields/ovabrw_rent_time_min.php:20
+#: admin/metabox/fields/ovabrw_rent_time_min.php:31
+#: admin/metabox/fields/ovabrw_rent_time_min.php:42
+#: admin/metabox/fields/ovabrw_rt.php:112
+#: admin/metabox/fields/ovabrw_rt.php:217
+#: admin/metabox/fields/ovabrw_rt_discount.php:13
+msgid "1"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:95
+msgid "1 Column"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_deter_rent_day.php:2
+msgid "1 day = 24 hours"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_local_price.php:62
+#: admin/metabox/fields/ovabrw_local_price_field.php:33
+#: admin/metabox/fields/ovabrw_local_price_field.php:36
+msgid "10"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_global_discount.php:24
+#: admin/metabox/fields/ovabrw_global_discount.php:63
+#: admin/metabox/fields/ovabrw_period_time.php:48
+#: admin/metabox/fields/ovabrw_period_time.php:104
+#: admin/metabox/fields/ovabrw_petime_discount.php:9
+#: admin/metabox/fields/ovabrw_petime_record.php:11
+#: admin/metabox/fields/ovabrw_resources.php:41
+#: admin/metabox/fields/ovabrw_resources_field.php:13
+#: admin/metabox/fields/ovabrw_rt.php:50 admin/metabox/fields/ovabrw_rt.php:56
+#: admin/metabox/fields/ovabrw_rt.php:104
+#: admin/metabox/fields/ovabrw_rt.php:211
+#: admin/metabox/fields/ovabrw_rt_discount.php:7
+#: admin/metabox/fields/ovabrw_rt_record.php:6
+#: admin/metabox/fields/ovabrw_rt_record.php:8
+#: admin/metabox/fields/ovabrw_service.php:78
+#: admin/metabox/fields/ovabrw_service_field.php:13
+msgid "10.5"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:126
+msgid "12 Hour (06:PM)"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:33
+msgid "1: Day"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_global_discount.php:33
+#: admin/metabox/fields/ovabrw_global_discount.php:71
+#: admin/metabox/fields/ovabrw_rt.php:114
+#: admin/metabox/fields/ovabrw_rt.php:219
+#: admin/metabox/fields/ovabrw_rt_discount.php:16
+msgid "2"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:96
+msgid "2 Columns"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:127
+msgid "24 Hour (18:00)"
+msgstr ""
+
+#: inc/ovabrw-get-data.php:220 inc/ovabrw-get-data.php:244
+#: inc/ovabrw-get-data.php:328 inc/ovabrw-get-data.php:356
+msgid "24:00"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:34
+msgid "2: Hour"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:97
+msgid "3 Columns"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:35
+msgid "3: Mixed (Day and Hour)"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:36
+msgid ""
+"4: Period of Time ( 05:00 am - 10:00 am, 1 day, 2 days, 1 month, 6 months, 1 "
+"year... )"
+msgstr ""
+
+#: ovabrw-templates/single/search_map.php:199
+msgid "50km"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:37
+msgid "5: Location"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_local_price.php:68
+msgid "60"
+msgstr ""
+
+#: inc/ovabrw-get-data.php:1364 inc/ovabrw-get-data.php:1399
+#: inc/ovabrw-taxonomy.php:22 inc/ovabrw-taxonomy.php:72
+#: inc/ovabrw-taxonomy.php:97
+msgid ": "
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:376
+msgid "[contact-form-7 id=\"205\" title=\"Contact form 1\"]"
+msgstr ""
+
+#: ovabrw-templates/single/search_map.php:242
+msgid "A-Z"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_period_time.php:130
+#: admin/metabox/fields/ovabrw_petime_record.php:64
+msgid "Add Discount"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_features.php:70
+msgid "Add Feature"
+msgstr ""
+
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:104
+msgid "Add field"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_global_discount.php:86
+msgid "Add GD"
+msgstr ""
+
+#: admin/order/class_create_order.php:323
+msgid "Add Item"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:617
+#: admin/metabox/ovabrw-custom-fields.php:662
+msgid "Add Label"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_local_price.php:84
+msgid "Add Local Price"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_choose_location.php:70
+msgid "Add Location"
+msgstr ""
+
+#: admin/order/class_create_order.php:125
+#: admin/order/class_create_order.php:231
+msgid "Add Meta"
+msgstr ""
+
+#: custom-post-type/register_cpt.php:13
+msgid "Add New Location"
+msgstr ""
+
+#: inc/ovabrw_hooks.php:516
+msgid "Add new option"
+msgstr ""
+
+#: custom-post-type/register_cpt.php:53 custom-post-type/register_cpt.php:54
+msgid "Add New Vehicle"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_service.php:129
+#: admin/metabox/fields/ovabrw_service_group.php:50
+msgid "Add Option"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_period_time.php:158
+msgid "Add Period Time"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_rt.php:136
+#: admin/metabox/fields/ovabrw_rt.php:241
+#: admin/metabox/fields/ovabrw_rt_record.php:38
+msgid "Add PST"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_resources.php:97
+msgid "Add Resources"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_service.php:158
+msgid "Add Service"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_rt.php:276
+msgid "Add ST"
+msgstr ""
+
+#: admin/custom-taxonomy/custom_taxonomy.php:101
+msgid "Add Taxonomy"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_untime.php:67
+msgid "Add UT"
+msgstr ""
+
+#: ovabrw-templates/single/request_booking.php:100
+#: ovabrw-templates/single/request_booking.php:104
+#: admin/metabox/fields/ovabrw_product_map.php:35
+msgid "Address"
+msgstr ""
+
+#: admin/order/class_create_order.php:64 admin/order/class_create_order.php:98
+msgid "Address 1"
+msgstr ""
+
+#: admin/order/class_create_order.php:67 admin/order/class_create_order.php:101
+msgid "Address 2"
+msgstr ""
+
+#: inc/ovabrw-extra-tab.php:145
+msgid "Address: "
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1363
+msgid "Admin Settings"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:193
+msgid "Albanian (Shqip)"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_calendar.php:129
+#: elementor/widgets/ovabrw_product_images.php:125
+#: elementor/widgets/ovabrw_product_meta.php:51
+#: elementor/widgets/ovabrw_product_price.php:84
+#: elementor/widgets/ovabrw_product_short_description.php:52
+#: elementor/widgets/ovabrw_product_title.php:109
+#: elementor/widgets/ovabrw_unavailable_time.php:84
+msgid "Alignment"
+msgstr ""
+
+#: admin/category/init.php:46 admin/category/init.php:258
+#: admin/metabox/ovabrw-custom-fields.php:501
+msgid "All"
+msgstr ""
+
+#: custom-post-type/register_cpt.php:17
+msgid "All Location"
+msgstr ""
+
+#: custom-post-type/register_cpt.php:58
+msgid "All Vehicle"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:540
+#: admin/metabox/ovabrw-custom-fields.php:571
+msgid "Allow customers to enter the other location"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1292
+msgid "Allow to send mail to customer"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:416
+msgid "Always Open Price Table"
+msgstr ""
+
+#: inc/ovabrw_deposit.php:338
+msgid "Amount Insurance"
+msgstr ""
+
+#: inc/ovabrw-cart.php:503 inc/ovabrw_hooks.php:411 inc/ovabrw_hooks.php:454
+msgid "Amount Of Insurance"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:110
+#: admin/order/class_create_order.php:186
+#: admin/order/class_create_order.php:292
+msgid "Amount of insurance"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:152
+msgid "Arabic"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:546
+msgid "Archive Product"
+msgstr ""
+
+#: inc/ovabrw_hooks.php:518
+msgid "Are you sure ?"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_related.php:82
+msgid "ASC"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:126
+msgid "Ascending"
+msgstr ""
+
+#: elementor/widgets/ovabrw_custom_taxonomy.php:78
+#: elementor/widgets/ovabrw_product_features.php:79
+msgid "Auto"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:188
+#: admin/metabox/ovabrw-custom-fields.php:200
+msgid "Automatic"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_location.php:12
+msgid "Avaiable in"
+msgstr ""
+
+#: admin/class_ovabrw_check_product.php:70
+#: ovabrw-templates/single/calendar.php:87
+msgid "Available"
+msgstr ""
+
+#: inc/ovabrw-cart.php:1192 inc/ovabrw-cart.php:1250
+#, php-format
+msgid "Available vehicle is %s"
+msgstr ""
+
+#: ovabrw-templates/single/booking-form/ajax_total.php:7
+msgid "Available Vehicles:"
+msgstr ""
+
+#: admin/class_ovabrw_check_product.php:179
+msgid "Available Vehicles: "
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:153
+msgid "Azerbaijanian (Azeri)"
+msgstr ""
+
+#: elementor/widgets/ovabrw_custom_taxonomy.php:123
+#: elementor/widgets/ovabrw_product_calendar.php:83
+#: elementor/widgets/ovabrw_product_calendar.php:215
+#: elementor/widgets/ovabrw_product_calendar.php:248
+#: elementor/widgets/ovabrw_product_features.php:90
+#: elementor/widgets/ovabrw_product_features.php:135
+#: elementor/widgets/ovabrw_product_table_price.php:208
+msgid "Background"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_calendar.php:182
+msgid "Background Button Active"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1302
+msgid "Before x day"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_title.php:176
+msgid "Blend Mode"
+msgstr ""
+
+#: elementor/widgets/ovabrw_custom_taxonomy.php:77
+#: elementor/widgets/ovabrw_product_features.php:78
+msgid "Block"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_calendar.php:423
+msgid "Body Background"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_calendar.php:435
+msgid "Body Color"
+msgstr ""
+
+#: ovabrw-templates/single/booking-form.php:49
+msgid "Booking"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:27
+msgid "Booking & Rental"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:42
+#: admin/setting/ovabrw-settings-tab.php:589
+#: ovabrw-templates/single/booking-form.php:27
+msgid "Booking Form"
+msgstr ""
+
+#: elementor/widgets/ovabrw_custom_taxonomy.php:135
+#: elementor/widgets/ovabrw_custom_taxonomy.php:153
+#: elementor/widgets/ovabrw_custom_taxonomy.php:171
+#: elementor/widgets/ovabrw_custom_taxonomy.php:256
+#: elementor/widgets/ovabrw_product_features.php:147
+#: elementor/widgets/ovabrw_product_features.php:165
+#: elementor/widgets/ovabrw_product_features.php:183
+#: elementor/widgets/ovabrw_product_features.php:245
+#: elementor/widgets/ovabrw_product_features.php:330
+#: elementor/widgets/ovabrw_product_features.php:392
+msgid "Border"
+msgstr ""
+
+#: elementor/widgets/ovabrw_custom_taxonomy.php:143
+#: elementor/widgets/ovabrw_product_features.php:155
+msgid "Border Items (first)"
+msgstr ""
+
+#: elementor/widgets/ovabrw_custom_taxonomy.php:161
+#: elementor/widgets/ovabrw_product_features.php:173
+msgid "Border Items (last)"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_calendar.php:170
+#: elementor/widgets/ovabrw_product_images.php:59
+#: elementor/widgets/ovabrw_product_images.php:100
+msgid "Border Radius"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:155
+msgid "Bosanski"
+msgstr ""
+
+#. Name of the plugin
+msgid "BRW - Booking & Rental Plugin"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:154
+msgid "Bulgarian"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:83
+msgid ""
+"Calculate rental period:<br/> <strong>- Day</strong>: (Drop-off date) - "
+"(Pick-up date) + 1 <br/> <strong>- Night</strong>: (Drop-off date) - (Pick-"
+"up date) <br/> <strong>- Hour</strong>: (Drop-off date) - (Pick-up date) + X "
+"<br/> X = 1:  if (Drop-off Time) - (Pick-up Time) > 0 <br/>X = 0:  if (Drop-"
+"off Time) - (Pick-up Time) < 0"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_calendar.php:66
+msgid "Calendar"
+msgstr ""
+
+#: admin/order/class_display_table_order.php:120
+#: admin/order/class_render_table_order.php:53
+#: admin/order/class_render_table_order.php:71
+msgid "Cancel"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:46
+#: admin/setting/ovabrw-settings-tab.php:1249
+msgid "Cancel Order"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1255
+msgid "Cancellation is accepted before x hours"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1263
+msgid "Cancellation is accepted if the total order is less than x amount"
+msgstr ""
+
+#: admin/order/class_create_order.php:42
+msgid "Cancelled"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:156
+msgid "Català"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:607
+#: admin/metabox/ovabrw-custom-fields.php:652
+#: elementor/widgets/ovabrw_search_map.php:59
+#: ovabrw-templates/shortcode/search_form_full.php:75
+msgid "Category"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_calendar.php:137
+#: elementor/widgets/ovabrw_product_images.php:133
+#: elementor/widgets/ovabrw_product_meta.php:59
+#: elementor/widgets/ovabrw_product_price.php:92
+#: elementor/widgets/ovabrw_product_short_description.php:60
+#: elementor/widgets/ovabrw_product_title.php:117
+#: elementor/widgets/ovabrw_unavailable_time.php:92
+msgid "Center"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:75
+#: admin/order/class_create_order.php:162
+#: admin/order/class_create_order.php:268
+msgid "Charged by"
+msgstr ""
+
+#: admin/class_ovabrw_check_product.php:14 admin/init.php:67 admin/init.php:68
+msgid "Check Product"
+msgstr ""
+
+#: admin/order/class_render_table_order.php:159
+msgid "Check-in - Check-out"
+msgstr ""
+
+#: admin/order/class_display_table_order.php:54
+msgid "Check-in date"
+msgstr ""
+
+#: admin/order/class_display_table_order.php:55
+msgid "Check-out date"
+msgstr ""
+
+#: admin/import/ovabrw_import_locaitons.php:31
+#: admin/import/ovabrw_import_locaitons.php:71
+msgid "Choose a CSV file from your computer:"
+msgstr ""
+
+#: admin/category/init.php:43 admin/category/init.php:253
+msgid "Choose Custom Checkout Field in booking form"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:209
+msgid "Choose Image"
+msgstr ""
+
+#: ovabrw-templates/single/request_booking.php:187
+#: ovabrw-templates/single/booking-form/fields.php:182
+msgid "Choose Package"
+msgstr ""
+
+#: elementor/widgets/ovabrw_custom_taxonomy.php:53
+#: elementor/widgets/ovabrw_product_booking_form.php:55
+#: elementor/widgets/ovabrw_product_calendar.php:54
+#: elementor/widgets/ovabrw_product_features.php:54
+#: elementor/widgets/ovabrw_product_price.php:55
+#: elementor/widgets/ovabrw_product_table_price.php:55
+#: elementor/widgets/ovabrw_product_title.php:55
+#: elementor/widgets/ovabrw_unavailable_time.php:55
+msgid "Choose Product"
+msgstr ""
+
+#: admin/category/init.php:53 admin/category/init.php:266
+msgid "Choose Special Checkout Field in booking form"
+msgstr ""
+
+#: admin/category/init.php:19 admin/category/init.php:223
+msgid "Choose Taxonomies"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_id_vehicle.php:13
+msgid "Choose Vehicles"
+msgstr ""
+
+#: admin/order/class_create_order.php:70 admin/order/class_create_order.php:104
+msgid "City"
+msgstr ""
+
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:253
+msgid "Class"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_feature_field.php:5
+msgid "Class Font"
+msgstr ""
+
+#: ovabrw-templates/single/table-price/seasons_day.php:128
+#: ovabrw-templates/single/table-price/seasons_hour.php:115
+msgid "Close"
+msgstr ""
+
+#: admin/order/class_display_table_order.php:121
+#: admin/order/class_render_table_order.php:57
+#: admin/order/class_render_table_order.php:72
+msgid "Closed"
+msgstr ""
+
+#: custom-post-type/register_cpt.php:93
+#, php-format
+msgid "Closed <span class=\"count\">(%s)</span>"
+msgid_plural "Closed<span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: elementor/widgets/ovabrw_custom_taxonomy.php:221
+#: elementor/widgets/ovabrw_custom_taxonomy.php:306
+#: elementor/widgets/ovabrw_product_calendar.php:203
+#: elementor/widgets/ovabrw_product_calendar.php:236
+#: elementor/widgets/ovabrw_product_calendar.php:308
+#: elementor/widgets/ovabrw_product_features.php:233
+#: elementor/widgets/ovabrw_product_features.php:295
+#: elementor/widgets/ovabrw_product_features.php:380
+#: elementor/widgets/ovabrw_product_meta.php:76
+#: elementor/widgets/ovabrw_product_price.php:109
+#: elementor/widgets/ovabrw_product_short_description.php:82
+#: elementor/widgets/ovabrw_product_table_price.php:84
+#: elementor/widgets/ovabrw_product_table_price.php:281
+#: elementor/widgets/ovabrw_product_title.php:149
+#: elementor/widgets/ovabrw_unavailable_time.php:118
+#: elementor/widgets/ovabrw_unavailable_time.php:158
+msgid "Color"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_meta.php:95
+msgid "Color Category"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:527
+msgid "Color of unavailable date in calendar"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_table_price.php:146
+#: elementor/widgets/ovabrw_product_table_price.php:219
+msgid "Color Title"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:985
+#: elementor/widgets/ovabrw_search_map.php:91
+msgid "Column"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_related.php:51
+msgid "Columns"
+msgstr ""
+
+#: admin/order/class_create_order.php:55 admin/order/class_create_order.php:92
+msgid "Company"
+msgstr ""
+
+#: admin/order/class_create_order.php:38
+#: admin/order/class_display_table_order.php:117
+#: admin/order/class_render_table_order.php:47
+#: admin/order/class_render_table_order.php:68
+msgid "Completed"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_related.php:35
+#: elementor/widgets/ovabrw_product_table_price.php:129
+msgid "Content"
+msgstr ""
+
+#: admin/order/class_create_order.php:205
+#: admin/order/class_create_order.php:311
+msgid "Cost"
+msgstr ""
+
+#: admin/init.php:49 admin/init.php:50 admin/order/class_create_order.php:33
+#: admin/order/class_create_order.php:326
+msgid "Create Order"
+msgstr ""
+
+#: admin/init.php:85 admin/init.php:86
+#: admin/metabox/ovabrw-custom-fields.php:493
+#: admin/metabox/ovabrw-custom-fields.php:498
+#: admin/metabox/ovabrw-custom-fields.php:513
+msgid "Custom Checkout Field"
+msgstr ""
+
+#: admin/init.php:94 admin/init.php:95
+#: elementor/widgets/ovabrw_custom_taxonomy.php:17
+msgid "Custom Taxonomy"
+msgstr ""
+
+#: admin/order/class_display_table_order.php:48
+#: admin/order/class_render_table_order.php:155
+msgid "Customer Name"
+msgstr ""
+
+#: inc/ovabrw-functions.php:34 admin/setting/ovabrw-settings-tab.php:113
+msgid "d-m-Y"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_dailys.php:6
+msgid "Daily"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:271
+msgid "Daily Price"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:159
+msgid "Dansk"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_related.php:64
+#: elementor/widgets/ovabrw_search_map.php:112
+msgid "Date"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:110
+msgid "Date Format"
+msgstr ""
+
+#: inc/ovabrw-get-data.php:1572 admin/metabox/ovabrw-custom-fields.php:79
+#: admin/order/class_create_order.php:154
+#: admin/order/class_create_order.php:164
+#: admin/order/class_create_order.php:260
+#: admin/order/class_create_order.php:270
+#: admin/setting/ovabrw-settings-tab.php:507
+#: elementor/widgets/ovabrw_product_calendar.php:347
+#: ovabrw-templates/single/booking-form/resource.php:49
+msgid "Day"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_calendar.php:367
+msgid "Day Past Background"
+msgstr ""
+
+#: inc/ovabrw-functions.php:650 inc/ovabrw-functions.php:656
+#: inc/ovabrw-functions.php:669 inc/ovabrw-functions.php:675
+#: inc/ovabrw-get-data.php:1050 inc/ovabrw_hooks.php:140
+#: ovabrw-templates/single/request_booking.php:368
+#: admin/metabox/fields/ovabrw_global_discount.php:44
+#: admin/metabox/fields/ovabrw_global_discount.php:75
+#: admin/metabox/fields/ovabrw_rt_discount.php:21
+msgid "Day(s)"
+msgstr ""
+
+#: ovabrw-templates/single/table-price/global_discount_day.php:51
+#: ovabrw-templates/single/table-price/seasons_day.php:108
+msgid "days"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_rt.php:178
+#: admin/metabox/fields/ovabrw_rt.php:180
+msgid "DD-MM"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_rt.php:65 admin/metabox/fields/ovabrw_rt.php:74
+#: admin/metabox/fields/ovabrw_rt_record.php:11
+#: admin/metabox/fields/ovabrw_rt_record.php:16
+msgid "DD-MM-YY"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:173
+msgid "decimal use dot (.)"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:417
+msgid "Defaul Time"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:365
+#: admin/metabox/ovabrw-custom-fields.php:394
+#: admin/metabox/ovabrw-custom-fields.php:420
+#: admin/metabox/ovabrw-custom-fields.php:447
+#: admin/metabox/ovabrw-custom-fields.php:472
+#: admin/metabox/ovabrw-custom-fields.php:531
+#: admin/metabox/ovabrw-custom-fields.php:562
+#: admin/metabox/ovabrw-custom-fields.php:593
+#: admin/metabox/ovabrw-custom-fields.php:640
+#: admin/metabox/ovabrw-custom-fields.php:682
+msgid "Default"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:239
+msgid "Default hour of end time"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:219
+msgid "Default hour of start time"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:168
+msgid "Default Location"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:348
+msgid "Default or Other (made in Templates of Elementor )"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:469
+msgid "Default Time"
+msgstr ""
+
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:247
+msgid "Default value"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:501
+msgid "Default View (Calendar Full)"
+msgstr ""
+
+#: elementor/widgets/ovabrw_custom_taxonomy.php:33
+#: elementor/widgets/ovabrw_product_booking_form.php:35
+#: elementor/widgets/ovabrw_product_calendar.php:34
+#: elementor/widgets/ovabrw_product_features.php:34
+#: elementor/widgets/ovabrw_product_price.php:35
+#: elementor/widgets/ovabrw_product_table_price.php:35
+#: elementor/widgets/ovabrw_product_title.php:35
+#: elementor/widgets/ovabrw_unavailable_time.php:35
+msgid "Demo"
+msgstr ""
+
+#: admin/import/ovabrw_import_locaitons.php:46
+#: admin/import/ovabrw_import_locaitons.php:86
+msgid "Demo file.csv"
+msgstr ""
+
+#: inc/ovabrw_deposit.php:175 inc/ovabrw_deposit.php:339
+msgid "Deposit"
+msgstr ""
+
+#: inc/ovabrw_hooks.php:412 inc/ovabrw_hooks.php:458
+#: admin/order/class_create_order.php:190
+#: admin/order/class_create_order.php:296
+msgid "Deposit Amount"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:170
+msgid "Deposit amount"
+msgstr ""
+
+#: ovabrw-templates/single/booking-form/deposit.php:28
+msgid "Deposit Option"
+msgstr ""
+
+#: admin/order/class_render_table_order.php:166
+msgid "Deposit Status"
+msgstr ""
+
+#: inc/ovabrw_deposit.php:263
+msgid "Deposit status"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:155
+msgid "Deposit type"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_related.php:83
+msgid "DESC"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:127
+msgid "Descending"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_features.php:11
+#: admin/metabox/fields/ovabrw_features.php:41
+#: admin/metabox/fields/ovabrw_feature_field.php:15
+msgid "Description"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:337
+msgid "Disable Week Day"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_period_time.php:10
+msgid "Discount"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_rt.php:10
+msgid "Discount in Special Time (DST)"
+msgstr ""
+
+#: admin/category/init.php:10 admin/category/init.php:205
+#: elementor/widgets/ovabrw_custom_taxonomy.php:73
+#: elementor/widgets/ovabrw_product_features.php:74
+msgid "Display"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:205
+msgid "Display in Calendar"
+msgstr ""
+
+#: admin/class_ovabrw_check_product.php:27
+msgid "Display Schedule"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:957
+msgid "Display Shortcode "
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:737
+#: admin/setting/ovabrw-settings-tab.php:948
+msgid "Display Tab after Description or Review Tab"
+msgstr ""
+
+#: inc/ovabrw-cart.php:433 admin/order/class_create_order.php:249
+#: elementor/widgets/ovabrw_search_map.php:64
+#: ovabrw-templates/shortcode/search_form_full.php:99
+#: ovabrw-templates/single/request_booking.php:206
+#: ovabrw-templates/single/booking-form/fields.php:85
+#: ovabrw-templates/single/booking-form/fields.php:91
+#: ovabrw-templates/single/booking-form/fields.php:93
+#: ovabrw-templates/single/booking-form/fields.php:100
+msgid "Drop-off Date"
+msgstr ""
+
+#: admin/order/class_create_order.php:143
+msgid "Drop-off Date *"
+msgstr ""
+
+#: ovabrw-templates/single/search_map.php:120
+msgid "Drop-off date ..."
+msgstr ""
+
+#: inc/ovabrw-cart.php:95
+msgid "Drop-off Date must be greater than Pick-up Date"
+msgstr ""
+
+#: inc/ovabrw-extra-tab.php:160
+msgid "Drop-off Date: "
+msgstr ""
+
+#: inc/ovabrw-cart.php:387 admin/category/init.php:80
+#: admin/category/init.php:300 admin/order/class_create_order.php:135
+#: admin/order/class_create_order.php:241
+#: elementor/widgets/ovabrw_search_map.php:62
+#: ovabrw-templates/shortcode/search_form_full.php:88
+#: ovabrw-templates/single/request_booking.php:142
+#: admin/metabox/fields/ovabrw_choose_location.php:8
+#: admin/metabox/fields/ovabrw_local_price.php:6
+#: ovabrw-templates/single/booking-form/fields.php:129
+msgid "Drop-off Location"
+msgstr ""
+
+#: inc/ovabrw-cart.php:109
+msgid "Drop-off location is wrong"
+msgstr ""
+
+#: inc/ovabrw-extra-tab.php:151
+msgid "Drop-off Location: "
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_resources.php:9
+#: admin/metabox/fields/ovabrw_service.php:54
+#: admin/metabox/fields/ovabrw_service_group.php:37
+msgid "Duration"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_global_discount.php:7
+msgid "Duration (Min Max): Number"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:183
+msgid "Dutch"
+msgstr ""
+
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:120
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:170
+#: admin/custom-taxonomy/custom_taxonomy.php:133
+#: admin/custom-taxonomy/custom_taxonomy.php:203
+msgid "Edit"
+msgstr ""
+
+#: custom-post-type/register_cpt.php:15
+msgid "Edit Location"
+msgstr ""
+
+#: custom-post-type/register_cpt.php:56
+msgid "Edit Vehicle"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:165
+msgid "Eesti"
+msgstr ""
+
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:206
+#: admin/order/class_create_order.php:58
+#: ovabrw-templates/single/request_booking.php:83
+msgid "Email"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:920
+#: admin/setting/ovabrw-settings-tab.php:1342
+msgid "Email Content"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:890
+msgid "Email Settings"
+msgstr ""
+
+#: inc/ovabrw-extra-tab.php:139
+msgid "Email: "
+msgstr ""
+
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:265
+#: admin/custom-taxonomy/custom_taxonomy.php:276
+#: admin/setting/ovabrw-settings-tab.php:1289
+msgid "Enable"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:125
+msgid "Enable deposit"
+msgstr ""
+
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:119
+#: admin/custom-taxonomy/custom_taxonomy.php:127
+msgid "Enabled"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_untime.php:11
+#: ovabrw-templates/single/table-price/seasons_day.php:37
+#: ovabrw-templates/single/table-price/seasons_day.php:56
+#: ovabrw-templates/single/table-price/seasons_hour.php:37
+#: ovabrw-templates/single/table-price/seasons_hour.php:54
+msgid "End Date"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_rt.php:9
+msgid "End Date (DD-MM)"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:439
+msgid "End Date for booking"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_period_time.php:71
+#: admin/metabox/fields/ovabrw_petime_record.php:28
+msgid "End Hour"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_period_time.php:92
+#: admin/metabox/fields/ovabrw_period_time.php:112
+#: admin/metabox/fields/ovabrw_petime_discount.php:17
+#: admin/metabox/fields/ovabrw_petime_record.php:51
+#: admin/metabox/fields/ovabrw_rt.php:76
+#: admin/metabox/fields/ovabrw_rt_record.php:17
+#: ovabrw-templates/single/table-price/period_time.php:28
+msgid "End Time"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:162
+msgid "English"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:163
+msgid "English (British) "
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:708
+msgid "Enter a venue"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:754
+msgid "Error Page"
+msgstr ""
+
+#: admin/order/class_render_table_order.php:66
+msgid "Error Update"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:166
+msgid "Euskara"
+msgstr ""
+
+#: inc/ovabrw-cron.php:37
+#, php-format
+msgid "Every % seconds"
+msgstr ""
+
+#: inc/ovabrw_deposit.php:45 inc/ovabrw_deposit.php:94
+msgid "excludes"
+msgstr ""
+
+#: ovabrw-templates/single/request_booking.php:427
+msgid "Extra Information"
+msgstr ""
+
+#: inc/ovabrw_deposit.php:336
+msgid "Extra Price"
+msgstr ""
+
+#: ovabrw-templates/single/request_booking.php:340
+msgid "Extra Service"
+msgstr ""
+
+#: inc/ovabrw-extra-tab.php:42 admin/setting/ovabrw-settings-tab.php:44
+msgid "Extra Tab"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:357
+#: admin/metabox/ovabrw-custom-fields.php:362
+msgid "Extra Tab (shortcode)"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:939
+msgid "Extra Tab in WooCommerce"
+msgstr ""
+
+#: inc/ovabrw-extra-tab.php:171
+msgid "Extra: "
+msgstr ""
+
+#: admin/order/class_create_order.php:44
+msgid "Failed"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:295
+#: elementor/widgets/ovabrw_product_features.php:66
+msgid "Features"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:220
+msgid "Field 1"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:234
+msgid "Field 2"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:248
+msgid "Field 3"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:262
+msgid "Field 4"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:276
+msgid "Field 5"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:290
+msgid "Field 6"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:304
+msgid "Field 7"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:318
+msgid "Field 8"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:332
+msgid "Field 9"
+msgstr ""
+
+#: admin/model.php:738 admin/model.php:825 admin/model.php:897
+#: admin/model.php:952
+msgid "File empty!"
+msgstr ""
+
+#: admin/order/class_display_table_order.php:127
+msgid "Filter"
+msgstr ""
+
+#: admin/class_ovabrw_check_product.php:168
+msgid "Find Vehicle"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:168
+msgid "Finnish (Suomi)"
+msgstr ""
+
+#: admin/order/class_create_order.php:49 admin/order/class_create_order.php:86
+msgid "First Name"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:994
+msgid "Five Column"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:159
+msgid "Fixed value"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:993
+msgid "Four Column"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:169
+msgid "French"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:265
+#: admin/metabox/fields/ovabrw_dailys.php:74
+#: ovabrw-templates/single/table-price/weekdays.php:51
+msgid "Friday"
+msgstr ""
+
+#: ovabrw-templates/single/table-price/global_discount_day.php:51
+#: ovabrw-templates/single/table-price/global_discount_hour.php:54
+msgid "from"
+msgstr ""
+
+#: admin/class_ovabrw_check_product.php:146
+#: admin/order/class_display_table_order.php:59
+msgid "From date"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:904
+#: admin/setting/ovabrw-settings-tab.php:1326
+msgid "From name"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_rt_record.php:12
+msgid "From Time"
+msgstr ""
+
+#: admin/metabox/class_ovabrw_metabox.php:129
+msgid "From: "
+msgstr ""
+
+#: inc/ovabrw_deposit.php:533 inc/ovabrw_hooks.php:414 inc/ovabrw_hooks.php:466
+msgid "Full Amount"
+msgstr ""
+
+#: inc/ovabrw_deposit.php:281 admin/order/class_render_table_order.php:351
+#: ovabrw-templates/single/booking-form/deposit.php:46
+msgid "Full Payment"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:170
+msgid "Galego"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:39
+#: admin/setting/ovabrw-settings-tab.php:102
+msgid "General"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:160
+msgid "German"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:604
+#: admin/metabox/ovabrw-custom-fields.php:649
+msgid "Get Label By "
+msgstr ""
+
+#: admin/category/init.php:117 admin/category/init.php:177
+msgid "Global"
+msgstr ""
+
+#: admin/category/init.php:135 admin/category/init.php:349
+msgid ""
+"Global (WooCommerce >> Settings >> Booking & Rental >> Product Template) or "
+"Other (made in Templates of Elementor )"
+msgstr ""
+
+#: ovabrw-templates/single/table-price/global_discount_day.php:32
+#: ovabrw-templates/single/table-price/global_discount_hour.php:33
+msgid "Global Discount"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:301
+msgid "Global Discount (GD)"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:287
+msgid "Google Key Map"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:228
+msgid "Group of end time for booking"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:210
+msgid "Group of start time for booking"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:391
+#: admin/metabox/ovabrw-custom-fields.php:444
+msgid "Group Time"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_calendar.php:387
+msgid "Header Background"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_calendar.php:399
+msgid "Header Color"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_calendar.php:411
+msgid "Header Padding"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:171
+msgid "Hebrew (עברית)"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:138
+#: elementor/widgets/ovabrw_search_map.php:149
+#: elementor/widgets/ovabrw_search_map.php:160
+#: elementor/widgets/ovabrw_search_map.php:171
+msgid "Hide"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1121
+msgid "Hide Taxonomy List"
+msgstr ""
+
+#: admin/order/class_create_order.php:165
+#: admin/order/class_create_order.php:271
+msgid "Hotel"
+msgstr ""
+
+#: inc/ovabrw-get-data.php:1569 admin/metabox/ovabrw-custom-fields.php:81
+#: admin/order/class_create_order.php:155
+#: admin/order/class_create_order.php:261
+#: ovabrw-templates/single/booking-form/resource.php:47
+msgid "Hour"
+msgstr ""
+
+#: admin/order/class_create_order.php:166
+#: admin/order/class_create_order.php:272
+msgid "Hour "
+msgstr ""
+
+#: inc/ovabrw-functions.php:652 inc/ovabrw-functions.php:654
+#: inc/ovabrw-functions.php:671 inc/ovabrw-functions.php:673
+#: inc/ovabrw-get-data.php:1050 inc/ovabrw-get-data.php:1076
+#: inc/ovabrw-get-data.php:1223 ovabrw-templates/single/request_booking.php:366
+#: admin/metabox/fields/ovabrw_global_discount.php:40
+#: admin/metabox/fields/ovabrw_global_discount.php:74
+#: admin/metabox/fields/ovabrw_rt_discount.php:20
+msgid "Hour(s)"
+msgstr ""
+
+#: ovabrw-templates/single/table-price/global_discount_hour.php:54
+#: ovabrw-templates/single/table-price/seasons_hour.php:100
+msgid "hours"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_calendar.php:229
+msgid "Hover"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:172
+msgid "Hrvatski"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_title.php:89
+msgid "HTML Tag"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://themeforest.net/user/ovatheme"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://themeforest.net/user/ovatheme/portfolio"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:173
+msgid "Hungarian"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:199
+msgid "Icon"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_features.php:7
+msgid "Icon Class"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_features.php:30
+msgid "Icon-Class"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_features.php:217
+msgid "Icons"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:110
+msgid "ID"
+msgstr ""
+
+#: admin/order/class_create_order.php:182
+#: admin/order/class_create_order.php:288
+msgid "ID Vehicle"
+msgstr ""
+
+#: inc/ovabrw-cart.php:494 admin/metabox/class_ovabrw_metabox.php:84
+msgid "Id Vehicle"
+msgstr ""
+
+#: admin/metabox/class_ovabrw_metabox.php:79
+msgid "Id Vehicle (Unique)"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_period_time.php:6
+msgid "ID*"
+msgstr ""
+
+#: admin/category/init.php:95 admin/category/init.php:316
+msgid ""
+"If empty will get value in WooCommerce >> Settings >> Booking & Rental >> "
+"Booking Form"
+msgstr ""
+
+#: admin/import/ovabrw_import_locaitons.php:51
+#: admin/import/ovabrw_import_locaitons.php:91
+msgid "Import"
+msgstr ""
+
+#: admin/init.php:76 admin/init.php:77
+msgid "Import Locations"
+msgstr ""
+
+#: admin/import/ovabrw_import_locaitons.php:15
+msgid "Import locations from a CSV file"
+msgstr ""
+
+#: admin/model.php:819 admin/model.php:946
+msgid "Imported locations fails!"
+msgstr ""
+
+#: admin/model.php:815 admin/model.php:942
+msgid "Imported locations success!"
+msgstr ""
+
+#: inc/ovabrw_deposit.php:45 inc/ovabrw_deposit.php:94
+msgid "includes"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:174
+msgid "Indonesian"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:679
+msgid "Input quantity in booking form"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1103
+msgid "Insert ID of category. Example 42, 15"
+msgstr ""
+
+#: admin/category/init.php:108 admin/category/init.php:337
+#: admin/metabox/ovabrw-custom-fields.php:663
+msgid "Insert label Drop-off Date. Example: Drop-off Date, Check-out"
+msgstr ""
+
+#: admin/category/init.php:102 admin/category/init.php:327
+#: admin/metabox/ovabrw-custom-fields.php:618
+msgid "Insert label Pick-up Date. Example: Pick-up Date, Check-in"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:514
+msgid ""
+"Insert name in general custom checkout field. Example: ova_email_field, "
+"ova_address_field"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:142
+msgid ""
+"Insert number like 15. Example: If you insert 15, time List for customers to "
+"choose will display: 07:15, 07:30, 07:45, 08:00"
+msgstr ""
+
+#: inc/ovabrw-cart.php:116
+msgid "Insert Pick-up date"
+msgstr ""
+
+#: inc/ovabrw-cart.php:88
+msgid "Insert Pick-up, Drop-off date"
+msgstr ""
+
+#: inc/ovabrw-cart.php:56
+msgid "Insert PickOff Location"
+msgstr ""
+
+#: inc/ovabrw-cart.php:49
+msgid "Insert PickUp Location"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1232
+msgid "Insert slug here and separated by \",\" "
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:432
+#: admin/metabox/ovabrw-custom-fields.php:484
+msgid "Insert time format 24hour. Example: 09:00"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:223
+#: admin/setting/ovabrw-settings-tab.php:243
+msgid "Insert time format: 24hour. Example: 06:00, 10:30, 14:00, 18:00"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:407
+#: admin/metabox/ovabrw-custom-fields.php:460
+#: admin/setting/ovabrw-settings-tab.php:214
+#: admin/setting/ovabrw-settings-tab.php:232
+msgid ""
+"Insert time format: 24hour. Like 07:00, 07:30, 08:00, 08:30, 09:00, 09:30, "
+"10:00, 10:30, 11:00, 11:30, 12:00, 12:30, 13:00, 13:30, 14:00, 14:30, 15:00, "
+"15:30, 16:00, 16:30, 17:00, 17:30, 18:00"
+msgstr ""
+
+#: inc/ovabrw_deposit.php:301 admin/order/class_render_table_order.php:170
+msgid "Insurance Status"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:175
+msgid "Italian"
+msgstr ""
+
+#: elementor/widgets/ovabrw_custom_taxonomy.php:115
+#: elementor/widgets/ovabrw_product_features.php:127
+msgid "Items"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:176
+msgid "Japanese"
+msgstr ""
+
+#: ovabrw-templates/single/request_booking.php:80
+msgid "John Doe"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_images.php:141
+#: elementor/widgets/ovabrw_product_short_description.php:68
+#: elementor/widgets/ovabrw_product_title.php:125
+msgid "Justified"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:178
+msgid "Korean"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:177
+msgid "Korean (한국어)"
+msgstr ""
+
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:116
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:235
+#: admin/custom-taxonomy/custom_taxonomy.php:268
+#: elementor/widgets/ovabrw_custom_taxonomy.php:205
+#: elementor/widgets/ovabrw_product_features.php:279
+#: admin/metabox/fields/ovabrw_features.php:10
+#: admin/metabox/fields/ovabrw_features.php:36
+#: admin/metabox/fields/ovabrw_feature_field.php:10
+msgid "Label"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_service.php:26
+#: admin/metabox/fields/ovabrw_service_group.php:7
+msgid "Label *"
+msgstr ""
+
+#: admin/category/init.php:106 admin/category/init.php:333
+msgid "Label Drop-off Date"
+msgstr ""
+
+#: admin/custom-taxonomy/custom_taxonomy.php:121
+msgid "Label Frontend"
+msgstr ""
+
+#: admin/custom-taxonomy/custom_taxonomy.php:265
+msgid "Label frontend"
+msgstr ""
+
+#: admin/category/init.php:100 admin/category/init.php:323
+msgid "Label Pick-up Date"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:148
+msgid "Language"
+msgstr ""
+
+#: admin/order/class_create_order.php:52 admin/order/class_create_order.php:89
+msgid "Last Name"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_product_map.php:51
+msgid "Latitude"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:296
+msgid "Latitude Map default"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:180
+msgid "Latvian (Latviešu)"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_calendar.php:133
+#: elementor/widgets/ovabrw_product_images.php:129
+#: elementor/widgets/ovabrw_product_meta.php:55
+#: elementor/widgets/ovabrw_product_price.php:88
+#: elementor/widgets/ovabrw_product_short_description.php:56
+#: elementor/widgets/ovabrw_product_title.php:113
+#: elementor/widgets/ovabrw_unavailable_time.php:88
+msgid "Left"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_title.php:74
+msgid "Link"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:508
+msgid "List"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:366
+msgid "List Taxonomy Custom"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:179
+msgid "Lithuanian (lietuvių) "
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:60
+#: ovabrw-templates/single/search_map.php:77
+msgid "Location"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:277
+msgid "Location Price"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_product_map.php:67
+msgid "Longitude"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:305
+msgid "Longitude Map default"
+msgstr ""
+
+#: inc/ovabrw-functions.php:30 admin/setting/ovabrw-settings-tab.php:114
+msgid "m/d/Y"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:181
+msgid "Macedonian (Македонски)"
+msgstr ""
+
+#: admin/init.php:58 admin/init.php:59
+#: admin/order/class_display_table_order.php:41
+#: admin/setting/ovabrw-settings-tab.php:48
+msgid "Manage Order"
+msgstr ""
+
+#: admin/custom-taxonomy/custom_taxonomy.php:124
+msgid "Manage Taxonomy"
+msgstr ""
+
+#: admin/custom-taxonomy/custom_taxonomy.php:190
+msgid "Manage Taxonomy: Add/Update value of taxonomy"
+msgstr ""
+
+#: custom-post-type/register_cpt.php:51
+msgid "Manage Vehicle"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:185
+#: admin/metabox/ovabrw-custom-fields.php:197
+msgid "Manage Vehicles"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:189
+msgid "Manual"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:694
+#: ovabrw-templates/single/search_map.php:33
+msgid "Map"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_product_map.php:19
+msgid "Map Name"
+msgstr ""
+
+#: elementor/widgets/ovabrw_custom_taxonomy.php:102
+#: elementor/widgets/ovabrw_custom_taxonomy.php:192
+#: elementor/widgets/ovabrw_custom_taxonomy.php:277
+#: elementor/widgets/ovabrw_custom_taxonomy.php:330
+#: elementor/widgets/ovabrw_product_calendar.php:106
+#: elementor/widgets/ovabrw_product_calendar.php:276
+#: elementor/widgets/ovabrw_product_calendar.php:332
+#: elementor/widgets/ovabrw_product_features.php:114
+#: elementor/widgets/ovabrw_product_features.php:204
+#: elementor/widgets/ovabrw_product_features.php:266
+#: elementor/widgets/ovabrw_product_features.php:351
+#: elementor/widgets/ovabrw_product_features.php:413
+#: elementor/widgets/ovabrw_product_price.php:141
+#: elementor/widgets/ovabrw_product_short_description.php:102
+#: elementor/widgets/ovabrw_product_title.php:204
+#: elementor/widgets/ovabrw_unavailable_time.php:137
+#: elementor/widgets/ovabrw_unavailable_time.php:177
+msgid "Margin"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:194
+msgid "Marker Select"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_rent_time_min.php:8
+msgid "Max Rental Dates"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_rent_time_min.php:19
+msgid "Max Rental Hours"
+msgstr ""
+
+#: inc/ovabrw-cart.php:157 inc/ovabrw-cart.php:170
+#, php-format
+msgid "Max Rental Hours %d hour"
+msgstr ""
+
+#: inc/ovabrw-cart.php:143
+#, php-format
+msgid "Max Rental Period: %d day"
+msgstr ""
+
+#: inc/ovabrw_ajax.php:524
+#, php-format
+msgid "Maximum Quantity: %s"
+msgstr ""
+
+#: admin/import/ovabrw_import_locaitons.php:40
+#: admin/import/ovabrw_import_locaitons.php:80
+#, php-format
+msgid "Maximum size: %s"
+msgstr ""
+
+#: ovabrw-templates/single/calendar.php:92
+msgid "Maybe available"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_related.php:70
+msgid "Menu Order"
+msgstr ""
+
+#: ovabrw-templates/single/table-price/global_discount_day.php:26
+#: ovabrw-templates/single/table-price/seasons_day.php:89
+#: ovabrw-templates/single/table-price/seasons_day.php:101
+msgid "Min - Max (Days)"
+msgstr ""
+
+#: ovabrw-templates/single/table-price/global_discount_hour.php:26
+#: ovabrw-templates/single/table-price/seasons_hour.php:88
+msgid "Min - Max (Hours)"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_rt.php:86 admin/metabox/fields/ovabrw_rt.php:198
+#: admin/metabox/fields/ovabrw_rt_record.php:26
+msgid "Min - Max: Number"
+msgstr ""
+
+#: ovabrw-templates/single/table-price/seasons_hour.php:97
+msgid "Min Duration (Hours)"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_rent_time_min.php:30
+msgid "Min Rental Dates"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_rent_time_min.php:41
+msgid "Min Rental Hours"
+msgstr ""
+
+#: inc/ovabrw-cart.php:163 inc/ovabrw-cart.php:176
+#, php-format
+msgid "Min Rental Hours %d hour"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:349
+msgid "Min Rental Period"
+msgstr ""
+
+#: inc/ovabrw-cart.php:149
+#, php-format
+msgid "Min Rental Period: %d day"
+msgstr ""
+
+#: elementor/widgets/ovabrw_custom_taxonomy.php:232
+#: elementor/widgets/ovabrw_product_features.php:306
+msgid "Min Width"
+msgstr ""
+
+#: admin/order/class_create_order.php:156
+#: admin/order/class_create_order.php:262
+msgid "Mixed "
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:113
+msgid "Modified"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:261
+#: admin/metabox/fields/ovabrw_dailys.php:26
+#: ovabrw-templates/single/table-price/weekdays.php:35
+msgid "Monday"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:182
+msgid "Mongolian (Монгол)"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:505
+msgid "Month"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_calendar.php:292
+msgid "Month Year"
+msgstr ""
+
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:114
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:228
+#: admin/custom-taxonomy/custom_taxonomy.php:115
+#: admin/custom-taxonomy/custom_taxonomy.php:249
+#: elementor/widgets/ovabrw_search_map.php:58
+#: elementor/widgets/ovabrw_search_map.php:111
+#: ovabrw-templates/single/request_booking.php:76
+msgid "Name"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_resources.php:7
+#: admin/metabox/fields/ovabrw_service.php:52
+#: admin/metabox/fields/ovabrw_service_group.php:35
+msgid "Name *"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:65
+#: ovabrw-templates/shortcode/search_form_full.php:105
+msgid "Name Attribute"
+msgstr ""
+
+#: admin/order/class_create_order.php:118
+#: admin/order/class_create_order.php:224
+#: ovabrw-templates/shortcode/search_form_full.php:67
+#: ovabrw-templates/shortcode/search_form_full.php:68
+#: ovabrw-templates/single/search_map.php:58
+msgid "Name Product"
+msgstr ""
+
+#: inc/ovabrw-extra-tab.php:138
+msgid "Name: "
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:502
+#: admin/metabox/ovabrw-custom-fields.php:608
+#: admin/metabox/ovabrw-custom-fields.php:653
+msgid "New"
+msgstr ""
+
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:180
+msgid "New Checkout Field"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:366
+msgid "New Form"
+msgstr ""
+
+#: custom-post-type/register_cpt.php:14
+msgid "New Location"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:395
+#: admin/metabox/ovabrw-custom-fields.php:421
+#: admin/metabox/ovabrw-custom-fields.php:448
+#: admin/metabox/ovabrw-custom-fields.php:473
+msgid "New Time"
+msgstr ""
+
+#: custom-post-type/register_cpt.php:55
+msgid "New Vehicle"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:696
+msgid "New York"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:697
+#: admin/metabox/ovabrw-custom-fields.php:700
+msgid "New York, NY, USA"
+msgstr ""
+
+#: ovabrw-templates/single/search_map.php:236
+msgid "Newest First"
+msgstr ""
+
+#: inc/ovabrw-get-data.php:1787
+msgid "Next"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:80
+msgid "Night"
+msgstr ""
+
+#: admin/metabox/class_ovabrw_metabox.php:101
+#: admin/metabox/ovabrw-custom-fields.php:64
+#: admin/metabox/ovabrw-custom-fields.php:128
+#: admin/metabox/ovabrw-custom-fields.php:144
+#: admin/metabox/ovabrw-custom-fields.php:367
+#: admin/metabox/ovabrw-custom-fields.php:396
+#: admin/metabox/ovabrw-custom-fields.php:449
+#: admin/metabox/ovabrw-custom-fields.php:533
+#: admin/metabox/ovabrw-custom-fields.php:544
+#: admin/metabox/ovabrw-custom-fields.php:564
+#: admin/metabox/ovabrw-custom-fields.php:575
+#: admin/metabox/ovabrw-custom-fields.php:595
+#: admin/metabox/ovabrw-custom-fields.php:642
+#: admin/metabox/ovabrw-custom-fields.php:684
+#: admin/setting/ovabrw-settings-tab.php:281
+#: admin/setting/ovabrw-settings-tab.php:361
+#: admin/setting/ovabrw-settings-tab.php:373
+#: admin/setting/ovabrw-settings-tab.php:385
+#: admin/setting/ovabrw-settings-tab.php:397
+#: admin/setting/ovabrw-settings-tab.php:409
+#: admin/setting/ovabrw-settings-tab.php:421
+#: admin/setting/ovabrw-settings-tab.php:433
+#: admin/setting/ovabrw-settings-tab.php:445
+#: admin/setting/ovabrw-settings-tab.php:458
+#: admin/setting/ovabrw-settings-tab.php:470
+#: admin/setting/ovabrw-settings-tab.php:482
+#: admin/setting/ovabrw-settings-tab.php:494
+#: admin/setting/ovabrw-settings-tab.php:520
+#: admin/setting/ovabrw-settings-tab.php:558
+#: admin/setting/ovabrw-settings-tab.php:570
+#: admin/setting/ovabrw-settings-tab.php:600
+#: admin/setting/ovabrw-settings-tab.php:611
+#: admin/setting/ovabrw-settings-tab.php:624
+#: admin/setting/ovabrw-settings-tab.php:638
+#: admin/setting/ovabrw-settings-tab.php:650
+#: admin/setting/ovabrw-settings-tab.php:662
+#: admin/setting/ovabrw-settings-tab.php:674
+#: admin/setting/ovabrw-settings-tab.php:686
+#: admin/setting/ovabrw-settings-tab.php:698
+#: admin/setting/ovabrw-settings-tab.php:767
+#: admin/setting/ovabrw-settings-tab.php:779
+#: admin/setting/ovabrw-settings-tab.php:790
+#: admin/setting/ovabrw-settings-tab.php:803
+#: admin/setting/ovabrw-settings-tab.php:817
+#: admin/setting/ovabrw-settings-tab.php:829
+#: admin/setting/ovabrw-settings-tab.php:841
+#: admin/setting/ovabrw-settings-tab.php:853
+#: admin/setting/ovabrw-settings-tab.php:865
+#: admin/setting/ovabrw-settings-tab.php:877
+#: admin/setting/ovabrw-settings-tab.php:1006
+#: admin/setting/ovabrw-settings-tab.php:1018
+#: admin/setting/ovabrw-settings-tab.php:1030
+#: admin/setting/ovabrw-settings-tab.php:1042
+#: admin/setting/ovabrw-settings-tab.php:1055
+#: admin/setting/ovabrw-settings-tab.php:1068
+#: admin/setting/ovabrw-settings-tab.php:1080
+#: admin/setting/ovabrw-settings-tab.php:1092
+#: admin/setting/ovabrw-settings-tab.php:1114
+#: admin/setting/ovabrw-settings-tab.php:1137
+#: admin/setting/ovabrw-settings-tab.php:1149
+#: admin/setting/ovabrw-settings-tab.php:1161
+#: admin/setting/ovabrw-settings-tab.php:1174
+#: admin/setting/ovabrw-settings-tab.php:1187
+#: admin/setting/ovabrw-settings-tab.php:1199
+#: admin/setting/ovabrw-settings-tab.php:1211
+#: admin/setting/ovabrw-settings-tab.php:1223
+#: admin/setting/ovabrw-settings-tab.php:1296
+#: admin/metabox/fields/ovabrw_features.php:48
+#: admin/metabox/fields/ovabrw_feature_field.php:21
+#: admin/metabox/fields/ovabrw_service.php:38
+#: admin/metabox/fields/ovabrw_service_group.php:19
+msgid "No"
+msgstr ""
+
+#: ovabrw-templates/single/table-price/seasons_day.php:122
+#: ovabrw-templates/single/table-price/seasons_hour.php:109
+msgid "No Discount in this time"
+msgstr ""
+
+#: custom-post-type/register_cpt.php:21
+msgid "No Location found in Trash."
+msgstr ""
+
+#: custom-post-type/register_cpt.php:20
+msgid "No Location found."
+msgstr ""
+
+#: inc/ovabrw_ajax.php:250
+msgid "No Package"
+msgstr ""
+
+#: inc/ovabrw-cart.php:78
+msgid "No package selected"
+msgstr ""
+
+#: custom-post-type/register_cpt.php:62
+msgid "No Vehicle found in Trash."
+msgstr ""
+
+#: custom-post-type/register_cpt.php:61
+msgid "No Vehicle found."
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_calendar.php:196
+#: elementor/widgets/ovabrw_product_title.php:179
+msgid "Normal"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:184
+msgid "Norwegian"
+msgstr ""
+
+#: ovabrw-templates/search_result.php:57
+#: ovabrw-templates/single/search_map.php:313
+msgid "Not Found"
+msgstr ""
+
+#: inc/ovabrw_ajax.php:878
+msgid "Not found product"
+msgstr ""
+
+#: admin/class_ovabrw_check_product.php:190
+msgid "Not Found Vehicle"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_resources.php:33
+#: admin/metabox/fields/ovabrw_resources_field.php:4
+#: admin/metabox/fields/ovabrw_service.php:69
+#: admin/metabox/fields/ovabrw_service_field.php:4
+msgid "Not space"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_period_time.php:44
+#: admin/metabox/fields/ovabrw_petime_record.php:7
+msgid "not space"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:308
+msgid "Note: ST doesnt use GD, it will use DST"
+msgstr ""
+
+#: ovabrw-templates/single/request_booking.php:91
+msgid "Number"
+msgstr ""
+
+#: ovabrw-templates/single/search_map.php:239
+msgid "Oldest First"
+msgstr ""
+
+#: admin/order/class_create_order.php:41
+#: admin/order/class_display_table_order.php:119
+#: admin/order/class_render_table_order.php:50
+#: admin/order/class_render_table_order.php:70
+msgid "On hold"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:990
+msgid "One Column"
+msgstr ""
+
+#: admin/import/ovabrw_import_locaitons.php:68
+msgid "Only applicable for Rental: Day, Hour, Mixed, Period of Time"
+msgstr ""
+
+#: admin/import/ovabrw_import_locaitons.php:28
+msgid "Only applicable for Rental: Location"
+msgstr ""
+
+#: ovabrw-templates/single/price.php:78 ovabrw-templates/single/price.php:83
+msgid "Option Price"
+msgstr ""
+
+#: inc/ovabrw_hooks.php:515
+msgid "Option Text"
+msgstr ""
+
+#: inc/ovabrw_hooks.php:514
+msgid "Option Value"
+msgstr ""
+
+#: ovabrw-templates/loop/price.php:68
+msgid "Optional price"
+msgstr ""
+
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:214
+msgid "Options"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_related.php:78
+#: elementor/widgets/ovabrw_search_map.php:122
+msgid "Order"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:258
+msgid "Order at frontend"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_related.php:60
+#: elementor/widgets/ovabrw_search_map.php:105
+msgid "Order By"
+msgstr ""
+
+#: inc/ovabrw-extra-tab.php:136
+msgid "Order details: "
+msgstr ""
+
+#: admin/order/class_display_table_order.php:44
+#: admin/order/class_render_table_order.php:151
+msgid "Order ID"
+msgstr ""
+
+#: admin/order/class_render_table_order.php:182
+msgid "Order Status"
+msgstr ""
+
+#: custom-post-type/register_cpt.php:88 inc/ovabrw_hooks.php:882
+msgctxt "Order status"
+msgid "Closed"
+msgstr ""
+
+#: inc/ovabrw-get-data.php:793
+msgid "Other Location"
+msgstr ""
+
+#: inc/ovabrw_ajax.php:522
+msgid "Out stock!"
+msgstr ""
+
+#. Author of the plugin
+#: elementor/ovabrw-register-elementor.php:58
+msgid "Ovatheme"
+msgstr ""
+
+#. Description of the plugin
+msgid "OvaTheme Booking, Rental WooCommerce Plugin."
+msgstr ""
+
+#: inc/ovabrw-cart.php:511 admin/order/class_create_order.php:170
+#: admin/order/class_create_order.php:276
+msgid "Package"
+msgstr "Ticket type"
+
+#: admin/metabox/fields/ovabrw_period_time.php:8
+msgid "Package Type*"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_period_time.php:9
+msgid "Package*"
+msgstr ""
+
+#: inc/ovabrw-extra-tab.php:137
+msgid "Package: "
+msgstr ""
+
+#: elementor/widgets/ovabrw_custom_taxonomy.php:90
+#: elementor/widgets/ovabrw_custom_taxonomy.php:180
+#: elementor/widgets/ovabrw_custom_taxonomy.php:265
+#: elementor/widgets/ovabrw_custom_taxonomy.php:318
+#: elementor/widgets/ovabrw_product_calendar.php:94
+#: elementor/widgets/ovabrw_product_calendar.php:264
+#: elementor/widgets/ovabrw_product_calendar.php:320
+#: elementor/widgets/ovabrw_product_features.php:102
+#: elementor/widgets/ovabrw_product_features.php:192
+#: elementor/widgets/ovabrw_product_features.php:254
+#: elementor/widgets/ovabrw_product_features.php:339
+#: elementor/widgets/ovabrw_product_features.php:401
+#: elementor/widgets/ovabrw_product_price.php:129
+msgid "Padding"
+msgstr ""
+
+#: inc/ovabrw_deposit.php:319 admin/order/class_render_table_order.php:345
+msgid "Paid for Customers"
+msgstr ""
+
+#: custom-post-type/register_cpt.php:19
+msgid "Parent Location:"
+msgstr ""
+
+#: custom-post-type/register_cpt.php:60
+msgid "Parent Vehicle:"
+msgstr ""
+
+#: inc/ovabrw_deposit.php:285 admin/order/class_render_table_order.php:353
+msgid "Partial Payment"
+msgstr ""
+
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:205
+msgid "Password"
+msgstr ""
+
+#: ovabrw-templates/single/booking-form/deposit.php:40
+msgid "Pay Deposit"
+msgstr ""
+
+#: inc/ovabrw_deposit.php:562
+msgid "PAY FULL"
+msgstr ""
+
+#: admin/order/class_create_order.php:40
+msgid "Pending payment"
+msgstr ""
+
+#: ovabrw-templates/single/booking-form/deposit.php:32
+msgid "Per item"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:79
+msgid "Per Page"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:158
+msgid "Percentage of price"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_period_time.php:59
+#: admin/metabox/fields/ovabrw_petime_record.php:18
+msgid "Period of Fixed Days"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_period_time.php:56
+#: admin/metabox/fields/ovabrw_petime_record.php:17
+msgid "Period of Fixed Hours in day"
+msgstr ""
+
+#: admin/order/class_create_order.php:157
+#: admin/order/class_create_order.php:263
+msgid "Period of Time"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:167
+msgid "Persian"
+msgstr ""
+
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:207
+#: admin/order/class_create_order.php:61 admin/order/class_create_order.php:95
+msgid "Phone"
+msgstr ""
+
+#: inc/ovabrw-extra-tab.php:142
+msgid "Phone: "
+msgstr ""
+
+#: inc/ovabrw-cart.php:420 admin/order/class_create_order.php:245
+#: elementor/widgets/ovabrw_search_map.php:63
+#: ovabrw-templates/shortcode/search_form_full.php:94
+#: ovabrw-templates/single/request_booking.php:162
+#: ovabrw-templates/single/booking-form/fields.php:74
+#: ovabrw-templates/single/booking-form/fields.php:80
+#: ovabrw-templates/single/booking-form/fields.php:82
+#: ovabrw-templates/single/booking-form/fields.php:97
+msgid "Pick-up Date"
+msgstr ""
+
+#: admin/order/class_create_order.php:139
+msgid "Pick-up Date *"
+msgstr ""
+
+#: ovabrw-templates/single/search_map.php:107
+msgid "Pick-up date ..."
+msgstr ""
+
+#: inc/ovabrw-cart.php:70
+msgid "Pick-up Date must be greater than Current Time"
+msgstr ""
+
+#: inc/ovabrw-extra-tab.php:157
+msgid "Pick-up Date: "
+msgstr ""
+
+#: inc/ovabrw-cart.php:379 admin/category/init.php:80
+#: admin/category/init.php:300 admin/order/class_create_order.php:131
+#: admin/order/class_create_order.php:237
+#: elementor/widgets/ovabrw_search_map.php:61
+#: ovabrw-templates/shortcode/search_form_full.php:82
+#: ovabrw-templates/single/request_booking.php:122
+#: admin/metabox/fields/ovabrw_choose_location.php:7
+#: admin/metabox/fields/ovabrw_local_price.php:5
+#: ovabrw-templates/single/booking-form/fields.php:109
+msgid "Pick-up Location"
+msgstr ""
+
+#: inc/ovabrw-cart.php:102
+msgid "Pick-up location is wrong"
+msgstr ""
+
+#: inc/ovabrw-extra-tab.php:148
+msgid "Pick-up Location: "
+msgstr ""
+
+#: admin/order/class_render_table_order.php:162
+msgid "Pick-up, Drop-off Location"
+msgstr ""
+
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:117
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:241
+msgid "Placeholder"
+msgstr ""
+
+#: shortcodes/shortcodes.php:254 shortcodes/shortcodes.php:284
+#: shortcodes/shortcodes.php:314 shortcodes/shortcodes.php:344
+#: shortcodes/shortcodes.php:374 shortcodes/shortcodes.php:404
+msgid ""
+"Please check surely you made template file for search form in plugin or theme"
+msgstr ""
+
+#: inc/ovabrw_ajax.php:269
+msgid "Please Choose Drop-off Date"
+msgstr ""
+
+#: inc/ovabrw_ajax.php:244 inc/ovabrw_ajax.php:263
+msgid "Please Choose Pick-up Date"
+msgstr ""
+
+#: inc/ovabrw-cart.php:63
+msgid "Please choose quantity greater 0"
+msgstr ""
+
+#: inc/ovabrw-cart.php:129
+msgid "Please choose Service"
+msgstr ""
+
+#: inc/ovabrw_ajax.php:615
+msgid "Please insert Pick-up, Drop-off Location"
+msgstr ""
+
+#: admin/model.php:687 admin/model.php:846 admin/model.php:972
+msgid "Please select a product"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:185
+msgid "Polish"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_related.php:67
+msgid "Popularity"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:186
+msgid "Portuguese"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:187
+msgid "Português(Brasil)"
+msgstr ""
+
+#: inc/ovabrw-get-data.php:1773
+msgid "Previous"
+msgstr ""
+
+#: inc/ovabrw_hooks.php:523 elementor/widgets/ovabrw_product_price.php:67
+#: elementor/widgets/ovabrw_product_related.php:66
+#: elementor/widgets/ovabrw_search_map.php:200
+#: admin/metabox/fields/ovabrw_dailys.php:7
+#: admin/metabox/fields/ovabrw_global_discount.php:6
+#: admin/metabox/fields/ovabrw_local_price.php:7
+#: admin/metabox/fields/ovabrw_period_time.php:90
+#: admin/metabox/fields/ovabrw_petime_record.php:49
+#: admin/metabox/fields/ovabrw_rt.php:85 admin/metabox/fields/ovabrw_rt.php:197
+#: admin/metabox/fields/ovabrw_rt_record.php:25
+#: ovabrw-templates/single/table-price/period_time.php:26
+#: ovabrw-templates/single/table-price/weekdays.php:28
+msgid "Price"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_resources.php:8
+#: admin/metabox/fields/ovabrw_service.php:53
+#: admin/metabox/fields/ovabrw_service_group.php:36
+msgid "Price *"
+msgstr ""
+
+#: ovabrw-templates/single/table-price/weekdays.php:22
+msgid "Price by day of the week"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_calendar.php:447
+msgid "Price Color"
+msgstr ""
+
+#: admin/order/class_create_order.php:127
+#: admin/order/class_create_order.php:233
+msgid "Price detail"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_period_time.php:7
+msgid "Price*"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_rt.php:6
+#: ovabrw-templates/single/table-price/global_discount_day.php:27
+#: ovabrw-templates/single/table-price/seasons_day.php:38
+msgid "Price/Day"
+msgstr ""
+
+#: ovabrw-templates/single/table-price/seasons_day.php:90
+msgid "Price/Day "
+msgstr ""
+
+#: ovabrw-templates/single/table-price/seasons_day.php:59
+#: ovabrw-templates/single/table-price/seasons_day.php:108
+msgid "Price/Day from"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_rt.php:7 admin/metabox/fields/ovabrw_rt.php:170
+#: ovabrw-templates/single/table-price/global_discount_hour.php:27
+#: ovabrw-templates/single/table-price/seasons_hour.php:38
+#: ovabrw-templates/single/table-price/seasons_hour.php:89
+msgid "Price/Hour"
+msgstr ""
+
+#: ovabrw-templates/single/table-price/seasons_hour.php:57
+#: ovabrw-templates/single/table-price/seasons_hour.php:100
+msgid "Price/Hour from"
+msgstr ""
+
+#: ovabrw-templates/loop/price.php:94
+msgid "Prices from £20"
+msgstr ""
+
+#: admin/order/class_create_order.php:39
+#: admin/order/class_display_table_order.php:118
+#: admin/order/class_render_table_order.php:44
+#: admin/order/class_render_table_order.php:69
+msgid "Processing"
+msgstr ""
+
+#: admin/order/class_create_order.php:116
+#: admin/order/class_create_order.php:222
+#: admin/order/class_render_table_order.php:178
+msgid "Product"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:40
+msgid "Product Archive"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_booking_form.php:19
+msgid "Product Booking Form"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_calendar.php:18
+msgid "Product Calendar"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:41
+#: admin/setting/ovabrw-settings-tab.php:339
+msgid "Product Details"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_features.php:18
+msgid "Product Features"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_images.php:17
+msgid "Product Images"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_meta.php:18
+#: elementor/widgets/ovabrw_product_meta.php:34
+msgid "Product Meta"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_price.php:19
+msgid "Product Price"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_table_price.php:19
+msgid "Product Price Table"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_rating.php:19
+msgid "Product Rating"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_related.php:19
+msgid "Product Related"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_tabs.php:19
+msgid "Product Tabs"
+msgstr ""
+
+#: admin/category/init.php:112 admin/category/init.php:343
+msgid "Product template"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:346
+msgid "Product Templates"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_title.php:19
+msgid "Product Title"
+msgstr ""
+
+#: inc/ovabrw-extra-tab.php:136
+msgid "Product: "
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_related.php:42
+msgid "Products Per Page"
+msgstr ""
+
+#: inc/ovabrw-cart.php:441 admin/order/class_create_order.php:147
+#: admin/order/class_create_order.php:253
+#: ovabrw-templates/single/request_booking.php:112
+#: ovabrw-templates/single/booking-form/fields.php:262
+msgid "Quantity"
+msgstr ""
+
+#: inc/ovabrw_ajax.php:289
+msgid "Quantity does not exist or is less than 0"
+msgstr ""
+
+#: inc/ovabrw-extra-tab.php:154
+msgid "Quantity: "
+msgstr ""
+
+#: ovabrw-templates/single/search_map.php:198
+msgid "Radius:"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_related.php:69
+#: elementor/widgets/ovabrw_search_map.php:114
+msgid "Random"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_related.php:68
+msgid "Rating"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:87
+msgid "Read documentation to know more"
+msgstr ""
+
+#: inc/ovabrw_deposit.php:323 admin/order/class_render_table_order.php:347
+msgid "Received"
+msgstr ""
+
+#: admin/order/class_create_order.php:43
+msgid "Refunded"
+msgstr ""
+
+#: inc/ovabrw_hooks.php:522 admin/metabox/ovabrw-custom-fields.php:97
+msgid "Regular Price / Day"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:48
+msgid "Regular price / Hour"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:51
+msgid "Regular price by hour"
+msgstr ""
+
+#: inc/ovabrw_deposit.php:59 inc/ovabrw_deposit.php:60
+#: inc/ovabrw_deposit.php:211 inc/ovabrw_deposit.php:340
+msgid "Remaining"
+msgstr ""
+
+#: inc/ovabrw_hooks.php:413 inc/ovabrw_hooks.php:462
+#: admin/order/class_create_order.php:194
+#: admin/order/class_create_order.php:300
+msgid "Remaining Amount"
+msgstr ""
+
+#: inc/ovabrw_deposit.php:108
+msgid "Remaining:"
+msgstr ""
+
+#: inc/ovabrw-mail.php:42 admin/setting/ovabrw-settings-tab.php:1321
+#: admin/setting/ovabrw-settings-tab.php:1329
+msgid "Remind Pick-up date"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:47
+#: admin/setting/ovabrw-settings-tab.php:1283
+msgid "Reminder"
+msgstr ""
+
+#: admin/import/ovabrw_import_locaitons.php:112
+msgid "Remove"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1100
+msgid "Remove Categories in dropdown"
+msgstr ""
+
+#: admin/import/ovabrw_import_locaitons.php:96
+msgid "Remove Locations"
+msgstr ""
+
+#: inc/ovabrw_hooks.php:517
+msgid "Remove option"
+msgstr ""
+
+#: admin/model.php:989
+msgid "Removed locations success!"
+msgstr ""
+
+#: inc/ovabrw_hooks.php:56 admin/category/init.php:12
+#: admin/category/init.php:211
+msgid "Rental"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:28
+#: admin/order/class_create_order.php:152
+#: admin/order/class_create_order.php:258
+msgid "Rental Type"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:43
+msgid "Request Booking Form"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:729
+msgid "Request Booking Form in Tab"
+msgstr ""
+
+#: inc/ovabrw-extra-tab.php:70 inc/ovabrw-extra-tab.php:198
+#: inc/ovabrw-extra-tab.php:200 admin/setting/ovabrw-settings-tab.php:899
+#: admin/setting/ovabrw-settings-tab.php:907
+msgid "Request For Booking"
+msgstr ""
+
+#: inc/ovabrw-extra-tab.php:11
+msgid "Request for booking"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1143
+msgid "Require Attribute"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1217
+msgid "Require Category"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:139
+msgid "Require deposit"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1205
+msgid "Require Drop-off Date"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1181
+msgid "Require Drop-off Location"
+msgstr ""
+
+#: admin/metabox/class_ovabrw_metabox.php:89
+msgid "Require Location"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1193
+msgid "Require Pick-up Date"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1168
+msgid "Require Pick-up Location"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1131
+msgid "Require Product Name"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1155
+msgid "Require Product Tag"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1229
+msgid "Require Taxonomy List"
+msgstr ""
+
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:118
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:262
+#: admin/metabox/fields/ovabrw_service.php:31
+#: admin/metabox/fields/ovabrw_service_group.php:12
+msgid "Required"
+msgstr ""
+
+#: inc/ovabrw-cart.php:480 inc/ovabrw-cart.php:658
+msgid "Resource"
+msgstr ""
+
+#: inc/ovabrw-extra-tab.php:163
+msgid "Resource: "
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:314
+#: admin/order/class_create_order.php:174
+#: admin/order/class_create_order.php:280
+#: ovabrw-templates/single/booking-form/resource.php:28
+msgid "Resources"
+msgstr ""
+
+#: ovabrw-templates/single/search_map.php:32
+msgid "Results"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_calendar.php:141
+#: elementor/widgets/ovabrw_product_images.php:137
+#: elementor/widgets/ovabrw_product_meta.php:63
+#: elementor/widgets/ovabrw_product_price.php:96
+#: elementor/widgets/ovabrw_product_short_description.php:64
+#: elementor/widgets/ovabrw_product_title.php:121
+#: elementor/widgets/ovabrw_unavailable_time.php:96
+msgid "Right"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:188
+msgid "Romanian"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:189
+msgid "Russian"
+msgstr ""
+
+#: ovabrw-templates/single/request_booking.php:87
+msgid "sample@yourcompany.com"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_dailys.php:86
+#: ovabrw-templates/single/table-price/weekdays.php:55
+msgid "Saturday"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:266
+msgid "Saturday "
+msgstr ""
+
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:271
+#: admin/custom-taxonomy/custom_taxonomy.php:295
+msgid "save"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:45
+#: ovabrw-templates/shortcode/search_form_full.php:147
+msgid "Search"
+msgstr ""
+
+#: custom-post-type/register_cpt.php:18
+msgid "Search Location"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:19
+msgid "Search Map"
+msgstr ""
+
+#: ovabrw-templates/search_result.php:25
+msgid "Search Result"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:977
+msgid "Search Setting"
+msgstr ""
+
+#: custom-post-type/register_cpt.php:59
+msgid "Search Vehicle"
+msgstr ""
+
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:209
+msgid "Select"
+msgstr ""
+
+#: inc/ovabrw-get-data.php:1644 ovabrw-templates/single/request_booking.php:403
+#: ovabrw-templates/single/booking-form/services.php:43
+#, php-format
+msgid "Select %s"
+msgstr ""
+
+#: inc/ovabrw-get-data.php:1672 shortcodes/shortcodes.php:142
+msgid "Select Attribute"
+msgstr ""
+
+#: inc/ovabrw-get-data.php:902
+msgid "Select Category"
+msgstr "Tour type"
+
+#: inc/ovabrw-get-data.php:744 inc/ovabrw-get-data.php:783
+#: inc/ovabrw-get-data.php:806
+#: admin/metabox/fields/ovabrw_choose_location-field.php:14
+#: admin/metabox/fields/ovabrw_choose_location-field.php:25
+#: admin/metabox/fields/ovabrw_choose_location.php:30
+#: admin/metabox/fields/ovabrw_choose_location.php:44
+#: admin/metabox/fields/ovabrw_local_price.php:32
+#: admin/metabox/fields/ovabrw_local_price.php:46
+#: admin/metabox/fields/ovabrw_local_price_field.php:12
+#: admin/metabox/fields/ovabrw_local_price_field.php:23
+msgid "Select Location"
+msgstr ""
+
+#: inc/ovabrw_ajax.php:399 ovabrw-templates/single/request_booking.php:193
+#: ovabrw-templates/single/booking-form/fields.php:191
+msgid "Select Package"
+msgstr "Select age"
+
+#: admin/setting/ovabrw-settings-tab.php:715
+msgid "Select Page"
+msgstr ""
+
+#: admin/order/class_create_order.php:8
+msgid "Select Product"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:57
+msgid "Select Search"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:344
+msgid "Select Taxonomy"
+msgstr ""
+
+#: ovabrw-templates/single/request_booking.php:433
+msgid "Send"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1310
+msgid "Send a mail every x seconds"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:912
+#: admin/setting/ovabrw-settings-tab.php:1334
+msgid "Send from email"
+msgstr ""
+
+#: ovabrw-templates/single/request_booking.php:69
+msgid "Send your requirement to us. We will check email and contact you soon."
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:195
+msgid "Serbian (Srpski)"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:194
+msgid "Serbian Cyrillic (Српски)"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:320
+#: ovabrw-templates/single/request_booking.php:394
+msgid "Service"
+msgstr ""
+
+#: admin/order/class_create_order.php:178
+#: admin/order/class_create_order.php:284
+#: ovabrw-templates/single/booking-form/services.php:31
+msgid "Services"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:72
+msgid "Settings"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:283
+msgid "Setup Locations"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:289
+msgid "Setup Price for Rental Type: Period of time"
+msgstr ""
+
+#: admin/order/class_create_order.php:81
+msgid "Ship to a different address?"
+msgstr ""
+
+#: admin/category/init.php:13 admin/category/init.php:214
+msgid "Shop"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_short_description.php:19
+msgid "Short Description"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:377
+msgid "Shortcode"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:137
+#: elementor/widgets/ovabrw_search_map.php:148
+#: elementor/widgets/ovabrw_search_map.php:159
+#: elementor/widgets/ovabrw_search_map.php:170
+msgid "Show"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:774
+msgid "Show Address"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1012
+msgid "Show Attribute"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:565
+msgid "Show Attributes"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:693
+msgid "Show Availables Vehicle"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:515
+msgid "Show Booked Time in Calendar"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:356
+msgid "Show Booking Form"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:440
+msgid "Show Calendar"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1086
+msgid "Show Category"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1378
+msgid "Show Customer"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1402
+msgid "Show Deposit Status"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:626
+#: admin/metabox/ovabrw-custom-fields.php:637
+#: admin/setting/ovabrw-settings-tab.php:645
+#: admin/setting/ovabrw-settings-tab.php:836
+#: admin/setting/ovabrw-settings-tab.php:1074
+msgid "Show Drop-off Date"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:554
+#: admin/metabox/ovabrw-custom-fields.php:559
+#: admin/setting/ovabrw-settings-tab.php:620
+#: admin/setting/ovabrw-settings-tab.php:799
+#: admin/setting/ovabrw-settings-tab.php:1049
+msgid "Show Drop-off Location"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:872
+msgid "Show Extra Info"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:669
+msgid "Show Extra Service"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:681
+msgid "Show Extra Service, Resource in Cart, Checkout, Order Detail"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:380
+msgid "Show Extra Tab"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:392
+msgid "Show Feature"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:146
+msgid "Show Featured"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:553
+msgid "Show Features"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:135
+msgid "Show Filters"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1370
+msgid "Show ID"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_features.php:12
+msgid "Show In Category"
+msgstr ""
+
+#: admin/custom-taxonomy/custom_taxonomy.php:130
+#: admin/custom-taxonomy/custom_taxonomy.php:287
+msgid "Show in Listing"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1410
+msgid "Show Insurance Status"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:655
+msgid "Show label Drop-off Date outside Frontend"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:610
+msgid "Show label Pick-up Date outside Frontend"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1394
+msgid "Show Location"
+msgstr ""
+
+#: admin/category/init.php:76 admin/category/init.php:293
+msgid "Show Location in booking form"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:157
+msgid "Show Map"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:477
+msgid "Show Navigation Day (Calendar Full)"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:489
+msgid "Show Navigation List (Calendar Full)"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:453
+msgid "Show Navigation Month (Calendar Full)"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:465
+msgid "Show Navigation Week (Calendar Full)"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:762
+msgid "Show Number Phone"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1434
+msgid "Show Order Status"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:585
+#: admin/metabox/ovabrw-custom-fields.php:590
+#: admin/setting/ovabrw-settings-tab.php:633
+#: admin/setting/ovabrw-settings-tab.php:824
+#: admin/setting/ovabrw-settings-tab.php:1062
+msgid "Show Pick-up Date"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:523
+#: admin/metabox/ovabrw-custom-fields.php:528
+#: admin/setting/ovabrw-settings-tab.php:607
+#: admin/setting/ovabrw-settings-tab.php:786
+#: admin/setting/ovabrw-settings-tab.php:1036
+msgid "Show Pick-up Location"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:404
+msgid "Show Price Table"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1426
+msgid "Show Product"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1000
+msgid "Show Product Name"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1024
+msgid "Show Product Tag"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:674
+#: admin/setting/ovabrw-settings-tab.php:595
+#: admin/setting/ovabrw-settings-tab.php:812
+msgid "Show Quantity"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:368
+msgid "Show Request Booking Form"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:848
+msgid "Show Resource"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:657
+#: admin/setting/ovabrw-settings-tab.php:860
+msgid "Show Service"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1108
+msgid "Show Taxonomy"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:275
+msgid "Show Taxonomy depend Category"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1386
+msgid "Show Time"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:428
+msgid "Show Unavailable Time"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1418
+msgid "Show Vehicle"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:157
+msgid "Simplified Chinese"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:201
+msgid "Simplified Chinese (简体中文)"
+msgstr ""
+
+#: admin/custom-taxonomy/custom_taxonomy.php:118
+#: admin/custom-taxonomy/custom_taxonomy.php:257
+msgid "Singular name"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:191
+msgid "Slovenčina"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:192
+msgid "Slovenščina"
+msgstr ""
+
+#: admin/custom-taxonomy/custom_taxonomy.php:112
+#: admin/custom-taxonomy/custom_taxonomy.php:237
+msgid "Slug"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:31
+msgid "Some fields will show/hide when change this field"
+msgstr ""
+
+#: ovabrw-templates/single/search_map.php:234
+msgid "Sort By"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_meta.php:114
+msgid "Space Between"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_images.php:71
+msgid "Spacing Image"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_images.php:112
+msgid "Spacing Thumbnails"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:164
+msgid "Spanish"
+msgstr ""
+
+#: admin/category/init.php:47 admin/category/init.php:259
+msgid "Special"
+msgstr ""
+
+#: inc/ovabrw-functions.php:688 inc/ovabrw-functions.php:694
+msgid "Special Day(s)"
+msgstr ""
+
+#: ovabrw-templates/single/table-price/seasons_day.php:39
+#: ovabrw-templates/single/table-price/seasons_day.php:62
+#: ovabrw-templates/single/table-price/seasons_hour.php:39
+#: ovabrw-templates/single/table-price/seasons_hour.php:60
+msgid "Special Discount"
+msgstr ""
+
+#: inc/ovabrw-functions.php:690 inc/ovabrw-functions.php:692
+msgid "Special Hour(s)"
+msgstr ""
+
+#: ovabrw-templates/single/table-price/seasons_day.php:32
+#: ovabrw-templates/single/table-price/seasons_hour.php:31
+msgid "Special Time"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:307
+msgid "Special Time (ST)"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:201
+#: admin/metabox/fields/ovabrw_untime.php:10
+#: ovabrw-templates/single/table-price/seasons_day.php:36
+#: ovabrw-templates/single/table-price/seasons_day.php:53
+#: ovabrw-templates/single/table-price/seasons_hour.php:36
+#: ovabrw-templates/single/table-price/seasons_hour.php:51
+msgid "Start Date"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_rt.php:8
+msgid "Start Date (DD-MM)"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:386
+msgid "Start Date For Booking"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_period_time.php:69
+#: admin/metabox/fields/ovabrw_petime_record.php:26
+msgid "Start Hour"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_period_time.php:91
+#: admin/metabox/fields/ovabrw_period_time.php:108
+#: admin/metabox/fields/ovabrw_petime_discount.php:13
+#: admin/metabox/fields/ovabrw_petime_record.php:50
+#: admin/metabox/fields/ovabrw_rt.php:67
+#: ovabrw-templates/single/table-price/period_time.php:27
+msgid "Start Time"
+msgstr ""
+
+#: admin/order/class_create_order.php:36
+msgid "Status"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:135
+msgid "Step Time"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:213
+msgid "Stock Quantity"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_images.php:33
+msgid "Style"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:896
+#: admin/setting/ovabrw-settings-tab.php:1318
+msgid "Subject"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:267
+#: admin/metabox/fields/ovabrw_dailys.php:98
+#: ovabrw-templates/single/table-price/weekdays.php:59
+msgid "Sunday"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:196
+msgid "Svenska"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:190
+msgid "Swedish"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_table_price.php:191
+msgid "Table"
+msgstr ""
+
+#: ovabrw-templates/single/table_price.php:38
+msgid "Table Price & Discount"
+msgstr ""
+
+#: ovabrw-templates/single/table_price.php:65
+msgid "Table Price - Day"
+msgstr ""
+
+#: ovabrw-templates/single/table_price.php:50
+msgid "Table Price - Hour"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_table_price.php:264
+msgid "Table Value"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:66
+msgid "Tag"
+msgstr ""
+
+#: ovabrw-templates/shortcode/search_form_full.php:110
+#: ovabrw-templates/shortcode/search_form_full.php:111
+#: ovabrw-templates/single/search_map.php:150
+msgid "Tag Product"
+msgstr ""
+
+#: elementor/widgets/ovabrw_custom_taxonomy.php:65
+msgid "Taxonomy"
+msgstr ""
+
+#: admin/custom-taxonomy/custom_taxonomy.php:260
+msgid "Taxonomy 1"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:356
+msgid "Taxonomy Custom"
+msgstr ""
+
+#: admin/custom-taxonomy/custom_taxonomy.php:243
+msgid "Taxonomy key, must not exceed 32 characters"
+msgstr ""
+
+#: admin/custom-taxonomy/custom_taxonomy.php:240
+msgid "taxonomy_1"
+msgstr ""
+
+#: admin/custom-taxonomy/custom_taxonomy.php:252
+msgid "Taxonomys 1"
+msgstr ""
+
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:204
+#: admin/metabox/fields/ovabrw_period_time.php:82
+#: admin/metabox/fields/ovabrw_petime_record.php:41
+msgid "Text"
+msgstr ""
+
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:208
+msgid "Textarea"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:197
+msgid "Thai"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:746
+msgid "Thank Page"
+msgstr ""
+
+#: admin/class_ovabrw_check_product.php:130
+msgid "The Available Vehicle"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:914
+#: admin/setting/ovabrw-settings-tab.php:1336
+msgid "The customer will know them to receive mail from which email address is"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:257
+msgid "The day that each week begins"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:300
+msgid "The default latitude of map when the event do not exist"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:309
+msgid "The default longitude of map when the event do not exist"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1366
+msgid ""
+"The fields are sorted ascending. To hide the field, enter the number: 0 or "
+"empty"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_images.php:42
+msgid ""
+"The style of this widget is often affected by your theme and <p></p>lugins. "
+"If you experience any such issue, try to switch to a basic theme and "
+"deactivate related plugins."
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_calendar.php:75
+#: elementor/widgets/ovabrw_product_meta.php:43
+#: elementor/widgets/ovabrw_product_price.php:76
+#: elementor/widgets/ovabrw_product_short_description.php:44
+#: elementor/widgets/ovabrw_product_table_price.php:76
+#: elementor/widgets/ovabrw_product_table_price.php:138
+#: elementor/widgets/ovabrw_product_table_price.php:200
+#: elementor/widgets/ovabrw_product_table_price.php:273
+#: elementor/widgets/ovabrw_unavailable_time.php:76
+msgid ""
+"The style of this widget is often affected by your theme and plugins. If you "
+"experience any such issue, try to switch to a basic theme and deactivate "
+"related plugins."
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:906
+#: admin/setting/ovabrw-settings-tab.php:1328
+msgid "The subject displays in mail detail"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:898
+#: admin/setting/ovabrw-settings-tab.php:1320
+msgid "The subject displays in the email list"
+msgstr ""
+
+#: inc/ovabrw_ajax.php:449
+msgid "There are no packages"
+msgstr ""
+
+#: elementor/widgets/ovabrw_custom_taxonomy.php:47
+#: elementor/widgets/ovabrw_product_booking_form.php:49
+#: elementor/widgets/ovabrw_product_calendar.php:48
+#: elementor/widgets/ovabrw_product_features.php:48
+#: elementor/widgets/ovabrw_product_price.php:49
+#: elementor/widgets/ovabrw_product_table_price.php:49
+#: elementor/widgets/ovabrw_product_title.php:49
+#: elementor/widgets/ovabrw_unavailable_time.php:49
+msgid "There are no rental products"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:112
+msgid "This amount will be added to the cart. Decimal use dot (.)"
+msgstr ""
+
+#: inc/ovabrw-get-data.php:1641 ovabrw-templates/single/request_booking.php:78
+#: ovabrw-templates/single/request_booking.php:85
+#: ovabrw-templates/single/request_booking.php:93
+#: ovabrw-templates/single/request_booking.php:102
+#: ovabrw-templates/single/request_booking.php:114
+#: ovabrw-templates/single/request_booking.php:124
+#: ovabrw-templates/single/request_booking.php:144
+#: ovabrw-templates/single/request_booking.php:164
+#: ovabrw-templates/single/request_booking.php:189
+#: ovabrw-templates/single/request_booking.php:208
+#: ovabrw-templates/single/request_booking.php:279
+#: ovabrw-templates/single/booking-form/extra_fields.php:37
+#: ovabrw-templates/single/booking-form/fields.php:111
+#: ovabrw-templates/single/booking-form/fields.php:131
+#: ovabrw-templates/single/booking-form/fields.php:154
+#: ovabrw-templates/single/booking-form/fields.php:186
+#: ovabrw-templates/single/booking-form/fields.php:209
+#: ovabrw-templates/single/booking-form/fields.php:237
+#: ovabrw-templates/single/booking-form/fields.php:264
+#: ovabrw-templates/single/booking-form/services.php:40
+msgid "This field is required"
+msgstr ""
+
+#: ovabrw-templates/shortcode/search_form_full.php:63
+#: ovabrw-templates/single/booking-form.php:28
+#: ovabrw-templates/single/request_booking.php:71
+msgid "This field is required."
+msgstr ""
+
+#: inc/ovabrw-cart.php:909 inc/ovabrw-cart.php:941 inc/ovabrw_ajax.php:504
+msgid "This time is not available for renting"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:992
+msgid "Three Column"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_images.php:83
+msgid "Thumbnails"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:264
+#: admin/metabox/fields/ovabrw_dailys.php:62
+#: ovabrw-templates/single/table-price/weekdays.php:47
+msgid "Thursday"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_local_price.php:8
+msgid "Time (Minute)"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:243
+msgid "Time between 2 leases (Day)"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:230
+msgid "Time between 2 leases (Minutes)"
+msgstr ""
+
+#: ovabrw-templates/single/table-price/seasons_day.php:70
+#: ovabrw-templates/single/table-price/seasons_hour.php:68
+msgid "Time Discount: "
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:123
+msgid "Time Format"
+msgstr ""
+
+#: elementor/widgets/ovabrw_unavailable_time.php:149
+msgid "Time Options"
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_calendar.php:121
+#: elementor/widgets/ovabrw_product_related.php:65
+#: elementor/widgets/ovabrw_product_table_price.php:67
+#: elementor/widgets/ovabrw_product_title.php:67
+#: elementor/widgets/ovabrw_product_title.php:141
+#: elementor/widgets/ovabrw_search_map.php:109
+msgid "Title"
+msgstr ""
+
+#: elementor/widgets/ovabrw_unavailable_time.php:109
+msgid "Title Options"
+msgstr ""
+
+#: admin/class_ovabrw_check_product.php:148
+msgid "to"
+msgstr ""
+
+#: admin/class_ovabrw_check_product.php:153
+#: admin/order/class_display_table_order.php:63
+msgid "To date"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_rt.php:186
+#: admin/metabox/fields/ovabrw_rt.php:188
+msgid "To DD-MM"
+msgstr ""
+
+#: inc/ovabrw_deposit.php:53 inc/ovabrw_deposit.php:54
+msgid "To Pay"
+msgstr ""
+
+#: inc/ovabrw_deposit.php:104
+msgid "To Pay:"
+msgstr ""
+
+#: admin/metabox/class_ovabrw_metabox.php:137
+msgid "To: "
+msgstr ""
+
+#: elementor/widgets/ovabrw_product_calendar.php:355
+msgid "Today Background"
+msgstr ""
+
+#: ovabrw-templates/single/search_map.php:42
+msgid "Toggle Filters"
+msgstr ""
+
+#: inc/ovabrw-get-data.php:1575 inc/ovabrw-get-data.php:1578
+#: ovabrw-templates/single/request_booking.php:370
+#: ovabrw-templates/single/booking-form/resource.php:51
+msgid "Total"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:84
+msgid "Total Custom Taxonomy"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_period_time.php:65
+#: admin/metabox/fields/ovabrw_petime_record.php:22
+msgid "Total Day"
+msgstr ""
+
+#: inc/ovabrw_deposit.php:515
+msgid "Total Deposit Amount:"
+msgstr ""
+
+#: inc/ovabrw_deposit.php:524
+msgid "Total Remaining Amount"
+msgstr ""
+
+#: admin/order/class_create_order.php:201
+#: admin/order/class_create_order.php:307
+msgid "Total time"
+msgstr ""
+
+#: admin/class_ovabrw_check_product.php:29
+msgid "Total Vehicle"
+msgstr ""
+
+#: ovabrw-templates/single/booking-form/ajax_total.php:4
+msgid "Total:"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:202
+msgid "Traditional Chinese (繁體中文)"
+msgstr ""
+
+#: admin/order/class_create_order.php:158
+#: admin/order/class_create_order.php:264
+msgid "Transportation"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:262
+#: admin/metabox/fields/ovabrw_dailys.php:38
+#: ovabrw-templates/single/table-price/weekdays.php:39
+msgid "Tuesday"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:198
+msgid "Turkish"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:991
+msgid "Two Column"
+msgstr ""
+
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:115
+#: admin/custom-checkout-fields/class_custom_checkout_field.php:201
+msgid "Type"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:199
+msgid "Ukrainian"
+msgstr ""
+
+#: admin/class_ovabrw_check_product.php:76
+#: admin/class_ovabrw_check_product.php:78
+#: ovabrw-templates/single/calendar.php:98
+#: ovabrw-templates/single/calendar.php:100
+msgid "Unavailable"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:248
+msgid "Unavailable Date for booking"
+msgstr ""
+
+#: admin/metabox/class_ovabrw_metabox.php:126
+#: elementor/widgets/ovabrw_unavailable_time.php:19
+#: elementor/widgets/ovabrw_unavailable_time.php:67
+msgid "Unavailable Time"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:326
+msgid "Unavailable Time (UT)"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_resources.php:6
+#: admin/metabox/fields/ovabrw_service.php:51
+#: admin/metabox/fields/ovabrw_service_group.php:34
+msgid "Unique ID *"
+msgstr ""
+
+#: admin/order/class_render_table_order.php:61
+msgid "Update Order"
+msgstr ""
+
+#: admin/order/class_render_table_order.php:67
+msgid "Update Status"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:631
+msgid "Use by Settings"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:262
+msgid "Use in some elements"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:1344
+msgid ""
+"Use tags to generate email template. For example: You have hired a vehicle: "
+"[ovabrw_vehicle_name] at [ovabrw_order_pickup_date]"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:922
+msgid ""
+"Use tags to generate email template. For example: You have hired a vehicle: "
+"[ovabrw_vehicle_name] at [ovabrw_order_pickup_date] to "
+"[ovabrw_order_pickoff_date]. [ovabrw_order_details]"
+msgstr ""
+
+#: elementor/widgets/ovabrw_custom_taxonomy.php:290
+#: elementor/widgets/ovabrw_product_features.php:364
+msgid "Value"
+msgstr ""
+
+#: shortcodes/shortcodes.php:149
+msgid "Value Attribute"
+msgstr ""
+
+#: custom-post-type/register_cpt.php:52
+#: admin/order/class_render_table_order.php:174
+msgid "Vehicle"
+msgstr ""
+
+#: inc/ovabrw-cart.php:564
+#, php-format
+msgid "Vehicle %s isn't available for this time, Please book other time."
+msgstr ""
+
+#: admin/class_ovabrw_check_product.php:173
+msgid "Vehicle ID"
+msgstr ""
+
+#: inc/ovabrw_ajax.php:79 inc/ovabrw_ajax.php:304 inc/ovabrw_ajax.php:311
+msgid "Vehicle is not available for this time, Please book other time."
+msgstr ""
+
+#: inc/ovabrw-cart.php:1195 inc/ovabrw-cart.php:1253
+msgid "Vehicle isn't available for this time, Please book other time."
+msgstr ""
+
+#: admin/metabox/class_ovabrw_metabox.php:112
+msgid "Vehicle location"
+msgstr ""
+
+#: admin/metabox/class_ovabrw_metabox.php:42
+msgid "Vehicle Setting"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:200
+msgid "Vietnamese"
+msgstr ""
+
+#: ovabrw-templates/single/table-price/seasons_day.php:64
+#: ovabrw-templates/single/table-price/seasons_hour.php:62
+msgid "View Discount"
+msgstr ""
+
+#: custom-post-type/register_cpt.php:16
+msgid "View Location"
+msgstr ""
+
+#: custom-post-type/register_cpt.php:57
+msgid "View Vehicle"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:263
+#: admin/metabox/fields/ovabrw_dailys.php:50
+#: ovabrw-templates/single/table-price/weekdays.php:43
+msgid "Wednesday"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:506
+msgid "Week"
+msgstr ""
+
+#: ovabrw-templates/single/table-price/weekdays.php:27
+msgid "Weekdays"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:979
+msgid ""
+"When you use [ovabrw_search /] and don't insert params, the shortcode will "
+"use value here "
+msgstr ""
+
+#: inc/ovabrw-functions.php:28 admin/setting/ovabrw-settings-tab.php:116
+msgid "Y-m-d"
+msgstr ""
+
+#: inc/ovabrw-functions.php:32 admin/setting/ovabrw-settings-tab.php:115
+msgid "Y/m/d"
+msgstr ""
+
+#: admin/metabox/class_ovabrw_metabox.php:92
+#: admin/metabox/ovabrw-custom-fields.php:65
+#: admin/metabox/ovabrw-custom-fields.php:129
+#: admin/metabox/ovabrw-custom-fields.php:145
+#: admin/metabox/ovabrw-custom-fields.php:532
+#: admin/metabox/ovabrw-custom-fields.php:543
+#: admin/metabox/ovabrw-custom-fields.php:563
+#: admin/metabox/ovabrw-custom-fields.php:574
+#: admin/metabox/ovabrw-custom-fields.php:594
+#: admin/metabox/ovabrw-custom-fields.php:641
+#: admin/metabox/ovabrw-custom-fields.php:683
+#: admin/setting/ovabrw-settings-tab.php:280
+#: admin/setting/ovabrw-settings-tab.php:360
+#: admin/setting/ovabrw-settings-tab.php:372
+#: admin/setting/ovabrw-settings-tab.php:384
+#: admin/setting/ovabrw-settings-tab.php:396
+#: admin/setting/ovabrw-settings-tab.php:408
+#: admin/setting/ovabrw-settings-tab.php:420
+#: admin/setting/ovabrw-settings-tab.php:432
+#: admin/setting/ovabrw-settings-tab.php:444
+#: admin/setting/ovabrw-settings-tab.php:457
+#: admin/setting/ovabrw-settings-tab.php:469
+#: admin/setting/ovabrw-settings-tab.php:481
+#: admin/setting/ovabrw-settings-tab.php:493
+#: admin/setting/ovabrw-settings-tab.php:519
+#: admin/setting/ovabrw-settings-tab.php:557
+#: admin/setting/ovabrw-settings-tab.php:569
+#: admin/setting/ovabrw-settings-tab.php:599
+#: admin/setting/ovabrw-settings-tab.php:612
+#: admin/setting/ovabrw-settings-tab.php:625
+#: admin/setting/ovabrw-settings-tab.php:637
+#: admin/setting/ovabrw-settings-tab.php:649
+#: admin/setting/ovabrw-settings-tab.php:661
+#: admin/setting/ovabrw-settings-tab.php:673
+#: admin/setting/ovabrw-settings-tab.php:685
+#: admin/setting/ovabrw-settings-tab.php:697
+#: admin/setting/ovabrw-settings-tab.php:766
+#: admin/setting/ovabrw-settings-tab.php:778
+#: admin/setting/ovabrw-settings-tab.php:791
+#: admin/setting/ovabrw-settings-tab.php:804
+#: admin/setting/ovabrw-settings-tab.php:816
+#: admin/setting/ovabrw-settings-tab.php:828
+#: admin/setting/ovabrw-settings-tab.php:840
+#: admin/setting/ovabrw-settings-tab.php:852
+#: admin/setting/ovabrw-settings-tab.php:864
+#: admin/setting/ovabrw-settings-tab.php:876
+#: admin/setting/ovabrw-settings-tab.php:1005
+#: admin/setting/ovabrw-settings-tab.php:1017
+#: admin/setting/ovabrw-settings-tab.php:1029
+#: admin/setting/ovabrw-settings-tab.php:1041
+#: admin/setting/ovabrw-settings-tab.php:1054
+#: admin/setting/ovabrw-settings-tab.php:1067
+#: admin/setting/ovabrw-settings-tab.php:1079
+#: admin/setting/ovabrw-settings-tab.php:1091
+#: admin/setting/ovabrw-settings-tab.php:1113
+#: admin/setting/ovabrw-settings-tab.php:1136
+#: admin/setting/ovabrw-settings-tab.php:1148
+#: admin/setting/ovabrw-settings-tab.php:1160
+#: admin/setting/ovabrw-settings-tab.php:1173
+#: admin/setting/ovabrw-settings-tab.php:1186
+#: admin/setting/ovabrw-settings-tab.php:1198
+#: admin/setting/ovabrw-settings-tab.php:1210
+#: admin/setting/ovabrw-settings-tab.php:1222
+#: admin/setting/ovabrw-settings-tab.php:1295
+#: admin/metabox/fields/ovabrw_features.php:47
+#: admin/metabox/fields/ovabrw_feature_field.php:20
+#: admin/metabox/fields/ovabrw_service.php:35
+#: admin/metabox/fields/ovabrw_service_group.php:16
+msgid "Yes"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:141
+msgid "Yes: Allow pay Full Payment, No: Only Deposit"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:291
+msgid ""
+"You can get here: https://developers.google.com/maps/documentation/"
+"javascript/get-api-key"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:952
+msgid "You can insert 9, 11, 21, 31"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:741
+msgid "You can insert 9, 11, 31"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:960
+msgid "You can insert any shortcode here."
+msgstr ""
+
+#: ovabrw-templates/single/unavailable_time.php:34
+msgid "You can't rent product in this time"
+msgstr ""
+
+#: inc/ovabrw_hooks.php:524
+msgid "You cannot book on this day!"
+msgstr ""
+
+#: admin/model.php:546
+msgid "You don't have permission to create order"
+msgstr ""
+
+#: admin/model.php:681 admin/model.php:840
+msgid "You don't have permission to import locations"
+msgstr ""
+
+#: admin/model.php:965
+msgid "You don't have permission to remove locations"
+msgstr ""
+
+#: admin/order/class_render_table_order.php:66
+msgid "You don't have permission to update"
+msgstr ""
+
+#: inc/ovabrw-mail.php:7 admin/setting/ovabrw-settings-tab.php:1345
+msgid ""
+"You have hired a vehicle: [ovabrw_vehicle_name] at [ovabrw_order_pickup_date]"
+msgstr ""
+
+#: inc/ovabrw-extra-tab.php:175 inc/ovabrw-extra-tab.php:177
+msgid ""
+"You have hired a vehicle: [ovabrw_vehicle_name] at "
+"[ovabrw_order_pickup_date] - [ovabrw_order_pickoff_date]. "
+"[ovabrw_order_details]"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:923
+msgid ""
+"You have hired a vehicle: [ovabrw_vehicle_name] at "
+"[ovabrw_order_pickup_date] to [ovabrw_order_pickoff_date]. "
+"[ovabrw_order_details]"
+msgstr ""
+
+#: admin/metabox/fields/ovabrw_id_vehicle.php:46
+msgid ""
+"You must select at least one vehicle. If you want to add a Vehicle, you need "
+"to go to: Manage Vehicle >> Add Vehicles"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:195
+msgid "You should use Icon to display exactly position"
+msgstr ""
+
+#: admin/metabox/ovabrw-custom-fields.php:616
+#: admin/metabox/ovabrw-custom-fields.php:661
+msgid "Your Label"
+msgstr ""
+
+#: ovabrw-templates/single/search_map.php:245
+msgid "Z-A"
+msgstr ""
+
+#: elementor/widgets/ovabrw_search_map.php:179
+msgid "Zoom Map"
+msgstr ""
+
+#: inc/ovabrw_hooks.php:96
+msgid "× "
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:158
+msgid "Čeština"
+msgstr ""
+
+#: admin/setting/ovabrw-settings-tab.php:161
+msgid "Ελληνικά"
+msgstr ""
