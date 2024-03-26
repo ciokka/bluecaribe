@@ -1150,3 +1150,21 @@ function mostra_campo_passeggeri_ordine_backend( $order ){
 add_action( 'woocommerce_order_details_after_order_table', 'mostra_campo_passeggeri_ordine_backend', 11 );
 // Mostra il campo "Passeggeri" nell'ordine nel backend di WooCommerce
 add_action( 'woocommerce_admin_order_data_after_billing_address', 'mostra_campo_passeggeri_ordine_backend', 10, 1 );
+
+
+// Funzione per aggiungere WP PUSHER nella barra di amministrazione
+function aggiungi_voce_wpadminbar($wp_admin_bar) {
+    // Cambia "Nuova Voce" con il testo desiderato per la tua voce nella barra di amministrazione
+    $wp_admin_bar->add_menu(array(
+        'id' => 'wppusheritem',
+        'title' => 'Aggiorna da GIT Repo',
+        'href' => '/wp-admin/admin.php?page=wppusher-themes',
+        'meta' => array(
+            'title' => 'Per eseguire l\'update del tema dalla repository', // Descrizione opzionale
+        ),
+    ));
+}
+
+// Aggiungi la funzione alla barra di amministrazione
+add_action('admin_bar_menu', 'aggiungi_voce_wpadminbar', 999);
+
