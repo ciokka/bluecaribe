@@ -815,29 +815,6 @@ function rimuovi_script_fullcalendar($src) {
 
 add_filter('script_loader_src', 'rimuovi_script_fullcalendar', 10, 1);
 
-add_action('wp_head', 'my_metapixel', 20);
-function my_metapixel()
-{
-    ?>
-    <!-- Meta Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1661770377684443');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1661770377684443&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
-<?php
-}
 
 add_filter( 'woocommerce_loop_add_to_cart_link', 'my_ovarbrw_woocommerce_loop_add_to_cart_link', 11, 3 );
 if ( ! function_exists( 'my_ovarbrw_woocommerce_loop_add_to_cart_link' ) ) {
