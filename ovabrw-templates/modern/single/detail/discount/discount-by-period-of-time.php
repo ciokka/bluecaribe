@@ -25,8 +25,8 @@
 					$start 	= isset( $discount_start[$dsc_k] ) ? $discount_start[$dsc_k] : '';
 					$end 	= isset( $discount_end[$dsc_k] ) ? $discount_end[$dsc_k] : '';
 					$priceint = intval($price); // Converte il valore in intero
-					$discount_priceint = intval($dsc_price ); // Converte il valore in intero
-					$discount_percentage = (($priceint - $discount_priceint) / $priceint) * 100;
+					// $discount_priceint = intval($dsc_price ); // Converte il valore in intero
+					$discount_percentage = (($priceint - $dsc_price) / $priceint) * 100;
 					$discount_percentage = round($discount_percentage);
 				?>
 					<?php if ( $dsc_price != '' && $start != '' && $end != '' ): ?>
