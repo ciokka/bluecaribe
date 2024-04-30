@@ -49,5 +49,22 @@
 <?php
 	$output = ob_get_contents();
 	ob_end_clean();
-	echo $output;
+	$city = do_shortcode('[cfgeo return="city"]');
+	$region = do_shortcode('[cfgeo return="region_code"]');
+	if( get_field( 'private' ) != 1 ){
+		if(isset($_COOKIE["tourOperator"]) && $_COOKIE["tourOperator"]) echo $output;
+		else {
+			if($city == 'Tulum' || !in_array($region,["YUC","ROO"]) ) {
+				echo $output;
+			} else {
+				echo '<style type="text/css">#booking-box .elementor-widget-text-editor { display: none !important; }</style>
+				<a class="btn_tran contact" href="'. get_permalink(3332) .'">'.__( 'Contact us', 'hello-elementor-child' ).'</a>';
+			}
+			// echo do_shortcode('[cfgeo exclude="YUC,ROO"]'.$output.'[/cfgeo]');
+			// echo do_shortcode('[cfgeo include="YUC,ROO"]
+			// <style type="text/css">#booking-box .elementor-widget-text-editor { display: none !important; }</style>
+			// <a class="btn_tran contact" href="'. get_permalink(3332) .'">'.__( 'Contact us', 'hello-elementor-child' ).'</a>
+			// [/cfgeo]');
+		}
+	} else echo '<style type="text/css">#booking-box .elementor-widget-text-editor { display: none !important; }</style><a class="btn_tran contact" href="'. get_permalink(3332) .'">'.__( 'Contact us', 'hello-elementor-child' ).'</a>';
 ?>
