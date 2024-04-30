@@ -49,5 +49,10 @@
 <?php
 	$output = ob_get_contents();
 	ob_end_clean();
-	echo $output;
+	if( get_field( 'private' ) != 1 ){
+
+				echo $output;
+			
+		
+	} else echo '<style type="text/css">#booking-box .elementor-widget-text-editor { display: none !important; }</style><a class="btn_tran contact" href="'. get_permalink(3332) .'">'.__( 'Contact us', 'hello-elementor-child' ).'</a>';
 ?>
