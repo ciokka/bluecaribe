@@ -33,6 +33,9 @@
 		//margin: 35vh auto 0 auto;
 		margin: 0 auto;
 		margin-top: calc(35vh - 50px);
+		@media (max-width: 1799px) {
+			margin-top: calc(50vh - 50px);
+		}
 		left: 0;
 		right: 0;
 		background: $color-white;
@@ -140,6 +143,11 @@
 }
 .aws-search-result {
     margin-top: 10px !important;
+}
+@media (min-width: 768px) and (max-width: 1799px) {
+	.sliderHome {
+		min-height: 100vh;
+	}
 }
 @media (max-width: 767px) {
 	.home .ovabrw_wd_search form .wrap_content {

@@ -9976,6 +9976,11 @@ ul.woocommerce-error li {
   justify-content: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
+@media (max-width: 1799px) {
+  .home .filtersHome {
+    margin-top: calc(50vh - 50px);
+  }
+}
 .home .ovabrw_wd_search form .wrap_content {
   width: auto;
   flex-grow: 5;
@@ -10059,6 +10064,11 @@ ul.woocommerce-error li {
   margin-top: 10px !important;
 }
 
+@media (min-width: 768px) and (max-width: 1799px) {
+  .sliderHome {
+    min-height: 100vh;
+  }
+}
 @media (max-width: 767px) {
   .home .ovabrw_wd_search form .wrap_content {
     flex-direction: column;
