@@ -8091,13 +8091,12 @@ a:hover {
 .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item.show_ajax_content.active,
 .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi.show_ajax_content.active {
   height: 40px;
-  font-weight: 600;
+  font-weight: 700 !important;
 }
 .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item.show_ajax_content.active .txtInfo,
 .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi.show_ajax_content.active .txtInfo {
   padding: 5px 10px;
   font-size: 12px;
-  background-color: #EAF7FF !important;
   width: 100%;
   text-align: center;
   margin-top: 10px;
@@ -8178,9 +8177,6 @@ a:hover {
   border-width: 5px;
   border-color: #666 transparent #666 transparent;
 }
-.product-template-default #modern-booking .ovabrw_service_wrap .ovabrw_service {
-  margin: 0;
-}
 .product-template-default #modern-booking .ajax_loading {
   background: rgba(255, 255, 255, 0.7);
   pointer-events: none;
@@ -8248,12 +8244,11 @@ a:hover {
 }
 .product-template-default #modern-booking .ovabrw-product-fields .rental_item.show_ajax_content.active {
   height: 40px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .product-template-default #modern-booking .ovabrw-product-fields .rental_item.show_ajax_content.active .txtInfo {
   padding: 5px 10px;
   font-size: 12px;
-  background-color: #EAF7FF !important;
   width: 100%;
   text-align: center;
   margin-top: 10px;
@@ -8370,6 +8365,9 @@ a:hover {
   color: #000000;
   position: relative;
 }
+.product-template-default #modern-booking .ajaxprezzo .prezzi .ajax-show-error {
+  display: none !important;
+}
 .product-template-default #modern-booking .ajaxprezzo .prezzi:not(.rental_item) {
   position: static;
 }
@@ -8399,12 +8397,11 @@ a:hover {
 }
 .product-template-default #modern-booking .ajaxprezzo .prezzi.show_ajax_content.active {
   height: auto;
-  font-weight: 600;
+  font-weight: 700;
 }
 .product-template-default #modern-booking .ajaxprezzo .prezzi.show_ajax_content.active .txtInfo {
   padding: 3px 5px;
   font-size: 12px;
-  background-color: #EAF7FF !important;
   width: 100%;
   text-align: center;
   margin: 6px 0;
@@ -9753,6 +9750,35 @@ ul.woocommerce-error li {
   }
 }
 
+@media screen and (max-width: 767px) {
+  #pagina-pagamento .custom-category {
+    display: none !important;
+  }
+  #pagina-pagamento .list-0 {
+    display: none !important;
+  }
+}
+#pagina-pagamento #place_order .button.alt {
+  border-radius: 50px !important;
+}
+
+.awcdp-deposits-wrapper, .awcdp-deposits-option {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.awcdp-deposit-checkout-button {
+  display: table !important;
+  width: 100% !important;
+}
+
+.awcdp-deposits-wrapper {
+  padding-top: 30px;
+}
+.awcdp-deposits-wrapper .awcdp-deposits-option .awcdp-radio {
+  border: none !important;
+}
+
 .search-result .site-main {
   flex-wrap: var(--flex-wrap);
   justify-content: var(--justify-content);
@@ -9962,7 +9988,7 @@ ul.woocommerce-error li {
 }
 .home .filtersHome {
   position: absolute;
-  width: 75%;
+  width: 55%;
   margin: 0 auto;
   margin-top: calc(35vh - 50px);
   left: 0;
@@ -9991,7 +10017,7 @@ ul.woocommerce-error li {
   align-items: center;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 33%;
+  width: 50%;
 }
 .home .ovabrw_wd_search form .wrap_content .s_field .content {
   margin: 0 10px;

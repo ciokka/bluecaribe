@@ -59,6 +59,7 @@ a:hover {
 	#page {
 		margin-top: 130px;
 	}
+
 	.flex-direction-nav {
 		//display: none !important;
 	}
@@ -89,15 +90,18 @@ a:hover {
 				margin: 0;
 				background-repeat: no-repeat;
 			}
+
 			&.youtube-video {
 				position: relative;
 				display: block;
 				width: 100%;
+
 				iframe {
 					aspect-ratio: 16 / 9;
 					width: 100%;
 					height: auto;
 				}
+
 				&:first-child::after {
 					display: none;
 				}
@@ -209,19 +213,20 @@ a:hover {
 				&.show_ajax_content {
 					height: 0px;
 					color: $color-text;
-					
+
 					&.active {
 						height: 40px;
-						font-weight: $typography-accent-font-weight;
+						font-weight: $typography-bolder !important;
+
 						.txtInfo {
 							padding: 5px 10px;
 							font-size: 12px;
-							background-color: #EAF7FF !important;
+							// background-color: #EAF7FF !important;
 							width: 100%;
 							text-align: center;
 							margin-top: 10px;
-							color: var(--e-global-color-secondary)!important;
-							
+							color: var(--e-global-color-secondary) !important;
+
 						}
 					}
 				}
@@ -310,12 +315,6 @@ a:hover {
 
 	// NEW inol3
 	#modern-booking {
-		.ovabrw_service_wrap {
-			.ovabrw_service {
-				margin: 0;
-			}
-		}
-		
 		.ajax_loading {
 
 			background: rgba(255, 255, 255, .7);
@@ -334,7 +333,7 @@ a:hover {
 				background-color: #ffffffa3;
 			}
 		}
-		
+
 		.rental_item .error_item {
 			label {
 				position: absolute;
@@ -394,15 +393,16 @@ a:hover {
 
 					&.active {
 						height: 40px;
-						font-weight: $typography-accent-font-weight;
+						font-weight: $typography-bolder;
+
 						.txtInfo {
 							padding: 5px 10px;
 							font-size: 12px;
-							background-color: #EAF7FF !important;
+							// background-color: #EAF7FF !important;
 							width: 100%;
 							text-align: center;
 							margin-top: 10px;
-							color: var(--e-global-color-secondary)!important;
+							color: var(--e-global-color-secondary) !important;
 						}
 					}
 				}
@@ -482,7 +482,7 @@ a:hover {
 					width: 1%;
 				}
 			}
-						
+
 			select,
 			input {
 				box-shadow: none;
@@ -544,6 +544,10 @@ a:hover {
 				color: $color-black;
 				position: relative;
 
+				.ajax-show-error {
+					display: none !important;
+				}
+
 				&:not(.rental_item) {
 					position: static;
 				}
@@ -577,15 +581,16 @@ a:hover {
 
 					&.active {
 						height: auto;
-						font-weight: $typography-accent-font-weight;
+						font-weight: $typography-bolder;
+
 						.txtInfo {
 							padding: 3px 5px;
 							font-size: 12px;
-							background-color: #EAF7FF !important;
+							// background-color: #EAF7FF !important;
 							width: 100%;
 							text-align: center;
 							margin: 6px 0;
-							color: var(--e-global-color-secondary)!important;
+							color: var(--e-global-color-secondary) !important;
 							display: inline-block;
 							font-weight: 700 !important;
 						}
@@ -752,10 +757,11 @@ a:hover {
 			color: $color-secondary;
 		}
 	}
-	
+
 	.ovabrw-product-unavailable {
 		padding: 0;
 		width: 100%;
+
 		table,
 		tr,
 		td {
@@ -767,6 +773,7 @@ a:hover {
 			text-align: center !important;
 			margin-bottom: 20px !important;
 		}
+
 		label {
 			text-align: center !important;
 			color: $color-secondary !important;
@@ -775,16 +782,18 @@ a:hover {
 			padding: 0 !important;
 		}
 	}
-	
+
 	button.submit.btn_tran {
 		opacity: 0.2;
 		transition: all .3s;
 		pointer-events: none;
+
 		&.active {
 			opacity: 1;
 			pointer-events: all;
 		}
 	}
+
 	/* datepicker form booking */
 
 	.ovabrw_woo_features {
@@ -1193,6 +1202,7 @@ table.shop_table {
 	.list-5 {
 		display: none !important;
 	}
+
 	.wc-item-meta {
 		padding-left: 0;
 	}
@@ -1271,23 +1281,29 @@ table.shop_table {
 }
 
 .ovabrw-modern-product {
+
 	span,
 	p,
 	div {
 		color: $color-text;
 	}
+
 	.accordion-item {
 		background-color: $bg-gray;
 		border-radius: 25px;
+
 		.accordion-button {
 			background: none;
 		}
 	}
+
 	background: none !important;
+
 	.ovabrw-product-categories {
 		.label {
 			display: none;
 		}
+
 		.name {
 			font-size: 18px !important;
 		}
@@ -1337,37 +1353,40 @@ table.shop_table {
 		.woocommerce-product-details__short-description {
 			display: none !important;
 		}
+
 		#shortDesc {
 			.ovabrw-product-short-description {
 				display: none;
 			}
+
 			#accordionShortdesc {
 				display: block !important;
-	
+
 				.accordion-button {
 					color: $color-primary;
 					padding: 1rem 20px;
-	
+
 					&:not(.collapsed) {
 						color: $color-text;
 						background-color: $color-white;
 						box-shadow: none;
 					}
-	
+
 					&::after {
 						background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2354AEF2'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 					}
-	
+
 					&:hover {
 						background: none !important;
 						color: $color-primary !important;
 					}
 				}
-	
+
 				.accordion-body {
 					padding: 1.50rem 1.25rem;
 					background-color: $bg-gray;
 					border-radius: 25px;
+
 					p {
 						margin-bottom: 15px;
 					}
@@ -1461,6 +1480,7 @@ body .otgs-development-site-front-end {
 
 	.product-subtotal {
 		text-align: right;
+
 		@media (max-width: 992px) {
 			&::before {
 				display: inline !important;
@@ -1475,10 +1495,12 @@ body .otgs-development-site-front-end {
 			font-weight: 700 !important;
 			display: inline-block;
 		}
+
 		&.product-name {
 			flex-direction: column !important;
 			align-items: start !important;
 		}
+
 		&:not(.product-name) {
 			margin-right: 10px;
 		}
@@ -1497,6 +1519,7 @@ body .otgs-development-site-front-end {
 		display: grid !important;
 		grid-template-columns: 1fr 1fr !important;
 		width: 100%;
+
 		@media (max-width: 767px) {
 			grid-template-columns: 2fr 3fr !important;
 			width: 100%;
@@ -1555,6 +1578,7 @@ body .otgs-development-site-front-end {
 		tr {
 			text-align: left !important;
 			align-items: end !important;
+
 			:last-child {
 				text-align: left !important;
 			}
@@ -1813,47 +1837,47 @@ button,
 		}
 
 
-			.sib-default-btn {
-				text-transform: uppercase;
-				color: $color-white;
-				background-color: $color-primary;
-				padding: 10px 50px;
-				border: none;
-				border-radius: 21px;
-				font-weight: $typography-bolder;
-				width: 100%;
+		.sib-default-btn {
+			text-transform: uppercase;
+			color: $color-white;
+			background-color: $color-primary;
+			padding: 10px 50px;
+			border: none;
+			border-radius: 21px;
+			font-weight: $typography-bolder;
+			width: 100%;
 
-				&:hover {
-					background-color: $color-accent;
-					color: $color-secondary;
-				}
+			&:hover {
+				background-color: $color-accent;
+				color: $color-secondary;
+			}
+		}
+
+		input.sib-email-area {
+			border-radius: 21px;
+			padding: 10px 10px;
+			width: 300px;
+			color: $color-black;
+		}
+
+		.sib-email-area {
+
+			color: $color-white;
+
+			a {
+				color: $color-primary;
+				text-decoration: none !important;
 			}
 
-			input.sib-email-area {
-				border-radius: 21px;
-				padding: 10px 10px;
-				width: 300px;
-				color: $color-black;
-			}
-
-			.sib-email-area {
-
-				color: $color-white;
-
-				a {
-					color: $color-primary;
-					text-decoration: none !important;
-				}
-
-				[type=checkbox] {
-					margin: 0px 10px;
-				}
-
-
+			[type=checkbox] {
+				margin: 0px 10px;
 			}
 
 
-		
+		}
+
+
+
 	}
 
 }
@@ -1882,6 +1906,7 @@ ul {
 						width: 120px;
 						height: 100px;
 						object-fit: cover;
+
 						@media (max-width: 767px) {
 							height: 65px;
 						}
@@ -1966,6 +1991,7 @@ ul {
 .product-template-default .ovabrw_booking_form .wrap_fields .input-group {
 	&.colorato {
 		max-width: 270px;
+
 		&::placeholder {
 			color: black;
 		}
@@ -1974,6 +2000,7 @@ ul {
 
 #colorato {
 	max-width: 270px;
+
 	&::placeholder {
 		color: black;
 	}
@@ -2016,6 +2043,7 @@ ul {
 .ovabrw-modern .xdsoft_datetimepicker .xdsoft_datepicker .xdsoft_calendar table tbody td.xdsoft_disabled {
 	background-color: #ffd2c6 !important;
 }
+
 .boxPrezzi {
 	&.ovabrw-product-price {
 		display: flex;
@@ -2025,11 +2053,13 @@ ul {
 		border-bottom: solid 1px #d8d8d8;
 		padding-bottom: 20px;
 		margin-bottom: 23px;
+
 		//margin-top: -20px;
 		.textPrezzo {
 			font-size: 13px !important;
 			padding: 0 1px 0 3px;
 		}
+
 		.badge {
 			position: absolute;
 			right: 0;
@@ -2040,6 +2070,7 @@ ul {
 			font-weight: 700;
 			border-radius: 5px;
 		}
+
 		.prezzo {
 			padding: 5px;
 			line-height: 30px !important;
@@ -2049,28 +2080,34 @@ ul {
 				font-size: 18px !important;
 				font-weight: 700 !important;
 			}
+
 			.amount {
-				line-height: 20px !important;	
+				line-height: 20px !important;
 				height: auto !important;
 				font-size: 18px !important;
 			}
+
 			&.sconto {
 				//padding-bottom: 0;
 				color: #87CC4B !important;
 			}
+
 			&.barrato {
+
 				//padding-top: 0;
 				.custom-prc,
 				.woocommerce-Price-currencySymbol {
 					text-decoration: line-through;
-					color: var(--e-global-color-secondary)!important;
+					color: var(--e-global-color-secondary) !important;
 					font-weight: 400 !important;
 					font-size: 14px !important;
 				}
+
 				.amount {
 					span {
 						//font-size: 13px !important;
 					}
+
 					//line-height: 16px !important;	
 					height: auto !important;
 
@@ -2084,7 +2121,7 @@ ul {
 	padding-top: 10px;
 
 	a {
-		color: var( --e-global-color-secondary ) !important;
+		color: var(--e-global-color-secondary) !important;
 
 		svg {
 			width: 19px;
@@ -2092,8 +2129,8 @@ ul {
 			margin-left: 5px;
 
 			path {
-				fill: var( --e-global-color-secondary );
-				
+				fill: var(--e-global-color-secondary);
+
 			}
 		}
 	}
@@ -2143,7 +2180,7 @@ ul {
 	}
 }
 
-.custom-spin-container{
+.custom-spin-container {
 	position: absolute;
 	width: calc(100% + 60px) !important;
 	height: 100% !important;
@@ -2155,14 +2192,55 @@ ul {
 	background-color: #c3c3c37e;
 	border-radius: 0px 0px 25px 25px;
 	pointer-events: none !important;
-	&.active{
+
+	&.active {
 		pointer-events: all !important;
 		z-index: 2;
 	}
-	@media screen and (max-width: 767px){
+
+	@media screen and (max-width: 767px) {
 		width: calc(100% + 40px) !important;
 		left: -20px;
 		border-radius: 0px 0px 35px 35px;
-	
+
 	}
-  }
+}
+
+#pagina-pagamento {
+	@media screen and (max-width: 767px) {
+		.custom-category {
+			display: none !important;
+		}
+
+		.list-0 {
+			display: none !important;
+		}
+	}
+
+	#place_order {
+		.button.alt {
+			border-radius: 50px !important;
+		}
+	}
+}
+
+.awcdp-deposits-wrapper, .awcdp-deposits-option {
+    width: 100% !important;
+	max-width: 100% !important;
+}
+.awcdp-deposit-checkout-button {
+    display: table !important;
+    width: 100% !important;
+}
+
+.awcdp-deposits-wrapper {
+	padding-top: 30px;
+	.awcdp-deposits-option {
+		.awcdp-radio {
+			border: none !important;	
+		}
+	}
+}
+
+
+

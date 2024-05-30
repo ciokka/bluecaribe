@@ -29,7 +29,7 @@
 
 	.filtersHome {
 		position: absolute;
-		width: 75%;
+		width: 55%;
 		//margin: 35vh auto 0 auto;
 		margin: 0 auto;
 		margin-top: calc(35vh - 50px);
@@ -55,13 +55,12 @@
 				flex-grow: 5;
 				display: flex;
 
-
 				.s_field {
 					display: flex;
 					align-items: center;
 					flex-direction: row;
 					justify-content: space-evenly;
-					width: 33%;
+					width: 50%;
 					.content {
 						margin: 0 10px;
 						flex: 0 0 80%;
