@@ -69,9 +69,9 @@ foreach ( $items as $item_id => $item ) :
 		
 		
 		// Product name.
-		echo '<p style="font-weight: bold; text-transform: uppercase; margin-bottom:0;">' . wp_kses_post( apply_filters( 'woocommerce_order_item_name', $item->get_name(), $item, false ) ) . '</p>';
+		echo '<p style="font-weight: bold; text-transform: uppercase; margin-bottom:0; padding:0">' . wp_kses_post( apply_filters( 'woocommerce_order_item_name', $item->get_name(), $item, false ) ) . '</p>';
 		
-		echo '<p style="font-weight: normal; text-align: start; font-size:14px;" class="custom-category">' . implode(', ', $category_names) . '</p>';
+		echo '<p style="font-weight: normal; text-align: start; font-size:14px; padding:0" class="custom-category">' . implode(', ', $category_names) . '</p>';
 		// SKU.
 		if ( $show_sku && $sku ) {
 			echo wp_kses_post( ' (#' . $sku . ')' );

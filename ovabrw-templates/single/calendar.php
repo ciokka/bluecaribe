@@ -5,62 +5,71 @@
  * This template can be overridden by copying it to yourtheme/ovabrw-templates/single/calendar.php
  *
  */
-if (!defined('ABSPATH'))
-	exit();
+if ( !defined( 'ABSPATH' ) ) exit();
 
 // Get product_id from do_action - use when insert shortcode
-if (isset($args['id']) && $args['id']) {
+if ( isset( $args['id'] ) && $args['id'] ) {
 	$pid = $args['id'];
 } else {
 	$pid = get_the_id();
 }
 
 // Check product type: rental
-$product = wc_get_product($pid);
-if (!$product || $product->get_type() !== 'ovabrw_car_rental')
-	return;
+$product = wc_get_product( $pid );
+if ( !$product || $product->get_type() !== 'ovabrw_car_rental' ) return;
 
 // get background color calendar in settings
-$background_color_calendar = ovabrw_get_setting(get_option('ova_brw_bg_calendar', '#c4c4c4'));
+$background_color_calendar = ovabrw_get_setting( get_option( 'ova_brw_bg_calendar', '#c4c4c4' ) );
 
 // get unavailable date for booking in settings
-$disable_week_day = get_option('ova_brw_calendar_disable_week_day', '');
-$product_disable_week_day = get_post_meta($pid, 'ovabrw_product_disable_week_day', true);
-if ($product_disable_week_day) {
+$disable_week_day 			= get_option( 'ova_brw_calendar_disable_week_day', '' );
+$product_disable_week_day 	= get_post_meta( $pid, 'ovabrw_product_disable_week_day', true );
+
+if ( $product_disable_week_day != '' ) {
 	$disable_week_day = $product_disable_week_day;
 }
 
-$data_disable_week_day = $disable_week_day != '' ? json_encode(explode(',', $disable_week_day)) : '';
+$data_disable_week_day = $disable_week_day != '' ? json_encode( explode( ',', $disable_week_day ) ) : '';
 
-$price_type = get_post_meta($pid, 'ovabrw_price_type', true);
-$order_time_calendar = ovabrw_create_order_time_calendar($pid);
+$price_type 			= get_post_meta( $pid, 'ovabrw_price_type', true );
+$order_time_calendar 	= ovabrw_create_order_time_calendar( $pid );
 
-$toolbar_nav[] = ovabrw_get_setting(get_option('ova_brw_calendar_show_nav_month', 'yes')) == 'yes' ? 'dayGridMonth' : '';
-$toolbar_nav[] = ovabrw_get_setting(get_option('ova_brw_calendar_show_nav_week', 'yes')) == 'yes' ? 'timeGridWeek' : '';
-$toolbar_nav[] = ovabrw_get_setting(get_option('ova_brw_calendar_show_nav_day', 'yes')) == 'yes' ? 'timeGridDay' : '';
-$toolbar_nav[] = ovabrw_get_setting(get_option('ova_brw_calendar_show_nav_list', 'yes')) == 'yes' ? 'listWeek' : '';
-$show_time = ovabrw_get_setting(get_option('ova_brw_template_show_time_in_calendar', 'yes')) == 'yes' ? '' : 'ova-hide-time-calendar';
 
-$nav = implode(',', array_filter($toolbar_nav));
+$toolbar_nav[] 	= ovabrw_get_setting( get_option( 'ova_brw_calendar_show_nav_month', 'yes' ) ) == 'yes' ? 'dayGridMonth' : '';
+$toolbar_nav[] 	= ovabrw_get_setting( get_option( 'ova_brw_calendar_show_nav_week', 'yes' ) ) == 'yes' ? 'timeGridWeek' : '';
+$toolbar_nav[] 	= ovabrw_get_setting( get_option( 'ova_brw_calendar_show_nav_day', 'yes' ) ) == 'yes' ? 'timeGridDay' : '';
+$toolbar_nav[] 	= ovabrw_get_setting( get_option( 'ova_brw_calendar_show_nav_list', 'yes' ) ) == 'yes' ? 'listWeek' : '';
+$show_time 		= ovabrw_get_setting( get_option( 'ova_brw_template_show_time_in_calendar', 'yes' ) ) == 'yes' ? '' : 'ova-hide-time-calendar';
 
-$language = ovabrw_get_setting(get_option('ova_brw_calendar_language_general', 'en'));
-if (function_exists('pll_current_language')) {
-	$language = pll_current_language();
+$nav = implode(',', array_filter( $toolbar_nav ) );
+
+$language = ovabrw_get_setting( get_option( 'ova_brw_calendar_language_general', 'en' ) );
+
+// WPML
+$current_lang = apply_filters( 'wpml_current_language', NULL );
+
+if ( $current_lang ) {
+    $language = $current_lang;
 }
 
-$default_view = ovabrw_get_setting(get_option('ova_brw_calendar_default_view', 'month'));
+// Polylang
+if ( function_exists('pll_current_language') ) {
+    $language = pll_current_language();
+}
+
+$default_view = ovabrw_get_setting( get_option( 'ova_brw_calendar_default_view', 'month' ) );
 
 // Get first day in week
-$first_day = ovabrw_get_setting(get_option('ova_brw_calendar_first_day', '0'));
-$manage_store = get_post_meta($pid, 'ovabrw_manage_store', true);
-$total_car_store = (int) get_post_meta($pid, 'ovabrw_car_count', true);
-$number_limit = $manage_store === 'store' ? $total_car_store : 1;
-$define_day = defined_one_day($pid);
-$data_define_day = $define_day ? 'data-define_day=' . $define_day : '';
-$default_hour_start = ovabrw_get_default_time($pid, 'start');
-$time_to_book_start = ovabrw_time_to_book($pid, 'start');
-$special_time = ovabrw_get_special_time($pid, $price_type);
-$data_special_time = json_encode($special_time);
+$first_day 			= ovabrw_get_setting( get_option( 'ova_brw_calendar_first_day', '0' ) );
+$manage_store 		= get_post_meta( $pid, 'ovabrw_manage_store', true );
+$total_car_store 	= (int)get_post_meta( $pid, 'ovabrw_car_count', true );
+$number_limit 		= $manage_store === 'store' ? $total_car_store : 1;
+$define_day 		= defined_one_day( $pid );
+$data_define_day 	= $define_day ? 'data-define_day='.$define_day : '';
+$default_hour_start = ovabrw_get_default_time( $pid, 'start' );
+$time_to_book_start = ovabrw_time_to_book( $pid, 'start' );
+$special_time 		= ovabrw_get_special_time( $pid, $price_type );
+$data_special_time 	= json_encode( $special_time );
 
 ?>
 

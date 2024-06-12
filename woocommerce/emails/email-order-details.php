@@ -94,6 +94,8 @@ do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plai
 				<?php
 			}
 			?>
+			<?php
+			if ( $order->is_created_via('checkout') ) { ?>
 			<tr>
 				<th class="td" scope="row" colspan="2" style="text-align:<?php echo esc_attr( $text_align ); ?>;">
 					<?php echo '<strong>' . esc_html__('Passengers', 'hello-elementor-child') . ':</strong>' ?>
@@ -118,6 +120,9 @@ do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plai
 					<?php echo get_post_meta( $order->get_id(), '_billing_hotel', true ) ?>
 				</td>
 			</tr>
+			<?php
+			}
+			?>
 		</tfoot>
 	</table>
 </div>

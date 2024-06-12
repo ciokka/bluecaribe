@@ -977,13 +977,13 @@ function has_class($class) {
 // }
 // add_action('woocommerce_order_item_name', 'visualizza_categorie_riepilogo_ordine', 10, 2);
 
-add_filter('pre_get_document_title', 'change_the_title', 999 , 3);
-function change_the_title() {
-    if (is_404()) {
-        $title =  esc_html__('Page not found', 'hello-elementor-child') . ' - ' . get_bloginfo('name');
-        return $title;
-    }
-}
+// add_filter('pre_get_document_title', 'change_the_title', 999 , 3);
+// function change_the_title() {
+//     if (is_404()) {
+//         $title =  esc_html__('Page not found', 'hello-elementor-child') . ' - ' . get_bloginfo('name');
+//         return $title;
+//     }
+// }
 
 // Aggiunge i dettagli dei prodotti prima dei dettagli del cliente nel checkout
 // add_action('woocommerce_checkout_before_customer_details', 'stampare_dettagli_prodotti_checkout', 10);
@@ -1145,3 +1145,122 @@ function aggiungi_voce_wpadminbar($wp_admin_bar) {
 // Aggiungi la funzione alla barra di amministrazione
 add_action('admin_bar_menu', 'aggiungi_voce_wpadminbar', 999);
 
+
+// OVERRIDE PER PLUGIN DEPOSITO 20%
+function custom_awcdp_locate_template($template, $template_name, $template_path) {
+    // Percorso dei template personalizzati nel tema child
+    $custom_templates = array(
+        'checkout/awcdp-checkout-deposit.php' => get_stylesheet_directory() . '/woocommerce/checkout/awcdp-checkout-deposit.php',
+        'emails/email-partial-payments-details.php' => get_stylesheet_directory() . '/woocommerce/emails/email-partial-payments-details.php'
+    );
+
+    // Sovrascrive il percorso del template per il checkout e le email
+    if (array_key_exists($template_name, $custom_templates)) {
+        $custom_template_path = $custom_templates[$template_name];
+        if (file_exists($custom_template_path)) {
+            return $custom_template_path;
+        } else {
+            error_log('Custom AWCDP template not found: ' . $custom_template_path);
+        }
+    }
+
+    // Blocca il caricamento dei template specifici per gli ordini
+    if ($template_name == 'order/awcdp-order-details.php' || $template_name == 'order/awcdp-partial-payment-details.php') {
+        error_log('Blocking AWCDP template: ' . $template_name);
+        return ''; // Puoi restituire anche un percorso a un template alternativo se preferisci
+    }
+
+    error_log('Template not matching: ' . $template_name);
+
+    return $template;
+}
+add_filter('awcdp_locate_template', 'custom_awcdp_locate_template', 10, 3);
+
+
+// function add_custom_email_class( $email_classes ) {
+//     require_once get_stylesheet_directory() . '/includes/class-wc-email-customer-reminder.php';
+//     $email_classes['WC_Email_Customer_Reminder'] = new WC_Email_Customer_Reminder();
+//     error_log('Custom email class registered.');
+//     return $email_classes;
+// }
+// add_filter( 'woocommerce_email_classes', 'add_custom_email_class' );
+
+
+
+
+/// ####### 6-6-2024 CRON per invio link per pagamento ordini parziali
+
+// Rimuovi eventuali eventi cron duplicati
+function clear_duplicate_cron_jobs() {
+    $timestamp = wp_next_scheduled( 'send_order_invoice_email_event' );
+
+    while ( $timestamp ) {
+        wp_unschedule_event( $timestamp, 'send_order_invoice_email_event' );
+        $timestamp = wp_next_scheduled( 'send_order_invoice_email_event' );
+    }
+
+    // Pianifica nuovamente l'evento di cron se non esiste già
+    if ( ! wp_next_scheduled( 'send_order_invoice_email_event' ) ) {
+        wp_schedule_event( time(), 'daily', 'send_order_invoice_email_event' );
+    }
+}
+
+add_action( 'init', 'clear_duplicate_cron_jobs' );
+
+
+
+// Pianifica l'evento di cron se non è già pianificato
+if ( ! wp_next_scheduled( 'inol3_send_order_invoice_email_event' ) ) {
+    wp_schedule_event( time(), 'daily', 'inol3_send_order_invoice_email_event' );
+}
+
+// Hook per la funzione che invia l'email
+add_action( 'inol3_send_order_invoice_email_event', 'send_order_invoice_email' );
+
+
+function send_order_invoice_email() {
+    // Ottieni tutti gli ordini con stato "wc-partially-paid"
+    $args = array(
+        'status' => 'wc-partially-paid',
+        'limit' => -1, // Ottieni tutti gli ordini senza limiti
+        'return' => 'ids' // Ottieni solo gli ID degli ordini
+    );
+    $orders = wc_get_orders( $args );
+
+    if ( ! empty( $orders ) && is_array( $orders ) ) {
+        foreach ( $orders as $order_id ) {
+            $order = wc_get_order( $order_id );
+            $pickup_dates_sent = array(); // Array per tenere traccia delle date di ritiro per cui l'email è stata inviata
+
+            foreach ( $order->get_items() as $item_id => $item ) {
+                $pickup_date = isset( $item['ovabrw_pickup_date'] ) ? strtotime( $item['ovabrw_pickup_date'] ) : 0;
+                $one_day_before_pickup = $pickup_date - 24 * 60 * 60 * 6;
+                $current_time = current_time( 'timestamp' );
+
+                // Verifica se l'email è già stata inviata per questa data di ritiro
+                if ( in_array( $pickup_date, $pickup_dates_sent ) ) {
+                    continue;
+                }
+
+                // Verifica se l'email è già stata inviata per questo elemento
+                $email_sent = get_post_meta( $order_id, '_ovabrw_email_sent_' . $item_id, true );
+
+                if ( $current_time >= $one_day_before_pickup && $current_time < $pickup_date && !$email_sent ) {
+                    // Invia l'email di fattura
+                    $emails = WC_Emails::instance();
+                    $emails->customer_invoice( $order );
+
+                    // Imposta il flag per evitare invii duplicati
+                    update_post_meta( $order_id, '_ovabrw_email_sent_' . $item_id, true );
+
+                    // Aggiungi la data di ritiro all'array delle date inviate
+                    $pickup_dates_sent[] = $pickup_date;
+                }
+            }
+        }
+    }
+}
+
+
+
+/// ####### 6-6-2024 CRON per invio link per pagamento ordini parziali FINE

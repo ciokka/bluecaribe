@@ -184,7 +184,7 @@ jQuery(function ($) {
       }, 100)
     })
   // fix allineamento datepicker inol3
-     $('.home .xdsoft_datetimepicker').addClass('small-custom')
+    $('.home .xdsoft_datetimepicker').addClass('small-custom')
 
 
 

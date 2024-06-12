@@ -12,8 +12,6 @@
 	$show_quantity 			= ovabrw_show_number_vehicle( $product_id );
 	$st_pickup_loc   		= get_post_meta( $product_id, 'ovabrw_st_pickup_loc', true );
 	$st_dropoff_loc  		= get_post_meta( $product_id, 'ovabrw_st_dropoff_loc', true );
-	$pickup_loc 			= isset( $_GET['pickup_loc'] ) ? $_GET['pickup_loc'] : '';
-	$pickoff_loc 			= isset( $_GET['pickoff_loc'] ) ? $_GET['pickoff_loc'] : '';
 	$defined_one_day 		= defined_one_day( $product_id );
 	$time_to_book_start 	= ovabrw_time_to_book( $product_id, 'start' );
 	$time_to_book_end 		= ovabrw_time_to_book( $product_id, 'end' );
@@ -29,15 +27,31 @@
 	$order_time = OVABRW_Get_Data::instance()->get_order_rent_time( $product_id, $statuses );
 	$dateformat = ovabrw_get_date_format();
 	$timeformat = ovabrw_get_time_format_php();
+
+	// Placeholder
 	$placeholder_date = ovabrw_get_placeholder_date();
 	$placeholder_time = ovabrw_get_placeholder_time();
+
+	$placeholder_startdate = $placeholder_date;
+	if ( $timepicker_start ) {
+		$placeholder_startdate .= ' '.$placeholder_time;
+	}
+
+	$placeholder_enddate = $placeholder_date;
+	if ( $timepicker_end ) {
+		$placeholder_enddate .= ' '.$placeholder_time;
+	}
 	
 	// Get data
-	$pickup_date 	= ovabrw_get_current_date_from_search( $timepicker_start, 'pickup_date', $product_id );
-	$dropoff_date 	= ovabrw_get_current_date_from_search( $timepicker_end, 'dropoff_date', $product_id );
 	$pickup_loc 	= isset( $_GET['pickup_loc'] ) ? $_GET['pickup_loc'] : '';
 	$pickoff_loc 	= isset( $_GET['pickoff_loc'] ) ? $_GET['pickoff_loc'] : '';
-	$pickup_time 	= strtotime( $pickup_date ) ? $default_hour_start : '';
+	$pickup_date 	= ovabrw_get_current_date_from_search( $timepicker_start, 'pickup_date', $product_id );
+	$dropoff_date 	= ovabrw_get_current_date_from_search( $timepicker_end, 'dropoff_date', $product_id );
+	$pickup_time 	= isset( $_GET['pickup_time'] ) ? $_GET['pickup_time'] : '';
+	
+	if ( ! $pickup_time ) {
+		$pickup_time = strtotime( $pickup_date ) ? $default_hour_start : '';
+	}
 
 	// Get first day in week
 	$first_day = get_option( 'ova_brw_calendar_first_day', '0' );
@@ -49,13 +63,13 @@
 	// Preparation Time
 	$preparation_time = get_post_meta( $product_id, 'ovabrw_preparation_time', true );
 ?>
-<?php if ( $rental_type === 'day' || $rental_type === 'hour' || $rental_type === 'mixed' ): ?>
-	<!-- Day, Hour, Mixed -->
+<?php if ( in_array( $rental_type, [ 'day', 'hour', 'mixed', 'hotel' ] ) ): ?>
+	<!-- Day, Hour, Mixed, Hotel -->
 	<?php if ( $show_pickup_loc ): ?>
 		<div class="rental_item">
 			<label><?php esc_html_e( 'Pick-up Location', 'ova-brw' ); ?></label>
 			<div class="error_item">
-				<label><?php esc_html_e( 'This field is required', 'ova-brw' ); ?></label> 
+				<label><?php esc_html_e( 'This field is required', 'ova-brw' ); ?></label>
 			</div>
 			<?php
 				if ( ! empty( $st_pickup_loc ) && ! empty( $st_dropoff_loc ) ) {
@@ -92,20 +106,20 @@
 				<?php esc_html_e( 'This field is required', 'ova-brw' ); ?>
 			</label>
 		</div>
-		<input 
-			type="text" 
-			name="ovabrw_pickup_date"  
-			default_hour="<?php echo esc_attr( $default_hour_start ); ?>"  
-			time_to_book="<?php echo esc_attr( $time_to_book_start ); ?>" 
-			class="required ovabrw_datetimepicker ovabrw_start_date" 
-			placeholder="<?php echo esc_attr( $placeholder_date ); ?>" 
-			value="<?php echo esc_attr( $pickup_date ); ?>" 
+		<input
+			type="text"
+			name="ovabrw_pickup_date"
+			default_hour="<?php echo esc_attr( $default_hour_start ); ?>"
+			time_to_book="<?php echo esc_attr( $time_to_book_start ); ?>"
+			class="required ovabrw_datetimepicker ovabrw_start_date"
+			placeholder="<?php echo esc_attr( $placeholder_startdate ); ?>"
+			value="<?php echo esc_attr( $pickup_date ); ?>"
 			order_time="<?php echo esc_attr( $order_time ); ?>"
 			data-pid="<?php echo esc_attr( $product_id ); ?>"
-			timepicker="<?php echo $timepicker_start ? 'true' : 'false'; ?>" 
-			data-firstday="<?php echo esc_attr( $first_day ); ?>" 
+			timepicker="<?php echo $timepicker_start ? 'true' : 'false'; ?>"
+			data-firstday="<?php echo esc_attr( $first_day ); ?>"
 			data-preparation-time="<?php echo esc_attr( $preparation_time ); ?>"
-			data-disable-week-day="<?php echo esc_attr( $disable_week_day ); ?>" 
+			data-disable-week-day="<?php echo esc_attr( $disable_week_day ); ?>"
 			autocomplete="off"
 			onfocus="blur();"
 		/>
@@ -126,19 +140,22 @@
 				default_hour="<?php echo esc_attr( $default_hour_end ); ?>"
 				time_to_book="<?php echo esc_attr( $time_to_book_end ); ?>"
 				class="required ovabrw_datetimepicker ovabrw_end_date" 
-				placeholder="<?php echo esc_attr( $placeholder_date ); ?>"
+				placeholder="<?php echo esc_attr( $placeholder_enddate ); ?>"
 				value="<?php echo esc_attr( $dropoff_date ); ?>"
 				order_time="<?php echo esc_attr( $order_time ); ?>"
 				timepicker="<?php echo $timepicker_end ? 'true' : 'false'; ?>"
 				data-firstday="<?php echo esc_attr( $first_day ); ?>"
-data-preparation-time="<?php echo esc_attr( $preparation_time ); ?>"
+				data-preparation-time="<?php echo esc_attr( $preparation_time ); ?>"
 				data-disable-week-day="<?php echo esc_attr( $disable_week_day ); ?>"
-autocomplete="off"
+				autocomplete="off"
 				onfocus="blur();"
 			/>
 		</div>
 	<?php endif; ?>
-	<!-- End Day, Hour, Mixed -->
+	<?php if ( $rental_type === 'hotel' ): ?>
+		<?php ovabrw_get_template('modern/single/detail/ovabrw-product-guests.php'); ?>
+	<?php endif; ?>
+	<!-- End Day, Hour, Mixed, Hotel -->
 <?php endif; ?>
 <?php if ( $rental_type === 'period_time' ): ?>
 	<!-- Period of Time -->
@@ -154,15 +171,15 @@ autocomplete="off"
 				<?php esc_html_e('Pick up location', 'hello-elementor-child'); ?>
 			</div>
 			<div class="error_item">
-				<label><?php esc_html_e( 'This field is required', 'ova-brw' ) ?></label>
+				<label><?php esc_html_e( 'This field is required', 'ova-brw' ); ?></label>
 			</div>
-				<?php
-					if ( ! empty( $st_pickup_loc ) && ! empty( $st_dropoff_loc ) ) {
-						echo OVABRW_Get_Data::instance()->get_html_couple_location( 'ovabrw_pickup_loc', 'required', $pickup_loc, $product_id, 'pickup' );
-					} else {
-						echo OVABRW_Get_Data::instance()->get_html_location( 'ovabrw_pickup_loc', 'required', $pickup_loc, $product_id, 'pickup' );
-					}
-				?>
+			<?php
+				if ( ! empty( $st_pickup_loc ) && ! empty( $st_dropoff_loc ) ) {
+					echo OVABRW_Get_Data::instance()->get_html_couple_location( 'ovabrw_pickup_loc', 'required', $pickup_loc, $product_id, 'pickup' );
+				} else {
+					echo OVABRW_Get_Data::instance()->get_html_location( 'ovabrw_pickup_loc', 'required', $pickup_loc, $product_id, 'pickup' );
+				}
+			?>
 			<div class="ovabrw-other-location"></div>
 		</div>
 	<?php endif; ?>
@@ -191,29 +208,37 @@ autocomplete="off"
 				<?php esc_html_e( 'This field is required', 'ova-brw' ); ?>
 			</label>
 		</div>
-				<input
-						type="text" 
-			name="ovabrw_pickup_date"  
-			default_hour="<?php echo esc_attr( $default_hour_start ); ?>"  
-			time_to_book="<?php echo esc_attr( $time_to_book_start ); ?>" 
-			class="required ovabrw_datetimepicker ovabrw_start_date startdate_perido_time" 
-			placeholder="<?php echo esc_attr( $placeholder_date ); ?>" 
-			value="<?php echo esc_attr( $pickup_date ); ?>" 
+		<input
+			type="text"
+			name="ovabrw_pickup_date"
+			default_hour="<?php echo esc_attr( $default_hour_start ); ?>"
+			time_to_book="<?php echo esc_attr( $time_to_book_start ); ?>"
+			class="required ovabrw_datetimepicker ovabrw_start_date startdate_perido_time"
+			placeholder="<?php echo esc_attr( $placeholder_startdate ); ?>"
+			value="<?php echo esc_attr( $pickup_date ); ?>"
 			order_time="<?php echo esc_attr( $order_time ); ?>"
 			data-pid="<?php echo esc_attr( $product_id ); ?>"
-			timepicker="<?php echo $timepicker_start ? 'true' : 'false'; ?>" 
+			timepicker="<?php echo $timepicker_start ? 'true' : 'false'; ?>"
 			data-firstday="<?php echo esc_attr( $first_day ); ?>"
 			data-preparation-time="<?php echo esc_attr( $preparation_time ); ?>"
 			data-disable-week-day="<?php echo esc_attr( $disable_week_day ); ?>"
 			autocomplete="off"
 			onfocus="blur();"
 		/>
-			</div>
+	</div>
 	<?php
 		$ovabrw_petime_id 		= get_post_meta( $product_id, 'ovabrw_petime_id', true );
 		$ovabrw_petime_label 	= get_post_meta( $product_id, 'ovabrw_petime_label', true );
 	?>
-	<?php if ( ! empty( $ovabrw_petime_id ) && ! empty( $ovabrw_petime_label ) ): ?>
+	<?php if ( ! empty( $ovabrw_petime_id ) && ! empty( $ovabrw_petime_label ) ):
+		$default_package 	= '';
+		$package_durations 	= isset( $_GET['ovabrw_package'] ) ? intval( $_GET['ovabrw_package'] ) : '';
+		
+
+		if ( $package_durations ) {
+			$default_package = OVABRW_Get_Data::instance()->get_package_id_by_durations( $product_id, $package_durations );
+		}
+	?>
 		<div class="rental_item">
 		<div class="labelForm">
 			<svg id="tickettype" data-name="tickettype" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"  width="30" height="30" >
@@ -222,18 +247,18 @@ autocomplete="off"
 			</svg>
 			<?php esc_html_e('Ticket type', 'hello-elementor-child'); ?>
 		</div>
-		<div class="error_item">
-			<label>
-				<?php esc_html_e('This field is required', 'ova-brw'); ?>
-			</label>
-		</div>
+			<div class="error_item">
+				<label>
+					<?php esc_html_e( 'This field is required', 'ova-brw' ); ?>
+				</label>
+			</div>
 			<div class="period_package">
 				<select name="ovabrw_period_package_id" class="required">
 					<option value=""><?php esc_html_e( 'Select Package', 'ova-brw' ); ?></option>
 					<?php foreach ( $ovabrw_petime_id as $key => $value ): ?>
-						<option value="<?php echo esc_attr( trim( $value ) ); ?>" > 
-								<?php echo isset( $ovabrw_petime_label[$key] ) ? esc_html( $ovabrw_petime_label[$key] ) : ''; ?> 
-							</option>
+						<option value="<?php echo esc_attr( trim( $value ) ); ?>"<?php selected( $value, $default_package ); ?>> 
+							<?php echo isset( $ovabrw_petime_label[$key] ) ? esc_html( $ovabrw_petime_label[$key] ) : ''; ?> 
+						</option>
 					<?php endforeach; ?>
 				</select>
 			</div>
@@ -272,21 +297,21 @@ autocomplete="off"
 				<?php esc_html_e( 'This field is required', 'ova-brw' ); ?>
 			</label>
 		</div>
-		<input 
-			type="text" 
-			name="ovabrw_pickup_date"  
-			default_hour="<?php echo esc_attr( $default_hour_start ); ?>"  
-			time_to_book="<?php echo esc_attr( $time_to_book_start ); ?>" 
-			class="required ovabrw_datetimepicker ovabrw_start_date" 
-			placeholder="<?php echo esc_attr( $placeholder_date ); ?>" 
-			value="<?php echo esc_attr( $pickup_date ); ?>" 
+		<input
+			type="text"
+			name="ovabrw_pickup_date"
+			default_hour="<?php echo esc_attr( $default_hour_start ); ?>"
+			time_to_book="<?php echo esc_attr( $time_to_book_start ); ?>"
+			class="required ovabrw_datetimepicker ovabrw_start_date"
+			placeholder="<?php echo esc_attr( $placeholder_startdate ); ?>"
+			value="<?php echo esc_attr( $pickup_date ); ?>"
 			order_time="<?php echo esc_attr( $order_time ); ?>"
 			data-pid="<?php echo esc_attr( $product_id ); ?>"
-			timepicker="<?php echo $timepicker_start ? 'true' : 'false'; ?>" 
+			timepicker="<?php echo $timepicker_start ? 'true' : 'false'; ?>"
 			data-firstday="<?php echo esc_attr( $first_day ); ?>"
 			data-preparation-time="<?php echo esc_attr( $preparation_time ); ?>"
 			data-disable-week-day="<?php echo esc_attr( $disable_week_day ); ?>"
-			autocomplete="off" 
+			autocomplete="off"
 			onfocus="blur();"
 		/>
 	</div>
@@ -306,7 +331,7 @@ autocomplete="off"
 				default_hour="<?php echo esc_attr( $default_hour_end ); ?>"
 				time_to_book="<?php echo esc_attr( $time_to_book_end ); ?>"
 				class="required ovabrw_datetimepicker ovabrw_end_date"
-				placeholder="<?php echo esc_attr( $placeholder_date ); ?>"
+				placeholder="<?php echo esc_attr( $placeholder_enddate ); ?>"
 				value="<?php echo esc_attr( $dropoff_date ); ?>"
 				order_time="<?php echo esc_attr( $order_time ); ?>"
 				timepicker="<?php echo $timepicker_end ? 'true' : 'false'; ?>"
@@ -321,6 +346,15 @@ autocomplete="off"
 	<!-- End Location -->
 <?php endif; ?>
 <?php if ( $rental_type === 'taxi' ):
+	// Data $_GET
+	$pickup_location 		= isset( $_GET['pickup_loc'] ) ? $_GET['pickup_loc'] : '';
+	$dropoff_location 		= isset( $_GET['pickoff_loc'] ) ? $_GET['pickoff_loc'] : '';
+	$origin_location 		= isset( $_GET['origin_location'] ) ? $_GET['origin_location'] : '';
+	$destination_location 	= isset( $_GET['destination_location'] ) ? $_GET['destination_location'] : '';
+	$duration 				= isset( $_GET['duration'] ) ? $_GET['duration'] : '';
+	$distance 				= isset( $_GET['distance'] ) ? $_GET['distance'] : '';
+
+	// Get data by product ID
 	$ovabrw_price_by 	= get_post_meta( $product_id, 'ovabrw_map_price_by', true );
 	$ovabrw_waypoint 	= get_post_meta( $product_id, 'ovabrw_waypoint', true );
 	$ovabrw_zoom_map 	= get_post_meta( $product_id, 'ovabrw_zoom_map', true );
@@ -360,12 +394,12 @@ autocomplete="off"
 				<?php esc_html_e( 'This field is required', 'ova-brw' ); ?>
 			</label>
 		</div>
-		<input 
+		<input
 			type="text"
 			name="ovabrw_pickup_date"
 			class="required ovabrw_datetimepicker ovabrw_start_date"
-			placeholder="<?php echo esc_attr( $placeholder_date ); ?>"
-value="<?php echo esc_attr( $pickup_date ); ?>"
+			placeholder="<?php echo esc_attr( $placeholder_startdate ); ?>"
+			value="<?php echo esc_attr( $pickup_date ); ?>"
 			order_time="<?php echo esc_attr( $order_time ); ?>"
 			data-pid="<?php echo esc_attr( $product_id ); ?>"
 			timepicker="false"
@@ -373,7 +407,7 @@ value="<?php echo esc_attr( $pickup_date ); ?>"
 			data-preparation-time="<?php echo esc_attr( $preparation_time ); ?>"
 			data-disable-week-day="<?php echo esc_attr( $disable_week_day ); ?>"
 			autocomplete="off"
-						onfocus="blur();"
+			onfocus="blur();"
 		/>
 	</div>
 	<div class="rental_item">
@@ -412,6 +446,7 @@ value="<?php echo esc_attr( $pickup_date ); ?>"
 			id="ovabrw_pickup_loc"
 			class="required"
 			name="ovabrw_pickup_loc"
+			value="<?php echo esc_attr( $pickup_location ); ?>"
 			placeholder="<?php esc_html_e( 'Enter your location', 'ova-brw' ); ?>"
 			autocomplete="off"
 		/>
@@ -419,7 +454,7 @@ value="<?php echo esc_attr( $pickup_date ); ?>"
 			type="hidden"
 			id="ovabrw_origin"
 			name="ovabrw_origin"
-			value=""
+			value="<?php echo esc_attr( stripslashes( stripslashes( $origin_location ) ) ); ?>"
 		/>
 		<?php if ( $ovabrw_waypoint === 'on' ): ?>
 			<i aria-hidden="true" class="flaticon-add btn-add-waypoint"></i>
@@ -439,6 +474,7 @@ value="<?php echo esc_attr( $pickup_date ); ?>"
 			id="ovabrw_pickoff_loc"
 			class="required"
 			name="ovabrw_pickoff_loc"
+			value="<?php echo esc_attr( $dropoff_location ); ?>"
 			placeholder="<?php esc_html_e( 'Enter your location', 'ova-brw' ); ?>"
 			autocomplete="off"
 		/>
@@ -446,26 +482,26 @@ value="<?php echo esc_attr( $pickup_date ); ?>"
 			type="hidden"
 			id="ovabrw_destination"
 			name="ovabrw_destination"
-			value=""
+			value="<?php echo esc_attr( stripslashes( stripslashes( $destination_location ) ) ); ?>"
 		/>
 	</div>
+	<?php if ( ! empty( $extra_time_hour ) && ! empty( $extra_time_label ) ): ?>
 	<div class="rental_item">
 		<label>
 			<?php esc_html_e( 'Extra Time', 'ova-brw' ); ?>
 		</label>
-		<?php if ( ! empty( $extra_time_hour ) && ! empty( $extra_time_label ) ): ?>
-			<select name="ovabrw_extra_time">
-				<option value=""><?php esc_html_e( 'Select Time', 'ova-brw' ); ?></option>
-				<?php foreach ( $extra_time_hour as $k => $time ):
-					$ext_label = isset( $extra_time_label[$k] ) ? $extra_time_label[$k] : '';
-				?>
-					<option value="<?php echo esc_attr( $time ); ?>">
-						<?php echo esc_html( $ext_label ); ?>
-					</option>
-				<?php endforeach; ?>
-			</select>
-		<?php endif; ?>
+		<select name="ovabrw_extra_time">
+			<option value=""><?php esc_html_e( 'Select Time', 'ova-brw' ); ?></option>
+			<?php foreach ( $extra_time_hour as $k => $time ):
+				$ext_label = isset( $extra_time_label[$k] ) ? $extra_time_label[$k] : '';
+			?>
+				<option value="<?php echo esc_attr( $time ); ?>">
+					<?php echo esc_html( $ext_label ); ?>
+				</option>
+			<?php endforeach; ?>
+		</select>
 	</div>
+	<?php endif; ?>
 	<input
 		type="hidden"
 		name="ovabrw-data-location"
@@ -485,21 +521,24 @@ value="<?php echo esc_attr( $pickup_date ); ?>"
 	<input
 		type="hidden"
 		name="ovabrw-duration-map"
-		value=""
+		value="<?php echo esc_attr( $duration ); ?>"
 	/>
 	<input
 		type="hidden"
 		name="ovabrw-duration"
-		value=""
+		value="<?php echo esc_attr( $duration ); ?>"
 	/>
 	<input
 		type="hidden"
 		name="ovabrw-distance"
-		value=""
+		value="<?php echo esc_attr( $distance ); ?>"
 	/>
 	<!-- End Taxi -->
 <?php endif; ?>
-<?php if ( $show_quantity === 'yes' ): $stock_qty = OVABRW_Get_Data::instance()->get_stock_quantity( $product_id ); ?>
+<?php if ( $show_quantity === 'yes' ): $stock_qty = OVABRW_Get_Data::instance()->get_stock_quantity( $product_id );
+
+	$quantity = isset( $_GET['ovabrw_quantity'] ) ? absint( $_GET['ovabrw_quantity'] ) : 1;
+?>
 	<div class="rental_item">
 	<div class="error_item"></div>
 		<div class="labelForm">
@@ -514,7 +553,7 @@ value="<?php echo esc_attr( $pickup_date ); ?>"
 			type="number"
 			class="required"
 			name="ovabrw_number_vehicle"
-			value="1"
+			value="<?php echo esc_attr( $quantity ); ?>"
 			min="1"
 			max="<?php echo esc_attr( $stock_qty ); ?>"
 		/>
@@ -531,9 +570,9 @@ value="<?php echo esc_attr( $pickup_date ); ?>"
 			<div class="distance-sum">
 				<h3 class="label"><?php esc_html_e( 'Total Distance', 'ova-brw' ); ?></h3>
 				<span class="distance-value">0</span>
-<?php if ( $price_by === 'km' ): ?>
-				<span class="distance-unit"><?php esc_html_e( 'km', 'ova-brw' ); ?></span>
-<?php else: ?>
+				<?php if ( $price_by === 'km' ): ?>
+					<span class="distance-unit"><?php esc_html_e( 'km', 'ova-brw' ); ?></span>
+				<?php else: ?>
 					<span class="distance-unit"><?php esc_html_e( 'mi', 'ova-brw' ); ?></span>
 				<?php endif; ?>
 			</div>

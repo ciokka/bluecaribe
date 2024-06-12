@@ -79,7 +79,7 @@
 			</a>
 		</span>
 	<?php endif; ?>
-	<?php elseif ( $rental_type === 'taxi' ):
+<?php elseif ( $rental_type === 'taxi' ):
 	$price 		= get_post_meta( $product_id, 'ovabrw_regul_price_taxi', true );
 	$price_by 	= get_post_meta( $product_id, 'ovabrw_map_price_by', true );
 
@@ -91,6 +91,12 @@
 	<?php else: ?>
 		<span class="unit"><?php esc_html_e( '/ Mi', 'ova-brw' ); ?></span>
 	<?php endif; ?>
+<?php elseif ( $rental_type === 'hotel' ):
+	$price 	= get_post_meta( $product_id, 'ovabrw_regular_price_hotel', true );
+	$unit 	= esc_html__( '/ Day', 'ova-brw' );
+?>
+	<span class="amount"><?php echo ovabrw_wc_price( $price, [], false ); ?></span>
+	<span class="unit"><?php echo esc_html( $unit ); ?></span>
 <?php else: ?>
 	<span class="amount">
 		<a href="<?php echo esc_url( get_the_permalink( $product_id ) ); ?>">

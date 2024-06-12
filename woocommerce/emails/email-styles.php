@@ -10,9 +10,9 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see     https://docs.woocommerce.com/document/template-structure/
+ * @see     https://woocommerce.com/document/template-structure/
  * @package WooCommerce\Templates\Emails
- * @version 7.4.0
+ * @version 8.6.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -184,6 +184,7 @@ body {
 
 #body_content p {
 	margin: 0 0 4px;
+	padding: 0 20px;
 }
 
 #body_content_inner {
@@ -206,6 +207,13 @@ body {
 	font-family: 'Poppins', sans-serif;
 	font-style: normal;
 	font-size: 14px;
+}
+
+.additional-fields {
+	padding: 12px 12px 0;
+	color: <?php echo esc_attr( $text_lighter_20 ); ?>;
+	border: 1px solid <?php echo esc_attr( $body_darker_10 ); ?>;
+	list-style: none outside;
 }
 
 #addresses table {
@@ -317,6 +325,19 @@ img {
 
 .linkFooterEmail {
 	padding-bottom: 50px;
+}
+.payment-text a {
+    font-weight: normal;
+    background-color: #54aef2;
+    border-radius: 30px 30px 30px 30px;
+    padding: 12px 22px 12px 22px;
+    color: #fff;
+    display: inline-block;
+    height: 16px;
+    width: auto;
+    line-height: 16px;
+    text-decoration: none;
+    margin: 20p 0;
 }
 
 /**

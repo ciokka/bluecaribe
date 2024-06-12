@@ -43,7 +43,7 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 			)
 		),
 		esc_html( get_bloginfo( 'name', 'display' ) ),
-		'<a href="' . esc_url( $order->get_checkout_payment_url() ) . '">' . esc_html__( 'Pay for this order', 'woocommerce' ) . '</a>'
+		'<a style="text-transform: uppercase; color: #FFFFFF; background-color: #104B71; padding: 10px 50px; border: none; border-radius: 21px; font-weight: 700; margin-top: 10px; width: auto; margin-bottom: 30px; text-decoration: none; display: inline-block;" href="' . esc_url( $order->get_checkout_payment_url() ) . '">' . esc_html__( 'Pay for this order', 'woocommerce' ) . '</a>'
 	);
 	?>
 	</p>
