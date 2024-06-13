@@ -9779,6 +9779,10 @@ ul.woocommerce-error li {
   border: none !important;
 }
 
+.ovabrw-product-sticky {
+  display: none !important;
+}
+
 .search-result .site-main {
   flex-wrap: var(--flex-wrap);
   justify-content: var(--justify-content);
