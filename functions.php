@@ -1234,7 +1234,7 @@ function send_order_invoice_email() {
 
             foreach ( $order->get_items() as $item_id => $item ) {
                 $pickup_date = isset( $item['ovabrw_pickup_date'] ) ? strtotime( $item['ovabrw_pickup_date'] ) : 0;
-                $one_day_before_pickup = $pickup_date - 24 * 60 * 60 * 6;
+                $one_day_before_pickup = $pickup_date - 24 * 60 * 60 * 7;
                 $current_time = current_time( 'timestamp' );
 
                 // Verifica se l'email è già stata inviata per questa data di ritiro
@@ -1264,3 +1264,158 @@ function send_order_invoice_email() {
 
 
 /// ####### 6-6-2024 CRON per invio link per pagamento ordini parziali FINE
+
+
+// Aggiungi questa funzione al file functions.php del tuo tema child
+
+function dropdown_products_exclude_private_tours() {
+    // Query per ottenere i prodotti
+    $args = array(
+        'post_type' => 'product',
+        'posts_per_page' => -1, // Ottieni tutti i prodotti
+        'post_status' => 'publish',
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'product_cat',
+                'field' => 'slug',
+                'terms' => 'private-tour',
+                'operator' => 'NOT IN', // Escludi la categoria "private-tours"
+            ),
+        ),
+    );
+    
+    $products = new WP_Query($args);
+    
+    // Inizia l'output del dropdown
+    $output = '<select name="products_dropdown" id="products_dropdown">';
+    $output .= '<option value="">' . esc_js(__("Select a Tour", "hello-elementor-child")) . '</option>';
+    if ($products->have_posts()) {
+        while ($products->have_posts()) {
+            $products->the_post();
+            $product_id = get_the_ID();
+            $product_title = get_the_title();
+            $product_permalink = get_permalink();
+            
+            // Ottieni le categorie del prodotto
+            $terms = get_the_terms($product_id, 'product_cat');
+            $categories_string = '';
+            
+            if ($terms && !is_wp_error($terms)) {
+                $categories = array();
+                foreach ($terms as $term) {
+                    $categories[] = $term->name;
+                }
+                $categories_string = implode(', ', $categories);
+            }
+            
+            // Aggiungi l'opzione alla select
+            $output .= '<option class="product_dropdown" value="' . $product_permalink . '">' . $product_title . ' - ' . $categories_string . '</option>';
+        }
+    } else {
+        $output .= '<option value="">Nessun prodotto disponibile</option>';
+    }
+    
+    $output .= '</select>';
+    
+    // Resetta il post data
+    wp_reset_postdata();
+    
+    return $output;
+}
+
+// Registra lo shortcode
+add_shortcode('products_dropdown', 'dropdown_products_exclude_private_tours');
+
+function dropdown_product_tags() {
+    $terms = get_terms(array(
+        'taxonomy' => 'product_tag',
+        'hide_empty' => false,
+        'post_status' => 'publish'
+    ));
+
+    $output = '<select name="product_tags_dropdown" id="product_tags_dropdown">';
+    $output .= '<option value="0">' . esc_js(__("Select a feature", "hello-elementor-child")) . '</option>';
+    
+    foreach ($terms as $term) {
+        $output .= '<option value="' . get_term_link($term) . '" data-tag-id="' . $term->term_id . '">' . $term->name . '</option>';
+    }
+
+    $output .= '</select>';
+
+    return $output;
+}
+add_shortcode('product_tags_dropdown', 'dropdown_product_tags');
+
+// Shortcode per utilizzare questa funzione
+add_shortcode('product_tags_dropdown', 'dropdown_product_tags');
+
+function ajax_get_products_by_tag() {
+    if (!isset($_POST['tag_id'])) {
+        wp_send_json_error('Invalid tag ID.');
+        wp_die();
+    }
+
+    $tag_id = intval($_POST['tag_id']);
+    $args = array(
+        'post_type' => 'product',
+        'posts_per_page' => -1,
+        'post_status' => 'publish',
+    );
+
+    if ($tag_id !== 0) {
+        $args['tax_query'] = array(
+            'relation' => 'AND',
+            array(
+                'taxonomy' => 'product_tag',
+                'field' => 'term_id',
+                'terms' => $tag_id,
+            ),
+            array(
+                'taxonomy' => 'product_cat',
+                'field' => 'slug',
+                'terms' => 'private-tour',
+                'operator' => 'NOT IN', // Exclude "private-tours" category
+            ),
+        );
+    } else {
+        $args['tax_query'] = array(
+            array(
+                'taxonomy' => 'product_cat',
+                'field' => 'slug',
+                'terms' => 'private-tour',
+                'operator' => 'NOT IN', // Exclude "private-tours" category
+            ),
+        );
+    }
+
+    $query = new WP_Query($args);
+
+    $products = array();
+
+    if ($query->have_posts()) {
+        while ($query->have_posts()) {
+            $query->the_post();
+            $terms = wp_get_post_terms(get_the_ID(), 'product_cat', array('fields' => 'slugs'));
+            if (!in_array('private-tour', $terms)) {
+                $products[] = array(
+                    'id' => get_the_ID(),
+                    'title' => html_entity_decode(get_the_title(), ENT_QUOTES, 'UTF-8'),
+                    'url' => get_permalink(),
+                    'categories' => implode(', ', $terms)
+                );
+            }
+        }
+    }
+    error_log(print_r($products, true));
+    wp_reset_postdata();
+
+    if (empty($products)) {
+        wp_send_json_error("No products found");
+    } else {
+        wp_send_json_success($products);
+    }
+    wp_die();
+}
+
+add_action('wp_ajax_get_products_by_tag', 'ajax_get_products_by_tag');
+add_action('wp_ajax_nopriv_get_products_by_tag', 'ajax_get_products_by_tag');
