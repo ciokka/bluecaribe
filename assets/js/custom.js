@@ -269,6 +269,10 @@ jQuery(function ($) {
         .then(response => {
             console.log("Server response:", response); // Logging server response
             productsDropdown.innerHTML = ''; // Clear current options
+            const defaultOption = document.createElement('option');
+            defaultOption.value = '';
+            defaultOption.textContent = 'Select a tour';
+            productsDropdown.appendChild(defaultOption);
             if (response.success) {
                 response.data.forEach(product => {
                     const option = document.createElement('option');
@@ -295,7 +299,10 @@ jQuery(function ($) {
     
     // Function to load all products initially
     function loadAllProducts() {
+      productsDropdown.innerHTML = '<option value="">Select a tour</option>';
+
         updateProducts(0); // Load all products
+
     }
     
     // Event listener for change in product tags dropdown
