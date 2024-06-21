@@ -1344,7 +1344,7 @@ function dropdown_product_tags() {
 
     return $output;
 }
-add_shortcode('product_tags_dropdown', 'dropdown_product_tags');
+
 
 // Shortcode per utilizzare questa funzione
 add_shortcode('product_tags_dropdown', 'dropdown_product_tags');

@@ -248,7 +248,7 @@ jQuery(function ($) {
     const productTagsDropdown = document.getElementById('product_tags_dropdown');
     
     // Maximum number of characters to display in the select options
-    const maxChars = 20;
+    // const maxChars = 20;
     
     // Function to update products based on the selected tag
     function updateProducts(tagId) {
@@ -279,7 +279,7 @@ jQuery(function ($) {
                     option.value = product.url;
                     const cleanCategories = product.categories.replace(/-/g, ' ');
                     const fullText = `${product.title} - ${cleanCategories}`;
-                    option.textContent = truncateText(fullText, maxChars); // Display truncated text initially
+                    // option.textContent = truncateText(fullText, maxChars); // Display truncated text initially
                     option.setAttribute('data-full-text', fullText); // Store full text as attribute
                     productsDropdown.appendChild(option);
                 });
@@ -339,35 +339,35 @@ jQuery(function ($) {
 
     const form = jQuery('form.ovabrw_search');
 
-    form.on('change', productsDropdown, function(event) {
-      const target = jQuery(event.currentTarget);
-      const options = target.find('option');
+    // form.on('change', productsDropdown, function(event) {
+    //   const target = jQuery(event.currentTarget);
+    //   const options = target.find('option');
     
-      if(options.length) {
-        options.each(function(i) {
-          const el = options.eq(i);
-          if (el.is(':selected')) {
-            const fullText = el.attr('data-full-text');
-            if(fullText){
-              const newText = truncateText(fullText, maxChars);
-              el.text(newText);
-            }
-          }
+    //   if(options.length) {
+    //     options.each(function(i) {
+    //       const el = options.eq(i);
+    //       if (el.is(':selected')) {
+    //         const fullText = el.attr('data-full-text');
+    //         if(fullText){
+    //           const newText = truncateText(fullText, maxChars);
+    //           el.text(newText);
+    //         }
+    //       }
 
-        });
-      }
-    });
+    //     });
+    //   }
+    // });
 
     // Event listener to truncate text when select loses focus
-    productsDropdown.addEventListener('blur', function() {
-        const options = this.options;
-        Array.from(options).forEach(option => {
-            const fullText = option.getAttribute('data-full-text');
-            if (fullText) {
-                option.textContent = truncateText(fullText, maxChars);
-            }
-        });
-    });
+    // productsDropdown.addEventListener('blur', function() {
+    //     const options = this.options;
+    //     Array.from(options).forEach(option => {
+    //         const fullText = option.getAttribute('data-full-text');
+    //         if (fullText) {
+    //             option.textContent = truncateText(fullText, maxChars);
+    //         }
+    //     });
+    // });
     
     // Event listener for click on the search button
     btnSearch.addEventListener("click", function(event) {
@@ -382,10 +382,10 @@ jQuery(function ($) {
         }
     });
     
-    // Function to truncate text
-    function truncateText(text, maxLength) {
-        return text.length > maxLength ? text.substring(0, maxLength) + '...' : text;
-    }
+    // // Function to truncate text
+    // function truncateText(text, maxLength) {
+    //     return text.length > maxLength ? text.substring(0, maxLength) + '...' : text;
+    // }
     
     // Load all products on page load
     window.addEventListener('load', loadAllProducts);
