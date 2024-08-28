@@ -1419,3 +1419,11 @@ function ajax_get_products_by_tag() {
 
 add_action('wp_ajax_get_products_by_tag', 'ajax_get_products_by_tag');
 add_action('wp_ajax_nopriv_get_products_by_tag', 'ajax_get_products_by_tag');
+
+function add_lazyload_placeholder($content) {
+    $placeholder = 'https://via.placeholder.com/600x600?text=...'; // URL del tuo placeholder
+    // Cerca tutte le immagini con l'attributo data-src e aggiungi un src con il placeholder
+    $content = preg_replace('/<img(.*?)data-src="(.*?)"(.*?)>/i', '<img$1src="' . $placeholder . '" data-src="$2"$3>', $content);
+    return $content;
+}
+add_filter('the_content', 'add_lazyload_placeholder');
