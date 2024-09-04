@@ -279,7 +279,7 @@ jQuery(function ($) {
                     option.value = product.url;
                     const cleanCategories = product.categories.replace(/-/g, ' ');
                     const fullText = `${product.title} - ${cleanCategories}`;
-                    // option.textContent = truncateText(fullText, maxChars); // Display truncated text initially
+                    option.textContent = fullText;
                     option.setAttribute('data-full-text', fullText); // Store full text as attribute
                     productsDropdown.appendChild(option);
                 });
