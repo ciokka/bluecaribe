@@ -1419,3 +1419,41 @@ function ajax_get_products_by_tag() {
 
 add_action('wp_ajax_get_products_by_tag', 'ajax_get_products_by_tag');
 add_action('wp_ajax_nopriv_get_products_by_tag', 'ajax_get_products_by_tag');
+add_action( 'pre_get_posts', 'filter_orders_by_coupon_for_user_role_partner' );
+function filter_orders_by_coupon_for_user_role_partner( $query ) {
+    // Verifica se siamo nel backend e che l'utente appartenga al ruolo "partner"
+    if ( is_admin() && $query->is_main_query() && current_user_can( 'partner' ) ) {
+        global $wpdb;
+        $current_user = wp_get_current_user();
+        $username = $current_user->user_login;
+
+        // Verifica che lo username abbia la forma "part0001", "part0002", ecc.
+        if ( preg_match( '/^part(\d+)$/', $username, $matches ) ) {
+            // Estrai il numero progressivo
+            $user_number = $matches[1];
+
+            // Crea il codice coupon corrispondente
+            $coupon_code = 'PROMO' . str_pad( $user_number, 4, '0', STR_PAD_LEFT ); // esempio PROMO0005
+
+            // Recupera gli ID degli ordini che hanno usato questo coupon
+            $order_ids = $wpdb->get_col( $wpdb->prepare(
+                "
+                SELECT order_items.order_id
+                FROM {$wpdb->prefix}woocommerce_order_items AS order_items
+                JOIN {$wpdb->prefix}woocommerce_order_itemmeta AS itemmeta
+                ON order_items.order_item_id = itemmeta.order_item_id
+                WHERE order_items.order_item_type = 'coupon'
+                AND itemmeta.meta_key = 'coupon_info'
+                AND itemmeta.meta_value LIKE %s
+                ",
+                '%' . $coupon_code . '%'
+            ));
+
+            // Filtra la query principale per mostrare solo gli ordini con il coupon corrispondente
+            $query->set( 'post__in', $order_ids );
+        }
+    }
+}
+
+
+
