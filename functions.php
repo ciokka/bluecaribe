@@ -1420,7 +1420,7 @@ function ajax_get_products_by_tag() {
 add_action('wp_ajax_get_products_by_tag', 'ajax_get_products_by_tag');
 add_action('wp_ajax_nopriv_get_products_by_tag', 'ajax_get_products_by_tag');
 
-function filter_orders_by_coupon_for_user_role_partner( $query ) {
+// custom-carousel
 add_action( 'pre_get_posts', 'filter_orders_by_alphanumeric_coupon_for_user_role_partner' );
 function filter_orders_by_alphanumeric_coupon_for_user_role_partner( $query ) {
     // Verifica se siamo nel backend e che l'utente appartenga al ruolo "partner"
@@ -1436,7 +1436,7 @@ function filter_orders_by_alphanumeric_coupon_for_user_role_partner( $query ) {
             $numeric_part = $matches[2];
 
             // Crea il codice coupon corrispondente
-            $coupon_code = 'PROMO' . $alpha_part . $numeric_part; // esempio PROMOFK01
+            $coupon_code = 'PROM' . $alpha_part . $numeric_part; // esempio PROMOFK01
 
             // Recupera gli ID degli ordini che hanno usato questo coupon
             $order_ids = $wpdb->get_col( $wpdb->prepare(
