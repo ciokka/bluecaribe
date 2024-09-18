@@ -1544,3 +1544,16 @@ function filter_orders_by_alphanumeric_coupon_for_user_role_partner( $query ) {
         }
     }
 }
+function remove_photoswipe_from_woocommerce_product_pages() {
+    // Controlla se siamo su una pagina prodotto di WooCommerce
+    if (is_product()) {
+        // Rimuove lo script PhotoSwipe
+        wp_dequeue_script('photoswipe');
+        wp_deregister_script('photoswipe');
+        
+        // Se PhotoSwipe ha anche uno stile associato, rimuovilo
+        wp_dequeue_style('photoswipe');
+        wp_deregister_style('photoswipe');
+    }
+}
+add_action('wp_enqueue_scripts', 'remove_photoswipe_from_woocommerce_product_pages', 100);
