@@ -154,6 +154,7 @@ jQuery(function ($) {
       $(".submit.btn_tran").removeClass("active");
   });
 
+
   // $(document).ready(function () {
     var myOptional = jQuery('#myOptional').text()
     var myPassengers = jQuery('#myPassengers').text()
@@ -161,7 +162,7 @@ jQuery(function ($) {
     var myPassengersPlaceholder = jQuery('#myPassengersPlaceholder').text()
     var myLanguagePlaceholder = jQuery('#myLanguagePlaceholder').text()
     var myRequired = $('<abbr class="required" title="obbligatorio">*</abbr>')
-    console.log('pronto')
+    console.log('pronto ciao')
     var currentUrl = window.location.href
 
     if (currentUrl.indexOf('/checkout/') !== -1) {
@@ -243,99 +244,99 @@ jQuery(function ($) {
     //   }, 1000);
     // });
 
-    const btnSearch = document.getElementById('btnSearch');
-    const productsDropdown = document.getElementById('products_dropdown');
-    const productTagsDropdown = document.getElementById('product_tags_dropdown');
+    // const btnSearch = document.getElementById('btnSearch');
+    // const productsDropdown = document.getElementById('products_dropdown');
+    // const productTagsDropdown = document.getElementById('product_tags_dropdown');
     
-    // Maximum number of characters to display in the select options
-    // const maxChars = 20;
+    // // Maximum number of characters to display in the select options
+    // // const maxChars = 20;
     
-    // Function to update products based on the selected tag
-    function updateProducts(tagId) {
-        console.log("Selected tag:", tagId); // Logging the selected tag
-        const data = new FormData();
-        data.append('action', 'get_products_by_tag');
-        data.append('tag_id', tagId);
+    // // Function to update products based on the selected tag
+    // function updateProducts(tagId) {
+    //     console.log("Selected tag:", tagId); // Logging the selected tag
+    //     const data = new FormData();
+    //     data.append('action', 'get_products_by_tag');
+    //     data.append('tag_id', tagId);
     
-        // Show loading option and disable the select
-        productsDropdown.innerHTML = '<option value="">Loading...</option>';
-        productsDropdown.disabled = true;
+    //     // Show loading option and disable the select
+    //     productsDropdown.innerHTML = '<option value="">Loading...</option>';
+    //     productsDropdown.disabled = true;
     
-        fetch(window.FetchTagsUrl, {
-            method: 'POST',
-            body: data
-        })
-        .then(response => response.json())
-        .then(response => {
-            console.log("Server response:", response); // Logging server response
-            productsDropdown.innerHTML = ''; // Clear current options
-            const defaultOption = document.createElement('option');
-            defaultOption.value = '';
-            defaultOption.textContent = 'Select a tour';
-            productsDropdown.appendChild(defaultOption);
-            if (response.success) {
-                response.data.forEach(product => {
-                    const option = document.createElement('option');
-                    option.value = product.url;
-                    const cleanCategories = product.categories.replace(/-/g, ' ');
-                    const fullText = `${product.title} - ${cleanCategories}`;
-                    option.textContent = fullText;
-                    option.setAttribute('data-full-text', fullText); // Store full text as attribute
-                    productsDropdown.appendChild(option);
-                });
-            } else {
-                console.error("Server error:", response.data);
-                productsDropdown.innerHTML = '<option value="">No tours available</option>';
-            }
-            // Re-enable the select
-            productsDropdown.disabled = false;
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            productsDropdown.innerHTML = '<option value="">Error loading</option>';
-            productsDropdown.disabled = false;
-        });
-    }
+    //     fetch(window.FetchTagsUrl, {
+    //         method: 'POST',
+    //         body: data
+    //     })
+    //     .then(response => response.json())
+    //     .then(response => {
+    //         console.log("Server response:", response); // Logging server response
+    //         productsDropdown.innerHTML = ''; // Clear current options
+    //         const defaultOption = document.createElement('option');
+    //         defaultOption.value = '';
+    //         defaultOption.textContent = 'Select a tour';
+    //         productsDropdown.appendChild(defaultOption);
+    //         if (response.success) {
+    //             response.data.forEach(product => {
+    //                 const option = document.createElement('option');
+    //                 option.value = product.url;
+    //                 const cleanCategories = product.categories.replace(/-/g, ' ');
+    //                 const fullText = `${product.title} - ${cleanCategories}`;
+    //                 option.textContent = fullText;
+    //                 option.setAttribute('data-full-text', fullText); // Store full text as attribute
+    //                 productsDropdown.appendChild(option);
+    //             });
+    //         } else {
+    //             console.error("Server error:", response.data);
+    //             productsDropdown.innerHTML = '<option value="">No tours available</option>';
+    //         }
+    //         // Re-enable the select
+    //         productsDropdown.disabled = false;
+    //     })
+    //     .catch(error => {
+    //         console.error('Error:', error);
+    //         productsDropdown.innerHTML = '<option value="">Error loading</option>';
+    //         productsDropdown.disabled = false;
+    //     });
+    // }
     
-    // Function to load all products initially
-    function loadAllProducts() {
-      productsDropdown.innerHTML = '<option value="">Select a tour</option>';
+    // // Function to load all products initially
+    // function loadAllProducts() {
+    //   productsDropdown.innerHTML = '<option value="">Select a tour</option>';
 
-        updateProducts(0); // Load all products
+    //     updateProducts(0); // Load all products
 
-    }
+    // }
     
-    // Event listener for change in product tags dropdown
-    productTagsDropdown.addEventListener('change', function() {
-        const selectedTag = this.value;
-        const tagId = this.options[this.selectedIndex].getAttribute('data-tag-id');
-        console.log("Selected tag URL:", selectedTag); // Log the selected tag URL
+    // // Event listener for change in product tags dropdown
+    // productTagsDropdown.addEventListener('change', function() {
+    //     const selectedTag = this.value;
+    //     const tagId = this.options[this.selectedIndex].getAttribute('data-tag-id');
+    //     console.log("Selected tag URL:", selectedTag); // Log the selected tag URL
     
-        if (selectedTag === "0") {
-            console.log("Reloading page to show all products"); // Log reloading page
-            window.location.reload(); // Reload the page
-        } else {
-            // Extract the tag ID from the tag URL
-            console.log("Derived tag ID:", tagId); // Log the derived tag ID
-            if (tagId) {
-                updateProducts(tagId);
-            }
-        }
-    });
+    //     if (selectedTag === "0") {
+    //         console.log("Reloading page to show all products"); // Log reloading page
+    //         window.location.reload(); // Reload the page
+    //     } else {
+    //         // Extract the tag ID from the tag URL
+    //         console.log("Derived tag ID:", tagId); // Log the derived tag ID
+    //         if (tagId) {
+    //             updateProducts(tagId);
+    //         }
+    //     }
+    // });
     
-    // Event listener to show full text when select is opened
-    productsDropdown.addEventListener('focus', function() {
-        const options = this.options;
-        Array.from(options).forEach(option => {
-            const fullText = option.getAttribute('data-full-text');
-            if (fullText) {
-                option.textContent = fullText;
+    // // Event listener to show full text when select is opened
+    // productsDropdown.addEventListener('focus', function() {
+    //     const options = this.options;
+    //     Array.from(options).forEach(option => {
+    //         const fullText = option.getAttribute('data-full-text');
+    //         if (fullText) {
+    //             option.textContent = fullText;
                
-            }
+    //         }
         
-        });
+    //     });
 
-    });
+    // });
 
     const form = jQuery('form.ovabrw_search');
 
@@ -389,5 +390,56 @@ jQuery(function ($) {
     
     // Load all products on page load
     window.addEventListener('load', loadAllProducts);
+  
     
+
+// READ MORE CLICK
+
+
+
 })
+jQuery(document).ready(function($) {
+  $('.read-more-btn').on('click', function() {
+    var $button = $(this); // Riferimento al pulsante cliccato
+    var $textShort = $(this).siblings('.text-content-short'); // Seleziona il testo corto
+    var $textFull = $(this).siblings('.text-content-full'); // Seleziona il testo completo
+
+    if ($textFull.is(':visible')) {
+        // Se il testo completo è visibile, chiudilo con l'animazione
+        $textFull.slideUp(100, function() {
+            $textShort.slideDown(); // Dopo la chiusura, mostra il testo corto
+        });
+        $button.removeClass('pos-text');
+        $button.removeClass('open')
+
+    } else {
+        // Se il testo completo è nascosto, aprilo con l'animazione
+        $textShort.slideUp(20, function() {
+            $textFull.slideDown(); // Dopo la chiusura del testo corto, mostra il testo completo
+        });
+        $button.addClass('pos-text');
+        $button.addClass('open');
+      
+    }
+});
+
+
+  // // Rimuovi la classe attiva da tutte le miniature
+  // $('.thumb-slider .swiper-slide').removeClass('active-thumb');
+
+  // // Ottieni l'indice reale dello slide attivo nel main-slider
+  // var activeIndex = mainSlider.realIndex; 
+  // console.log('Active index:', activeIndex);
+
+  // // Aggiungi la classe attiva alla miniatura corrispondente alla slide attiva
+  // var $activeThumbSlide = $('.thumb-slider .swiper-slide').eq(activeIndex);
+  
+  // if ($activeThumbSlide.length) {
+  //     console.log('Active thumb found, applying class');
+  //     $activeThumbSlide.addClass('active-thumb');
+  // } else {
+  //     console.error('Active thumb slide not found');
+  // }
+
+});
+

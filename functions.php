@@ -35,7 +35,7 @@ function theme_add_js()
     wp_enqueue_script('spinner-js', get_stylesheet_directory_uri() . '/assets/js/bootstrap-input-spinner.js', array('jquery'), '', true);
     wp_enqueue_script('custom-js', get_stylesheet_directory_uri() . '/assets/js/custom.js', array('jquery'), '', true);
     wp_enqueue_script('lottie-js', get_stylesheet_directory_uri() . '/assets/js/lottie.min.js', array('jquery'), '', true);
-
+    wp_enqueue_script('swiper', get_stylesheet_directory_uri() . '/assets/js/swiper-bundle.min.js', array(), null, true);
 }
 
 add_action('wp_enqueue_scripts', 'theme_add_js', 11);
@@ -1421,6 +1421,87 @@ add_action('wp_ajax_get_products_by_tag', 'ajax_get_products_by_tag');
 add_action('wp_ajax_nopriv_get_products_by_tag', 'ajax_get_products_by_tag');
 
 // custom-carousel
+
+
+function enqueue_custom_swiper_script() {
+    // Swiper CSS e JS
+    // wp_enqueue_style('swiper', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css');
+    // wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js', array(), null, true);
+    wp_enqueue_script('swiper-js', get_stylesheet_directory_uri() . '/assets/js/swiper-bundle.min.js', array('jquery'), '', true);
+
+    // Aggiungi il tuo script personalizzato dal tema child
+    wp_enqueue_script('custom-swiper-init', get_stylesheet_directory_uri() . '/assets/js/swiper-init.js', array('swiper'), null, true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_custom_swiper_script');
+
+function custom_image_carousel_shortcode($atts)
+{
+    ob_start();
+    include 'shortcodes/carousel.php';
+    $output = ob_get_clean();
+    return $output;
+}
+add_shortcode('custom_image_carousel', 'custom_image_carousel_shortcode');
+
+
+function get_other_products_shortcode() {
+    // Ottieni l'ID del prodotto corrente
+    $current_product_id = get_the_ID();
+
+    $args = array(
+        'post_type'      => 'product',
+        'posts_per_page' => 3, // Numero di prodotti da mostrare
+        'post_status'    => 'publish',
+        'orderby'        => 'rand', // Ordina casualmente
+        'post__not_in'   => array($current_product_id), // Escludi il prodotto corrente
+    );
+
+    $query = new WP_Query($args);
+    $output = '<div class="item-container">'; // Aggiungi qui la classe item-container
+
+    if ($query->have_posts()) {
+        while ($query->have_posts()) {
+            $query->the_post();
+            
+            $title = get_the_title();
+            $thumbnail_id = get_post_thumbnail_id();
+            $image = wp_get_attachment_image_src($thumbnail_id, 'full')[0];
+            $categories = wp_get_post_terms(get_the_ID(), 'product_cat');
+
+            // Ottieni i tag, ma mostri solo il primo
+            $tags = wp_get_post_terms(get_the_ID(), 'product_tag', array('fields' => 'names'));
+            $first_tag = !empty($tags) ? $tags[0] : ''; // Prende solo il primo tag, se esiste
+
+            $link = get_permalink();
+
+            // Solo l'immagine è cliccabile
+            $output .= '<div class="item">';
+            $output .= '<a href="' . esc_url($link) . '"><img src="' . esc_url($image) . '" alt="' . esc_attr($title) . '"></a>';
+            if (!empty($first_tag)) {
+                $output .= '<div class="item-tag">' . esc_html($first_tag) . '</div>'; // Mostra solo il primo tag
+            }
+            $output .= '<a href="' . esc_url($link) . '"><div class="item-title">' . esc_html($title) . '</div></a>';
+            $output .= '<div class="item-description">';
+            if (!empty($categories)) {
+                $cat_links = array();
+                foreach ($categories as $category) {
+                    $category_link = get_term_link($category);
+                    $cat_links[] = '<a href="' . esc_url($category_link) . '">' . esc_html($category->name) . '</a>';
+                }
+                $output .= implode(', ', $cat_links);
+            }
+            $output .= '</div>';
+            $output .= '</div>';
+        }
+        wp_reset_postdata();
+    }
+
+    $output .= '</div>'; // Chiudi item-container
+    return $output;
+}
+
+add_shortcode('other_products', 'get_other_products_shortcode');
+
 add_action( 'pre_get_posts', 'filter_orders_by_alphanumeric_coupon_for_user_role_partner' );
 function filter_orders_by_alphanumeric_coupon_for_user_role_partner( $query ) {
     // Verifica se siamo nel backend e che l'utente appartenga al ruolo "partner"
@@ -1463,6 +1544,3 @@ function filter_orders_by_alphanumeric_coupon_for_user_role_partner( $query ) {
         }
     }
 }
-
-
-

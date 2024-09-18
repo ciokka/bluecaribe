@@ -7968,20 +7968,25 @@ a:hover {
   }
 }
 
-.product-template-default {
+.product-template-default,
+.ovabrw-modern-product {
   /* datepicker form booking */
 }
-.product-template-default #page {
+.product-template-default #page,
+.ovabrw-modern-product #page {
   margin-top: 130px;
 }
-.product-template-default .woocommerce-breadcrumb {
+.product-template-default .woocommerce-breadcrumb,
+.ovabrw-modern-product .woocommerce-breadcrumb {
   display: none;
 }
-.product-template-default .woocommerce-product-gallery__image a {
+.product-template-default .woocommerce-product-gallery__image a,
+.ovabrw-modern-product .woocommerce-product-gallery__image a {
   position: relative;
   display: inline-block;
 }
-.product-template-default .woocommerce-product-gallery__image a::after {
+.product-template-default .woocommerce-product-gallery__image a::after,
+.ovabrw-modern-product .woocommerce-product-gallery__image a::after {
   content: "";
   width: 22px;
   display: block;
@@ -7994,50 +7999,63 @@ a:hover {
   margin: 0;
   background-repeat: no-repeat;
 }
-.product-template-default .woocommerce-product-gallery__image a.youtube-video {
+.product-template-default .woocommerce-product-gallery__image a.youtube-video,
+.ovabrw-modern-product .woocommerce-product-gallery__image a.youtube-video {
   position: relative;
   display: block;
   width: 100%;
 }
-.product-template-default .woocommerce-product-gallery__image a.youtube-video iframe {
+.product-template-default .woocommerce-product-gallery__image a.youtube-video iframe,
+.ovabrw-modern-product .woocommerce-product-gallery__image a.youtube-video iframe {
   aspect-ratio: 16/9;
   width: 100%;
   height: auto;
 }
-.product-template-default .woocommerce-product-gallery__image a.youtube-video:first-child::after {
+.product-template-default .woocommerce-product-gallery__image a.youtube-video:first-child::after,
+.ovabrw-modern-product .woocommerce-product-gallery__image a.youtube-video:first-child::after {
   display: none;
 }
-.product-template-default .bannerTour .wpr-featured-media-image {
+.product-template-default .bannerTour .wpr-featured-media-image,
+.ovabrw-modern-product .bannerTour .wpr-featured-media-image {
   height: 300px !important;
   display: flex;
 }
-.product-template-default .bannerTour .wpr-featured-media-image img {
+.product-template-default .bannerTour .wpr-featured-media-image img,
+.ovabrw-modern-product .bannerTour .wpr-featured-media-image img {
   object-fit: cover;
 }
-.product-template-default .rowSx3 #accordionShortdesc {
+.product-template-default .rowSx3 #accordionShortdesc,
+.ovabrw-modern-product .rowSx3 #accordionShortdesc {
   display: none;
 }
 .product-template-default .fc .fc-scrollgrid,
-.product-template-default .fc .fc-scrollgrid table {
+.product-template-default .fc .fc-scrollgrid table,
+.ovabrw-modern-product .fc .fc-scrollgrid,
+.ovabrw-modern-product .fc .fc-scrollgrid table {
   width: 100%;
   table-layout: unset;
 }
-.product-template-default .wpr-grid-item-content .inner-block {
+.product-template-default .wpr-grid-item-content .inner-block,
+.ovabrw-modern-product .wpr-grid-item-content .inner-block {
   padding: 0px 10px 10px 0px !important;
   margin: 0px 0px 10px 0px !important;
   overflow: auto;
   height: 125px;
 }
-.product-template-default .shopengine-product-list .tag a {
+.product-template-default .shopengine-product-list .tag a,
+.ovabrw-modern-product .shopengine-product-list .tag a {
   background: #54AEF2 !important;
 }
-.product-template-default .elementor-short-description .card-body {
+.product-template-default .elementor-short-description .card-body,
+.ovabrw-modern-product .elementor-short-description .card-body {
   padding: 1rem 0;
 }
-.product-template-default .ovabrw-container .ovabrw-row .wrap-item .ovabrw_service_wrap .ovabrw_service {
+.product-template-default .ovabrw-container .ovabrw-row .wrap-item .ovabrw_service_wrap .ovabrw_service,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item .ovabrw_service_wrap .ovabrw_service {
   margin: 0;
 }
-.product-template-default .ovabrw-container .ovabrw-row .wrap-item .rental_item .error_item label {
+.product-template-default .ovabrw-container .ovabrw-row .wrap-item .rental_item .error_item label,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item .rental_item .error_item label {
   position: absolute;
   top: 40px;
   left: 0;
@@ -8045,7 +8063,9 @@ a:hover {
   display: block;
 }
 .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item,
-.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi {
+.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi {
   flex: 0 0 100%;
   display: flex;
   justify-content: space-between;
@@ -8055,46 +8075,64 @@ a:hover {
   position: relative;
 }
 .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item:not(.rental_item),
-.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi:not(.rental_item) {
+.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi:not(.rental_item),
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item:not(.rental_item),
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi:not(.rental_item) {
   position: static;
 }
 .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item.elementor-price,
-.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi.elementor-price {
+.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi.elementor-price,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item.elementor-price,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi.elementor-price {
   display: none;
 }
 .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item .period_package,
-.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .period_package {
+.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .period_package,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item .period_package,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .period_package {
   width: 50%;
 }
 @media (max-width: 1600px) {
   .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item .period_package,
-  .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .period_package {
+  .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .period_package,
+  .ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item .period_package,
+  .ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .period_package {
     width: 100%;
   }
 }
 .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item .period_package select,
-.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .period_package select {
+.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .period_package select,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item .period_package select,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .period_package select {
   width: 100%;
   font-size: 14px;
   color: #515151 !important;
 }
 .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item p,
-.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi p {
+.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi p,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item p,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi p {
   color: #515151;
   margin: 0;
 }
 .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item.show_ajax_content,
-.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi.show_ajax_content {
+.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi.show_ajax_content,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item.show_ajax_content,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi.show_ajax_content {
   height: 0px;
   color: #515151;
 }
 .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item.show_ajax_content.active,
-.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi.show_ajax_content.active {
+.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi.show_ajax_content.active,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item.show_ajax_content.active,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi.show_ajax_content.active {
   height: 40px;
   font-weight: 700 !important;
 }
 .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item.show_ajax_content.active .txtInfo,
-.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi.show_ajax_content.active .txtInfo {
+.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi.show_ajax_content.active .txtInfo,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item.show_ajax_content.active .txtInfo,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi.show_ajax_content.active .txtInfo {
   padding: 5px 10px;
   font-size: 12px;
   width: 100%;
@@ -8103,17 +8141,23 @@ a:hover {
   color: var(--e-global-color-secondary) !important;
 }
 .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item .labelForm,
-.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .labelForm {
+.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .labelForm,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item .labelForm,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .labelForm {
   font-size: 14px;
 }
 @media (max-width: 767px) {
   .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item .labelForm,
-  .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .labelForm {
+  .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .labelForm,
+  .ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item .labelForm,
+  .ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .labelForm {
     font-size: 16px;
   }
 }
 .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item .labelForm#icon_adult:before,
-.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .labelForm#icon_adult:before {
+.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .labelForm#icon_adult:before,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item .labelForm#icon_adult:before,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .labelForm#icon_adult:before {
   background-image: url(assets/images/adult.svg);
   background-size: contain;
   content: "";
@@ -8127,7 +8171,9 @@ a:hover {
   left: 2px;
 }
 .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item .labelForm#icon_child:before,
-.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .labelForm#icon_child:before {
+.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .labelForm#icon_child:before,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item .labelForm#icon_child:before,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .labelForm#icon_child:before {
   background-image: url(assets/images/children.svg);
   background-size: contain;
   content: "";
@@ -8141,7 +8187,9 @@ a:hover {
   left: 2px;
 }
 .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item .labelForm#icon_calendar:before,
-.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .labelForm#icon_calendar:before {
+.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .labelForm#icon_calendar:before,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item .labelForm#icon_calendar:before,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .labelForm#icon_calendar:before {
   background-image: url(assets/images/calendar.svg);
   background-size: contain;
   content: "";
@@ -8155,7 +8203,9 @@ a:hover {
   left: 2px;
 }
 .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item .ajax_loading,
-.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .ajax_loading {
+.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .ajax_loading,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item .ajax_loading,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .ajax_loading {
   display: flex;
   width: 100%;
   height: 100%;
@@ -8171,17 +8221,21 @@ a:hover {
   pointer-events: none;
 }
 .product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item .ajax_loading:after,
-.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .ajax_loading:after {
+.product-template-default .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .ajax_loading:after,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .rental_item .ajax_loading:after,
+.ovabrw-modern-product .ovabrw-container .ovabrw-row .wrap-item.two_column .prezzi .ajax_loading:after {
   width: 40px;
   height: 40px;
   border-width: 5px;
   border-color: #666 transparent #666 transparent;
 }
-.product-template-default #modern-booking .ajax_loading {
+.product-template-default #modern-booking .ajax_loading,
+.ovabrw-modern-product #modern-booking .ajax_loading {
   background: rgba(255, 255, 255, 0.7);
   pointer-events: none;
 }
-.product-template-default #modern-booking .ajax_loading:after {
+.product-template-default #modern-booking .ajax_loading:after,
+.ovabrw-modern-product #modern-booking .ajax_loading:after {
   content: " ";
   display: block;
   width: 40px;
@@ -8193,20 +8247,23 @@ a:hover {
   animation: ajax_loading 1.2s linear infinite;
   background-color: rgba(255, 255, 255, 0.6392156863);
 }
-.product-template-default #modern-booking .rental_item .error_item label {
+.product-template-default #modern-booking .rental_item .error_item label,
+.ovabrw-modern-product #modern-booking .rental_item .error_item label {
   position: absolute;
   top: 40px;
   left: 0;
   font-size: 12px;
   display: block;
 }
-.product-template-default #modern-booking .ovabrw-product-fields {
+.product-template-default #modern-booking .ovabrw-product-fields,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields {
   display: flex !important;
   flex-wrap: wrap !important;
   width: 100% !important;
   padding-top: 0;
 }
-.product-template-default #modern-booking .ovabrw-product-fields .rental_item {
+.product-template-default #modern-booking .ovabrw-product-fields .rental_item,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields .rental_item {
   flex: 0 0 100%;
   display: flex;
   justify-content: space-between;
@@ -8215,38 +8272,47 @@ a:hover {
   color: #000000;
   position: relative;
 }
-.product-template-default #modern-booking .ovabrw-product-fields .rental_item:not(.rental_item) {
+.product-template-default #modern-booking .ovabrw-product-fields .rental_item:not(.rental_item),
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields .rental_item:not(.rental_item) {
   position: static;
 }
-.product-template-default #modern-booking .ovabrw-product-fields .rental_item.elementor-price {
+.product-template-default #modern-booking .ovabrw-product-fields .rental_item.elementor-price,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields .rental_item.elementor-price {
   display: none;
 }
-.product-template-default #modern-booking .ovabrw-product-fields .rental_item .period_package {
+.product-template-default #modern-booking .ovabrw-product-fields .rental_item .period_package,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields .rental_item .period_package {
   width: 50%;
 }
 @media (max-width: 1600px) {
-  .product-template-default #modern-booking .ovabrw-product-fields .rental_item .period_package {
+  .product-template-default #modern-booking .ovabrw-product-fields .rental_item .period_package,
+  .ovabrw-modern-product #modern-booking .ovabrw-product-fields .rental_item .period_package {
     width: 100%;
   }
 }
-.product-template-default #modern-booking .ovabrw-product-fields .rental_item .period_package select {
+.product-template-default #modern-booking .ovabrw-product-fields .rental_item .period_package select,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields .rental_item .period_package select {
   width: 100%;
   font-size: 14px;
   color: #515151 !important;
 }
-.product-template-default #modern-booking .ovabrw-product-fields .rental_item p {
+.product-template-default #modern-booking .ovabrw-product-fields .rental_item p,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields .rental_item p {
   color: #515151;
   margin: 0;
 }
-.product-template-default #modern-booking .ovabrw-product-fields .rental_item.show_ajax_content {
+.product-template-default #modern-booking .ovabrw-product-fields .rental_item.show_ajax_content,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields .rental_item.show_ajax_content {
   height: 0px;
   color: #515151;
 }
-.product-template-default #modern-booking .ovabrw-product-fields .rental_item.show_ajax_content.active {
+.product-template-default #modern-booking .ovabrw-product-fields .rental_item.show_ajax_content.active,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields .rental_item.show_ajax_content.active {
   height: 40px;
   font-weight: 700;
 }
-.product-template-default #modern-booking .ovabrw-product-fields .rental_item.show_ajax_content.active .txtInfo {
+.product-template-default #modern-booking .ovabrw-product-fields .rental_item.show_ajax_content.active .txtInfo,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields .rental_item.show_ajax_content.active .txtInfo {
   padding: 5px 10px;
   font-size: 12px;
   width: 100%;
@@ -8254,15 +8320,18 @@ a:hover {
   margin-top: 10px;
   color: var(--e-global-color-secondary) !important;
 }
-.product-template-default #modern-booking .ovabrw-product-fields .rental_item .labelForm {
+.product-template-default #modern-booking .ovabrw-product-fields .rental_item .labelForm,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields .rental_item .labelForm {
   font-size: 14px;
 }
 @media (max-width: 767px) {
-  .product-template-default #modern-booking .ovabrw-product-fields .rental_item .labelForm {
+  .product-template-default #modern-booking .ovabrw-product-fields .rental_item .labelForm,
+  .ovabrw-modern-product #modern-booking .ovabrw-product-fields .rental_item .labelForm {
     font-size: 16px;
   }
 }
-.product-template-default #modern-booking .ovabrw-product-fields .rental_item .labelForm#icon_adult:before {
+.product-template-default #modern-booking .ovabrw-product-fields .rental_item .labelForm#icon_adult:before,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields .rental_item .labelForm#icon_adult:before {
   background-image: url(assets/images/adult.svg);
   background-size: contain;
   content: "";
@@ -8275,7 +8344,8 @@ a:hover {
   top: 6px;
   left: 2px;
 }
-.product-template-default #modern-booking .ovabrw-product-fields .rental_item .labelForm#icon_child:before {
+.product-template-default #modern-booking .ovabrw-product-fields .rental_item .labelForm#icon_child:before,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields .rental_item .labelForm#icon_child:before {
   background-image: url(assets/images/children.svg);
   background-size: contain;
   content: "";
@@ -8288,7 +8358,8 @@ a:hover {
   top: 6px;
   left: 2px;
 }
-.product-template-default #modern-booking .ovabrw-product-fields .rental_item .labelForm#icon_calendar:before {
+.product-template-default #modern-booking .ovabrw-product-fields .rental_item .labelForm#icon_calendar:before,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields .rental_item .labelForm#icon_calendar:before {
   background-image: url(assets/images/calendar.svg);
   background-size: contain;
   content: "";
@@ -8301,23 +8372,29 @@ a:hover {
   top: 6px;
   left: 2px;
 }
-.product-template-default #modern-booking .ovabrw-product-fields .input-group {
+.product-template-default #modern-booking .ovabrw-product-fields .input-group,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields .input-group {
   width: 50%;
   font-size: 14px;
 }
 @media (max-width: 1600px) {
-  .product-template-default #modern-booking .ovabrw-product-fields .input-group {
+  .product-template-default #modern-booking .ovabrw-product-fields .input-group,
+  .ovabrw-modern-product #modern-booking .ovabrw-product-fields .input-group {
     width: 100%;
   }
 }
-.product-template-default #modern-booking .ovabrw-product-fields .input-group.selectData {
+.product-template-default #modern-booking .ovabrw-product-fields .input-group.selectData,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields .input-group.selectData {
   width: 100%;
 }
-.product-template-default #modern-booking .ovabrw-product-fields .input-group.form-control {
+.product-template-default #modern-booking .ovabrw-product-fields .input-group.form-control,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields .input-group.form-control {
   width: 1%;
 }
 .product-template-default #modern-booking .ovabrw-product-fields select,
-.product-template-default #modern-booking .ovabrw-product-fields input {
+.product-template-default #modern-booking .ovabrw-product-fields input,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields select,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields input {
   box-shadow: none;
   border: 1px solid #dbdbdb !important;
   border-radius: 4px;
@@ -8331,75 +8408,97 @@ a:hover {
 }
 @media (max-width: 1600px) {
   .product-template-default #modern-booking .ovabrw-product-fields select,
-  .product-template-default #modern-booking .ovabrw-product-fields input {
+  .product-template-default #modern-booking .ovabrw-product-fields input,
+  .ovabrw-modern-product #modern-booking .ovabrw-product-fields select,
+  .ovabrw-modern-product #modern-booking .ovabrw-product-fields input {
     width: 100%;
   }
 }
 .product-template-default #modern-booking .ovabrw-product-fields select.selectData,
-.product-template-default #modern-booking .ovabrw-product-fields input.selectData {
+.product-template-default #modern-booking .ovabrw-product-fields input.selectData,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields select.selectData,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields input.selectData {
   width: 100%;
 }
 .product-template-default #modern-booking .ovabrw-product-fields select.form-control,
-.product-template-default #modern-booking .ovabrw-product-fields input.form-control {
+.product-template-default #modern-booking .ovabrw-product-fields input.form-control,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields select.form-control,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields input.form-control {
   width: 1%;
 }
-.product-template-default #modern-booking .ovabrw-product-fields .selectLocation {
+.product-template-default #modern-booking .ovabrw-product-fields .selectLocation,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields .selectLocation {
   width: 50%;
 }
 @media (max-width: 1600px) {
-  .product-template-default #modern-booking .ovabrw-product-fields .selectLocation {
+  .product-template-default #modern-booking .ovabrw-product-fields .selectLocation,
+  .ovabrw-modern-product #modern-booking .ovabrw-product-fields .selectLocation {
     width: 100%;
   }
 }
-.product-template-default #modern-booking .ovabrw-product-fields .selectLocation select {
+.product-template-default #modern-booking .ovabrw-product-fields .selectLocation select,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields .selectLocation select {
   width: 100%;
 }
-.product-template-default #modern-booking .ovabrw-product-fields .ovabrw-other-location {
+.product-template-default #modern-booking .ovabrw-product-fields .ovabrw-other-location,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields .ovabrw-other-location {
   display: none;
 }
-.product-template-default #modern-booking .ovabrw-product-fields svg {
+.product-template-default #modern-booking .ovabrw-product-fields svg,
+.ovabrw-modern-product #modern-booking .ovabrw-product-fields svg {
   margin: 0 4px 3px 0;
 }
-.product-template-default #modern-booking .ajaxprezzo .prezzi {
+.product-template-default #modern-booking .ajaxprezzo .prezzi,
+.ovabrw-modern-product #modern-booking .ajaxprezzo .prezzi {
   padding: 0;
   color: #000000;
   position: relative;
 }
-.product-template-default #modern-booking .ajaxprezzo .prezzi .ajax-show-error {
+.product-template-default #modern-booking .ajaxprezzo .prezzi .ajax-show-error,
+.ovabrw-modern-product #modern-booking .ajaxprezzo .prezzi .ajax-show-error {
   display: none !important;
 }
-.product-template-default #modern-booking .ajaxprezzo .prezzi:not(.rental_item) {
+.product-template-default #modern-booking .ajaxprezzo .prezzi:not(.rental_item),
+.ovabrw-modern-product #modern-booking .ajaxprezzo .prezzi:not(.rental_item) {
   position: static;
 }
-.product-template-default #modern-booking .ajaxprezzo .prezzi.elementor-price {
+.product-template-default #modern-booking .ajaxprezzo .prezzi.elementor-price,
+.ovabrw-modern-product #modern-booking .ajaxprezzo .prezzi.elementor-price {
   display: none;
 }
-.product-template-default #modern-booking .ajaxprezzo .prezzi .period_package {
+.product-template-default #modern-booking .ajaxprezzo .prezzi .period_package,
+.ovabrw-modern-product #modern-booking .ajaxprezzo .prezzi .period_package {
   width: 50%;
 }
 @media (max-width: 1600px) {
-  .product-template-default #modern-booking .ajaxprezzo .prezzi .period_package {
+  .product-template-default #modern-booking .ajaxprezzo .prezzi .period_package,
+  .ovabrw-modern-product #modern-booking .ajaxprezzo .prezzi .period_package {
     width: 100%;
   }
 }
-.product-template-default #modern-booking .ajaxprezzo .prezzi .period_package select {
+.product-template-default #modern-booking .ajaxprezzo .prezzi .period_package select,
+.ovabrw-modern-product #modern-booking .ajaxprezzo .prezzi .period_package select {
   width: 100%;
   font-size: 14px;
   color: #515151 !important;
 }
-.product-template-default #modern-booking .ajaxprezzo .prezzi p {
+.product-template-default #modern-booking .ajaxprezzo .prezzi p,
+.ovabrw-modern-product #modern-booking .ajaxprezzo .prezzi p {
   color: #515151;
   margin: 0;
 }
-.product-template-default #modern-booking .ajaxprezzo .prezzi.show_ajax_content {
+.product-template-default #modern-booking .ajaxprezzo .prezzi.show_ajax_content,
+.ovabrw-modern-product #modern-booking .ajaxprezzo .prezzi.show_ajax_content {
   height: 0px;
   color: #515151;
 }
-.product-template-default #modern-booking .ajaxprezzo .prezzi.show_ajax_content.active {
+.product-template-default #modern-booking .ajaxprezzo .prezzi.show_ajax_content.active,
+.ovabrw-modern-product #modern-booking .ajaxprezzo .prezzi.show_ajax_content.active {
   height: auto;
   font-weight: 700;
 }
-.product-template-default #modern-booking .ajaxprezzo .prezzi.show_ajax_content.active .txtInfo {
+.product-template-default #modern-booking .ajaxprezzo .prezzi.show_ajax_content.active .txtInfo,
+.ovabrw-modern-product #modern-booking .ajaxprezzo .prezzi.show_ajax_content.active .txtInfo {
   padding: 3px 5px;
   font-size: 12px;
   width: 100%;
@@ -8409,15 +8508,18 @@ a:hover {
   display: inline-block;
   font-weight: 700 !important;
 }
-.product-template-default #modern-booking .ajaxprezzo .prezzi .labelForm {
+.product-template-default #modern-booking .ajaxprezzo .prezzi .labelForm,
+.ovabrw-modern-product #modern-booking .ajaxprezzo .prezzi .labelForm {
   font-size: 14px;
 }
 @media (max-width: 767px) {
-  .product-template-default #modern-booking .ajaxprezzo .prezzi .labelForm {
+  .product-template-default #modern-booking .ajaxprezzo .prezzi .labelForm,
+  .ovabrw-modern-product #modern-booking .ajaxprezzo .prezzi .labelForm {
     font-size: 16px;
   }
 }
-.product-template-default #modern-booking .ajaxprezzo .prezzi .labelForm#icon_adult:before {
+.product-template-default #modern-booking .ajaxprezzo .prezzi .labelForm#icon_adult:before,
+.ovabrw-modern-product #modern-booking .ajaxprezzo .prezzi .labelForm#icon_adult:before {
   background-image: url(assets/images/adult.svg);
   background-size: contain;
   content: "";
@@ -8430,7 +8532,8 @@ a:hover {
   top: 6px;
   left: 2px;
 }
-.product-template-default #modern-booking .ajaxprezzo .prezzi .labelForm#icon_child:before {
+.product-template-default #modern-booking .ajaxprezzo .prezzi .labelForm#icon_child:before,
+.ovabrw-modern-product #modern-booking .ajaxprezzo .prezzi .labelForm#icon_child:before {
   background-image: url(assets/images/children.svg);
   background-size: contain;
   content: "";
@@ -8443,7 +8546,8 @@ a:hover {
   top: 6px;
   left: 2px;
 }
-.product-template-default #modern-booking .ajaxprezzo .prezzi .labelForm#icon_calendar:before {
+.product-template-default #modern-booking .ajaxprezzo .prezzi .labelForm#icon_calendar:before,
+.ovabrw-modern-product #modern-booking .ajaxprezzo .prezzi .labelForm#icon_calendar:before {
   background-image: url(assets/images/calendar.svg);
   background-size: contain;
   content: "";
@@ -8456,7 +8560,8 @@ a:hover {
   top: 6px;
   left: 2px;
 }
-.product-template-default #modern-booking .ajaxprezzo .prezzi .ajax_loading {
+.product-template-default #modern-booking .ajaxprezzo .prezzi .ajax_loading,
+.ovabrw-modern-product #modern-booking .ajaxprezzo .prezzi .ajax_loading {
   display: flex;
   width: 100%;
   height: 100%;
@@ -8471,7 +8576,8 @@ a:hover {
   margin: 0;
   pointer-events: none;
 }
-.product-template-default #modern-booking .ajaxprezzo .prezzi .ajax_loading:after {
+.product-template-default #modern-booking .ajaxprezzo .prezzi .ajax_loading:after,
+.ovabrw-modern-product #modern-booking .ajaxprezzo .prezzi .ajax_loading:after {
   width: 40px;
   height: 40px;
   border-width: 5px;
@@ -8479,46 +8585,68 @@ a:hover {
 }
 .product-template-default .ovabrw_booking_form .wrap_fields select,
 .product-template-default .ovabrw_booking_form .wrap_fields input,
-.product-template-default .ovabrw_booking_form .wrap_fields .input-group {
+.product-template-default .ovabrw_booking_form .wrap_fields .input-group,
+.ovabrw-modern-product .ovabrw_booking_form .wrap_fields select,
+.ovabrw-modern-product .ovabrw_booking_form .wrap_fields input,
+.ovabrw-modern-product .ovabrw_booking_form .wrap_fields .input-group {
   color: #000000 !important;
 }
 @media (max-width: 1600px) {
   .product-template-default .ovabrw_booking_form .wrap_fields select,
   .product-template-default .ovabrw_booking_form .wrap_fields input,
-  .product-template-default .ovabrw_booking_form .wrap_fields .input-group {
+  .product-template-default .ovabrw_booking_form .wrap_fields .input-group,
+  .ovabrw-modern-product .ovabrw_booking_form .wrap_fields select,
+  .ovabrw-modern-product .ovabrw_booking_form .wrap_fields input,
+  .ovabrw-modern-product .ovabrw_booking_form .wrap_fields .input-group {
     width: 100%;
   }
 }
 .product-template-default .ovabrw_booking_form .wrap_fields select.selectData,
 .product-template-default .ovabrw_booking_form .wrap_fields input.selectData,
-.product-template-default .ovabrw_booking_form .wrap_fields .input-group.selectData {
+.product-template-default .ovabrw_booking_form .wrap_fields .input-group.selectData,
+.ovabrw-modern-product .ovabrw_booking_form .wrap_fields select.selectData,
+.ovabrw-modern-product .ovabrw_booking_form .wrap_fields input.selectData,
+.ovabrw-modern-product .ovabrw_booking_form .wrap_fields .input-group.selectData {
   width: 100%;
 }
 .product-template-default .ovabrw_booking_form .wrap_fields select.form-control,
 .product-template-default .ovabrw_booking_form .wrap_fields input.form-control,
-.product-template-default .ovabrw_booking_form .wrap_fields .input-group.form-control {
+.product-template-default .ovabrw_booking_form .wrap_fields .input-group.form-control,
+.ovabrw-modern-product .ovabrw_booking_form .wrap_fields select.form-control,
+.ovabrw-modern-product .ovabrw_booking_form .wrap_fields input.form-control,
+.ovabrw-modern-product .ovabrw_booking_form .wrap_fields .input-group.form-control {
   width: 1%;
 }
-.product-template-default .ovabrw_booking_form .wrap_fields .selectLocation {
+.product-template-default .ovabrw_booking_form .wrap_fields .selectLocation,
+.ovabrw-modern-product .ovabrw_booking_form .wrap_fields .selectLocation {
   width: 50%;
 }
 @media (max-width: 1600px) {
-  .product-template-default .ovabrw_booking_form .wrap_fields .selectLocation {
+  .product-template-default .ovabrw_booking_form .wrap_fields .selectLocation,
+  .ovabrw-modern-product .ovabrw_booking_form .wrap_fields .selectLocation {
     width: 100%;
   }
 }
-.product-template-default .ovabrw_booking_form .wrap_fields .selectLocation select {
+.product-template-default .ovabrw_booking_form .wrap_fields .selectLocation select,
+.ovabrw-modern-product .ovabrw_booking_form .wrap_fields .selectLocation select {
   width: 100%;
 }
-.product-template-default .ovabrw_booking_form .wrap_fields .ovabrw-other-location {
+.product-template-default .ovabrw_booking_form .wrap_fields .ovabrw-other-location,
+.ovabrw-modern-product .ovabrw_booking_form .wrap_fields .ovabrw-other-location {
   display: none;
 }
-.product-template-default .ovabrw_booking_form .wrap_fields svg {
+.product-template-default .ovabrw_booking_form .wrap_fields svg,
+.ovabrw-modern-product .ovabrw_booking_form .wrap_fields svg {
   margin: 0 4px 3px 0;
 }
 .product-template-default .ovabrw_booking_form button.btn_tran,
 .product-template-default .ovabrw_booking_form a.btn_tran,
-.product-template-default #booking-box button.submit.btn_tran {
+.product-template-default #booking-box button.submit.btn_tran,
+.product-template-default #modern-booking button.submit.btn_tran,
+.ovabrw-modern-product .ovabrw_booking_form button.btn_tran,
+.ovabrw-modern-product .ovabrw_booking_form a.btn_tran,
+.ovabrw-modern-product #booking-box button.submit.btn_tran,
+.ovabrw-modern-product #modern-booking button.submit.btn_tran {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #104B71;
@@ -8532,36 +8660,60 @@ a:hover {
 @media (max-width: 767px) {
   .product-template-default .ovabrw_booking_form button.btn_tran,
   .product-template-default .ovabrw_booking_form a.btn_tran,
-  .product-template-default #booking-box button.submit.btn_tran {
+  .product-template-default #booking-box button.submit.btn_tran,
+  .product-template-default #modern-booking button.submit.btn_tran,
+  .ovabrw-modern-product .ovabrw_booking_form button.btn_tran,
+  .ovabrw-modern-product .ovabrw_booking_form a.btn_tran,
+  .ovabrw-modern-product #booking-box button.submit.btn_tran,
+  .ovabrw-modern-product #modern-booking button.submit.btn_tran {
     transition: none !important;
   }
 }
 .product-template-default .ovabrw_booking_form button.btn_tran.contact,
 .product-template-default .ovabrw_booking_form a.btn_tran.contact,
-.product-template-default #booking-box button.submit.btn_tran.contact {
+.product-template-default #booking-box button.submit.btn_tran.contact,
+.product-template-default #modern-booking button.submit.btn_tran.contact,
+.ovabrw-modern-product .ovabrw_booking_form button.btn_tran.contact,
+.ovabrw-modern-product .ovabrw_booking_form a.btn_tran.contact,
+.ovabrw-modern-product #booking-box button.submit.btn_tran.contact,
+.ovabrw-modern-product #modern-booking button.submit.btn_tran.contact {
   display: inline-block;
   text-align: center;
   margin: 0;
 }
 .product-template-default .ovabrw_booking_form button.btn_tran .myLoadingClass,
 .product-template-default .ovabrw_booking_form a.btn_tran .myLoadingClass,
-.product-template-default #booking-box button.submit.btn_tran .myLoadingClass {
+.product-template-default #booking-box button.submit.btn_tran .myLoadingClass,
+.product-template-default #modern-booking button.submit.btn_tran .myLoadingClass,
+.ovabrw-modern-product .ovabrw_booking_form button.btn_tran .myLoadingClass,
+.ovabrw-modern-product .ovabrw_booking_form a.btn_tran .myLoadingClass,
+.ovabrw-modern-product #booking-box button.submit.btn_tran .myLoadingClass,
+.ovabrw-modern-product #modern-booking button.submit.btn_tran .myLoadingClass {
   background: "#fff url(/wp-admin/images/loading.gif) no-repeat center";
   opacity: 0.8;
 }
 .product-template-default .ovabrw_booking_form button.btn_tran:hover,
 .product-template-default .ovabrw_booking_form a.btn_tran:hover,
-.product-template-default #booking-box button.submit.btn_tran:hover {
+.product-template-default #booking-box button.submit.btn_tran:hover,
+.product-template-default #modern-booking button.submit.btn_tran:hover,
+.ovabrw-modern-product .ovabrw_booking_form button.btn_tran:hover,
+.ovabrw-modern-product .ovabrw_booking_form a.btn_tran:hover,
+.ovabrw-modern-product #booking-box button.submit.btn_tran:hover,
+.ovabrw-modern-product #modern-booking button.submit.btn_tran:hover {
   background-color: #FBDC03;
   color: #104B71;
 }
-.product-template-default .ovabrw-product-unavailable {
+.product-template-default .ovabrw-product-unavailable,
+.ovabrw-modern-product .ovabrw-product-unavailable {
   padding: 0;
   width: 100%;
 }
 .product-template-default .ovabrw-product-unavailable table,
 .product-template-default .ovabrw-product-unavailable tr,
-.product-template-default .ovabrw-product-unavailable td {
+.product-template-default .ovabrw-product-unavailable td,
+.ovabrw-modern-product .ovabrw-product-unavailable table,
+.ovabrw-modern-product .ovabrw-product-unavailable tr,
+.ovabrw-modern-product .ovabrw-product-unavailable td {
   background-color: #FBDC03 !important;
   color: #104B71 !important;
   font-weight: 700 !important;
@@ -8570,31 +8722,37 @@ a:hover {
   text-align: center !important;
   margin-bottom: 20px !important;
 }
-.product-template-default .ovabrw-product-unavailable label {
+.product-template-default .ovabrw-product-unavailable label,
+.ovabrw-modern-product .ovabrw-product-unavailable label {
   text-align: center !important;
   color: #104B71 !important;
   font-size: 14px !important;
   margin: 0 !important;
   padding: 0 !important;
 }
-.product-template-default button.submit.btn_tran {
+.product-template-default button.submit.btn_tran,
+.ovabrw-modern-product button.submit.btn_tran {
   opacity: 0.2;
   transition: all 0.3s;
   pointer-events: none;
 }
-.product-template-default button.submit.btn_tran.active {
+.product-template-default button.submit.btn_tran.active,
+.ovabrw-modern-product button.submit.btn_tran.active {
   opacity: 1;
   pointer-events: all;
 }
-.product-template-default .ovabrw_woo_features {
+.product-template-default .ovabrw_woo_features,
+.ovabrw-modern-product .ovabrw_woo_features {
   margin: 0 0 15px !important;
 }
-.product-template-default .ovabrw_woo_features li {
+.product-template-default .ovabrw_woo_features li,
+.ovabrw-modern-product .ovabrw_woo_features li {
   display: flex;
   padding: 5px 0;
   align-items: center;
 }
-.product-template-default .ovabrw_woo_features li i {
+.product-template-default .ovabrw_woo_features li i,
+.ovabrw-modern-product .ovabrw_woo_features li i {
   flex: 0 0 60px;
   display: inline-block;
   width: 45px;
@@ -8602,78 +8760,101 @@ a:hover {
   background-size: 45px 45px !important;
   background-repeat: no-repeat;
 }
-.product-template-default .ovabrw_woo_features li i:before {
+.product-template-default .ovabrw_woo_features li i:before,
+.ovabrw-modern-product .ovabrw_woo_features li i:before {
   width: 45px;
   height: 45px;
   padding: 5px 5px 5px 5px;
 }
-.product-template-default .ovabrw_woo_features li i.icon-guide {
+.product-template-default .ovabrw_woo_features li i.icon-guide,
+.ovabrw-modern-product .ovabrw_woo_features li i.icon-guide {
   background-image: url(assets/images/guide.svg) !important;
 }
-.product-template-default .ovabrw_woo_features li i.icon-transport {
+.product-template-default .ovabrw_woo_features li i.icon-transport,
+.ovabrw-modern-product .ovabrw_woo_features li i.icon-transport {
   background-image: url(assets/images/transport.svg) !important;
 }
-.product-template-default .ovabrw_woo_features li i.icon-island-tour {
+.product-template-default .ovabrw_woo_features li i.icon-island-tour,
+.ovabrw-modern-product .ovabrw_woo_features li i.icon-island-tour {
   background-image: url(assets/images/island-tour.svg) !important;
 }
-.product-template-default .ovabrw_woo_features li i.icon-snorkel {
+.product-template-default .ovabrw_woo_features li i.icon-snorkel,
+.ovabrw-modern-product .ovabrw_woo_features li i.icon-snorkel {
   background-image: url(assets/images/snorkel.svg) !important;
 }
-.product-template-default .ovabrw_woo_features li i.icon-archeological {
+.product-template-default .ovabrw_woo_features li i.icon-archeological,
+.ovabrw-modern-product .ovabrw_woo_features li i.icon-archeological {
   background-image: url(assets/images/archeological.svg) !important;
 }
-.product-template-default .ovabrw_woo_features li i.icon-boat-tour {
+.product-template-default .ovabrw_woo_features li i.icon-boat-tour,
+.ovabrw-modern-product .ovabrw_woo_features li i.icon-boat-tour {
   background-image: url(assets/images/boat-tour.svg) !important;
 }
-.product-template-default .ovabrw_woo_features li i.icon-breakfast {
+.product-template-default .ovabrw_woo_features li i.icon-breakfast,
+.ovabrw-modern-product .ovabrw_woo_features li i.icon-breakfast {
   background-image: url(assets/images/breakfast.svg) !important;
 }
-.product-template-default .ovabrw_woo_features li i.icon-cenote {
+.product-template-default .ovabrw_woo_features li i.icon-cenote,
+.ovabrw-modern-product .ovabrw_woo_features li i.icon-cenote {
   background-image: url(assets/images/cenote.svg) !important;
 }
-.product-template-default .ovabrw_woo_features li i.icon-golf {
+.product-template-default .ovabrw_woo_features li i.icon-golf,
+.ovabrw-modern-product .ovabrw_woo_features li i.icon-golf {
   background-image: url(assets/images/golf.svg) !important;
 }
-.product-template-default .ovabrw_woo_features li i.icon-guide {
+.product-template-default .ovabrw_woo_features li i.icon-guide,
+.ovabrw-modern-product .ovabrw_woo_features li i.icon-guide {
   background-image: url(assets/images/guide.svg) !important;
 }
-.product-template-default .ovabrw_woo_features li i.icon-island-tour {
+.product-template-default .ovabrw_woo_features li i.icon-island-tour,
+.ovabrw-modern-product .ovabrw_woo_features li i.icon-island-tour {
   background-image: url(assets/images/island-tour.svg) !important;
 }
-.product-template-default .ovabrw_woo_features li i.icon-marine-turtle {
+.product-template-default .ovabrw_woo_features li i.icon-marine-turtle,
+.ovabrw-modern-product .ovabrw_woo_features li i.icon-marine-turtle {
   background-image: url(assets/images/marine-turtle.svg) !important;
 }
-.product-template-default .ovabrw_woo_features li i.icon-mayan {
+.product-template-default .ovabrw_woo_features li i.icon-mayan,
+.ovabrw-modern-product .ovabrw_woo_features li i.icon-mayan {
   background-image: url(assets/images/mayan.svg) !important;
 }
-.product-template-default .ovabrw_woo_features li i.icon-multiple-languages {
+.product-template-default .ovabrw_woo_features li i.icon-multiple-languages,
+.ovabrw-modern-product .ovabrw_woo_features li i.icon-multiple-languages {
   background-image: url(assets/images/multiple-languages.svg) !important;
 }
-.product-template-default .ovabrw_woo_features li i.icon-nature-sighting {
+.product-template-default .ovabrw_woo_features li i.icon-nature-sighting,
+.ovabrw-modern-product .ovabrw_woo_features li i.icon-nature-sighting {
   background-image: url(assets/images/nature-sighting.svg) !important;
 }
-.product-template-default .ovabrw_woo_features li i.icon-relax {
+.product-template-default .ovabrw_woo_features li i.icon-relax,
+.ovabrw-modern-product .ovabrw_woo_features li i.icon-relax {
   background-image: url(assets/images/relax.svg) !important;
 }
-.product-template-default .ovabrw_woo_features li i.icon-swimming {
+.product-template-default .ovabrw_woo_features li i.icon-swimming,
+.ovabrw-modern-product .ovabrw_woo_features li i.icon-swimming {
   background-image: url(assets/images/swimming.svg) !important;
 }
-.product-template-default .ovabrw_woo_features li i.icon-tickets {
+.product-template-default .ovabrw_woo_features li i.icon-tickets,
+.ovabrw-modern-product .ovabrw_woo_features li i.icon-tickets {
   background-image: url(assets/images/tickets.svg) !important;
 }
-.product-template-default .ovabrw_woo_features li i.icon-tortillas {
+.product-template-default .ovabrw_woo_features li i.icon-tortillas,
+.ovabrw-modern-product .ovabrw_woo_features li i.icon-tortillas {
   background-image: url(assets/images/tortillas.svg) !important;
 }
-.product-template-default .ovabrw_woo_features li i.icon-lunch {
+.product-template-default .ovabrw_woo_features li i.icon-lunch,
+.ovabrw-modern-product .ovabrw_woo_features li i.icon-lunch {
   background-image: url(assets/images/lunch.svg) !important;
 }
-.product-template-default .operationDays {
+.product-template-default .operationDays,
+.ovabrw-modern-product .operationDays {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 40px;
 }
-.product-template-default .operationDays .giorni {
+.product-template-default .operationDays .giorni,
+.ovabrw-modern-product .operationDays .giorni {
   font-weight: 600;
   font-size: 13px;
   width: 30px;
@@ -8684,22 +8865,26 @@ a:hover {
   line-height: 29px;
   border-radius: 50%;
 }
-.product-template-default .operationDays .giorni.ok {
+.product-template-default .operationDays .giorni.ok,
+.ovabrw-modern-product .operationDays .giorni.ok {
   background-color: #87CC4B;
 }
-.product-template-default .operationDays .duration {
+.product-template-default .operationDays .duration,
+.ovabrw-modern-product .operationDays .duration {
   font-weight: 600;
   background-color: #FBDC03;
   padding: 3px 15px;
   border-radius: 25px;
   color: #104B71;
 }
-.product-template-default .operationDays .label {
+.product-template-default .operationDays .label,
+.ovabrw-modern-product .operationDays .label {
   max-width: 180px;
   color: #104B71;
   font-weight: 600;
 }
-.product-template-default .extraInfo {
+.product-template-default .extraInfo,
+.ovabrw-modern-product .extraInfo {
   display: flex;
   flex-direction: column;
   font-size: 12px;
@@ -8712,13 +8897,15 @@ a:hover {
   padding-bottom: 25px;
   margin-bottom: 10px;
 }
-.product-template-default .pdfTour {
+.product-template-default .pdfTour,
+.ovabrw-modern-product .pdfTour {
   display: flex;
   justify-content: flex-end;
   align-content: center;
   align-items: center;
 }
-.product-template-default .pdfTour .downloadPDF {
+.product-template-default .pdfTour .downloadPDF,
+.ovabrw-modern-product .pdfTour .downloadPDF {
   display: flex;
   flex-wrap: wrap;
   text-transform: uppercase;
@@ -8729,13 +8916,16 @@ a:hover {
   transition: all 0.3s ease;
   color: #104B71;
 }
-.product-template-default .pdfTour .downloadPDF:hover {
+.product-template-default .pdfTour .downloadPDF:hover,
+.ovabrw-modern-product .pdfTour .downloadPDF:hover {
   color: #54AEF2;
 }
-.product-template-default .pdfTour .downloadPDF .iconPdf {
+.product-template-default .pdfTour .downloadPDF .iconPdf,
+.ovabrw-modern-product .pdfTour .downloadPDF .iconPdf {
   height: 26px;
 }
-.product-template-default .shopengine-product-list .shopengine-single-product-item:hover {
+.product-template-default .shopengine-product-list .shopengine-single-product-item:hover,
+.ovabrw-modern-product .shopengine-product-list .shopengine-single-product-item:hover {
   box-shadow: none;
 }
 .woocommerce-notices-wrapper {
@@ -10011,13 +10201,6 @@ ul.woocommerce-error li {
     width: 70%;
   }
 }
-.home .truncate {
-  display: block;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 .home .ovabrw_wd_search form .wrap_content {
   width: auto;
   flex-grow: 5;
@@ -10207,6 +10390,559 @@ ul.woocommerce-error li {
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
+}
+
+.product-single {
+  padding: 35px;
+  max-width: 1600px;
+  display: flex;
+  margin: 0 auto;
+  background-color: #FFFFFF !important;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-row-gap: 0px;
+  margin: 0px auto;
+  width: 1250px;
+  justify-content: center;
+  align-items: start;
+}
+
+.div1 {
+  grid-area: 1/1/2/2;
+  margin-bottom: 20px;
+}
+.div1 .box-image-single {
+  width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.div1 .box-image-single .swiper-container {
+  width: 100%;
+}
+.div1 .box-image-single .swiper-container.main-slider {
+  height: 450px;
+  position: relative;
+}
+.div1 .box-image-single .swiper-container.main-slider .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.div1 .box-image-single .swiper-container.main-slider .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+.div1 .box-image-single .swiper-container.main-slider .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  object-position: center;
+}
+.div1 .box-image-single .swiper-container.thumb-slider {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+.div1 .box-image-single .swiper-container.thumb-slider .swiper-slide {
+  width: calc(10% - 15px);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.div1 .box-image-single .swiper-container.thumb-slider .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.div1 .box-image-single .swiper-container.thumb-slider .swiper-button-next,
+.div1 .box-image-single .swiper-container.thumb-slider .swiper-button-prev {
+  position: absolute;
+  width: 37px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  font-size: 16px !important;
+  color: rgba(16, 16, 16, 0.6156862745);
+  background-color: rgba(255, 255, 255, 0.5725490196);
+}
+.div1 .box-image-single .swiper-container.thumb-slider .swiper-button-prev {
+  top: 22px;
+  left: 0px;
+}
+.div1 .box-image-single .swiper-container.thumb-slider .swiper-button-next {
+  top: 22px;
+  right: 0px;
+}
+.div1 .box-image-single .swiper-container.thumb-slider .swiper-button-next:after, .div1 .box-image-single .swiper-container.thumb-slider .swiper-button-prev:after {
+  font-size: 20px !important;
+}
+.div1 .box-title-single {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.div1 .box-title-single .box-title {
+  flex-basis: 50%;
+}
+.div1 .box-title-single .title-single-prod {
+  text-align: left;
+  color: #222;
+  font-family: "Poppins", Sans-serif;
+  font-size: 29px;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+}
+.div1 .box-rating {
+  flex-basis: 50%;
+  align-content: center;
+}
+
+.div2 {
+  grid-area: 2/1/4/2;
+}
+
+.div3 {
+  grid-area: 1/3/3/3;
+}
+.div3 .cart-single-prod {
+  flex-shrink: 0;
+  width: 400px;
+}
+.div3 .box-cart {
+  position: relative;
+  padding: 30px 20px;
+  padding-bottom: 0;
+  border-radius: 25px;
+  background-color: #fff;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.div3 .box-cart .title-desc-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--e-global-color-primary);
+  border-radius: 25px 25px 0 0;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+.div3 .box-cart .boxPrezzi.ovabrw-product-price {
+  margin-top: 25px;
+}
+.div3 .box-cart .boxPrezzi.ovabrw-product-price .badge {
+  right: 20px;
+}
+.div3 .notice-message {
+  background-color: #f7f9fc;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #2b4d66;
+  font-size: 12px;
+}
+.div3 .info-message {
+  background-color: #f7f9fc;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.div3 .info-message h2, .div3 .info-message .h2 {
+  font-size: 15px;
+  color: #2b4d66;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+.div3 .info-message p {
+  font-size: 12px;
+  color: #515151;
+  margin: 0;
+}
+
+.div4 {
+  grid-area: 3/1/4/4;
+}
+.div4 .footer-product {
+  max-width: 1600px;
+  display: flex;
+  margin: 0 auto;
+  background-color: #FFFFFF !important;
+  width: 100%;
+}
+.div4 .review-slider {
+  width: 100%;
+  padding: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+.div4 .review-slider .swiper-slide {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 33%;
+  margin-right: 10px;
+}
+.div4 .review-slider .swiper-pagination, .div4 .review-slider .review-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  margin-top: 20px;
+}
+.div4 .review-slider .swiper-pagination-bullet, .div4 .review-slider .review-pagination-bullet {
+  background-color: #ccc;
+  opacity: 0.5;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: opacity 0.3s;
+}
+.div4 .review-slider .swiper-pagination-bullet-active, .div4 .review-slider .review-pagination-bullet-active {
+  background-color: #2b4d66;
+  opacity: 1;
+}
+.div4 .review-slider .carousel-item {
+  background-color: #f7f9fc;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+.div4 .review-slider .carousel-item .review-description {
+  overflow-y: auto;
+  height: 150px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.div4 .review-slider .review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.div4 .review-slider .review-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.div4 .review-slider .review-source {
+  font-size: 12px;
+  color: #999;
+  margin-top: auto;
+}
+.div4 .review-slider .review-button-next, .div4 .review-slider .review-button-prev {
+  color: #2b4d66;
+}
+.div4 .review-slider .review-pagination-bullet-active {
+  background-color: #2b4d66;
+}
+
+.section-heading {
+  position: relative;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+.section-heading .text-mid {
+  position: absolute;
+  margin: 0;
+  top: -27px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 35px;
+  padding: 10px 20px;
+}
+
+.section-background {
+  max-width: 1600px;
+  margin: auto;
+  background-color: #f7f9fc;
+  padding-top: 50px;
+}
+
+.section-container {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.item-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+  flex: 1;
+  margin-bottom: 20px;
+}
+.item a {
+  display: block;
+}
+.item a img {
+  height: auto;
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.item .item-tag {
+  background-color: #54AEF2;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.item .item-title {
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.item .item-title a {
+  text-decoration: none;
+  color: inherit;
+}
+.item .item-title a:hover {
+  text-decoration: underline;
+}
+.item .item-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+.item .view-product {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f3f4f6;
+  color: #1976d2;
+  border-top: 1px solid #E5E7EB;
+  transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 1300px) {
+  .product-single {
+    max-width: 1300px;
+  }
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: auto;
+  }
+  .div1 {
+    grid-area: 1/1/2/3;
+  }
+  .div1 .box-image-single {
+    width: auto;
+    margin: 0 auto;
+  }
+  .div1 .box-image-single .swiper-container {
+    width: 100%;
+  }
+  .div1 .box-image-single .swiper-container.thumb-slider .swiper-button-next,
+  .div1 .box-image-single .swiper-container.thumb-slider .swiper-button-prev {
+    display: none;
+  }
+  .div2 {
+    grid-area: 2/1/3/2;
+  }
+  .div3 {
+    grid-area: 2/2/3/3;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .div3 .cart-single-prod {
+    width: 80%;
+  }
+  .div4 {
+    grid-area: 3/1/4/3;
+  }
+  .section-heading {
+    font-size: 15px;
+  }
+  .section-heading .text-mid {
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 18px;
+    top: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 35px;
+    margin: 10px auto;
+  }
+  .item-container {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .product-single .review-slider .swiper-slide {
+    width: 100%;
+  }
+  .section-container {
+    max-width: 800px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .product-single {
+    padding: 0;
+    max-width: 600px;
+  }
+  .parent > *:not(.div1) {
+    padding: 10px;
+  }
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .div1 {
+    grid-area: 1/1/2/3;
+    margin-bottom: 0px;
+  }
+  .div1 .box-image-single {
+    height: 370px;
+  }
+  .div1 .box-image-single .swiper-container.thumb-slider .swiper-slide {
+    width: calc(20% - 15px) !important;
+  }
+  .div1 .box-title-single {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 15px;
+  }
+  .div1 .box-title-single .box-rating .pdfTour {
+    justify-content: flex-start;
+  }
+  .div2 {
+    grid-area: 2/1/3/3;
+  }
+  .div2 .ovabrw-product-short-description {
+    display: flex !important;
+    flex-direction: column;
+    transition: height 0.5s ease;
+    position: relative;
+    background-color: #f7f9fc; /* Colore di sfondo */
+    padding: 20px;
+    border-radius: 25px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .div2 .ovabrw-product-short-description .text-content {
+    max-height: 60px; /* Limita l'altezza del testo */
+    overflow: hidden; /* Nasconde il testo extra */
+    transition: max-height 0.3s ease; /* Effetto di apertura/chiusura */
+  }
+  .div2 .ovabrw-product-short-description .open .text-content {
+    max-height: 1000px; /* Altezza massima per aprire tutto il testo */
+  }
+  .div2 .ovabrw-product-short-description .text-content-full {
+    display: none; /* Nasconde il box di testo completo */
+    margin-top: 40px;
+  }
+  .div2 .ovabrw-product-short-description .text-content-short {
+    display: block; /* Mostra il riassunto di testo */
+  }
+  .div2 .ovabrw-product-short-description .read-more-btn {
+    background-color: transparent;
+    border: none;
+    color: #54AEF2;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px; /* Spazio sopra al bottone */
+    padding: 0;
+  }
+  .div2 .ovabrw-product-short-description .svg-read-more {
+    display: inline-block;
+    margin-left: 8px; /* Spazio tra il testo e l'icona */
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease; /* Transizione per la rotazione dell'icona */
+  }
+  .div2 .ovabrw-product-short-description .read-more-btn.open .svg-read-more {
+    transform: rotate(180deg); /* Ruota l'icona verso l'alto quando il box è aperto */
+  }
+  .div2 .ovabrw-product-short-description .pos-text {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    padding: 0px 18px !important;
+  }
+  .div2 .box-desc {
+    display: none !important;
+  }
+  .div3 {
+    grid-area: 3/1/4/3;
+  }
+  .div3 .cart-single-prod {
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .div4 {
+    grid-area: 4/1/5/3;
+  }
+  .section-heading .text-mid {
+    font-size: 15px;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 35px;
+    padding: 7px 10px;
+    width: 90%;
+    margin: 10px auto;
+  }
+  .section-container {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,650 @@
+$color-primary: #54AEF2;
+$color-secondary: #104B71;
+$color-text: #515151;
+$color-accent: #FBDC03;
+$color-white: #FFFFFF;
+$color-black: #000000;
+$typography-primary-font-family: "Poppins";
+$typography-primary-font-weight: 400;
+$typography-secondary-font-family: "Poppins";
+$typography-secondary-font-weight: 300;
+$typography-text-font-family: "Poppins";
+$typography-text-font-weight: 400;
+$typography-accent-font-family: "Poppins";
+$typography-accent-font-weight: 600;
+$typography-bolder: 700;
+$color-green: #87CC4B;
+$color-red: #E2684D;
+$body-bg: #EAF7FF !important;
+$bg-gray: #F7F8FB;
+$red-alert: #b81c23;
+.product-single{
+    padding: 35px;
+    max-width: 1600px;
+    display: flex;
+    margin: 0 auto;
+    background-color: $color-white !important;
+}
+.parent {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto; 
+    grid-row-gap: 0px;
+    margin: 0px auto;
+    width: 1250px;
+    justify-content: center;
+    align-items: start;  
+}
+
+
+    .div1 { 
+        grid-area: 1 / 1 / 2 / 2; 
+        margin-bottom: 20px;
+        .box-image-single {
+            width: 800px;
+             margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        
+            .swiper-container {
+                width: 100%;
+               
+                &.main-slider {
+                    height: 450px; // Altezza fissa per il carosello principale
+                    position: relative;
+                    
+        
+                    .swiper-wrapper {
+                        width: 100%;
+                        height: 100%;
+                    }
+        
+                    .swiper-slide {
+                        width: 100%;
+                        height: 100%;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            display: block;
+                            object-position: center;
+                        }
+                    }
+                }
+        
+                &.thumb-slider {
+                    margin-top: 10px;             
+                    display: flex;
+                    flex-wrap: wrap;
+                    position: relative;
+                    justify-content: center;
+                    align-items: center;
+                    
+                     height: 70px;
+
+        
+                    .swiper-slide {
+                        width: calc(10% - 15px); // Calcola la larghezza per 8 immagini
+                        // height: 100px;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+        
+                    // Modifica la posizione delle frecce in relazione al carosello thumb-slider
+                    .swiper-button-next,
+                    .swiper-button-prev {
+                        position: absolute;
+                        width: 37px;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        border: none;
+                        font-size: 16px !important;
+                        color: #1010109d;
+                        background-color: #ffffff92;
+        
+                    }
+        
+                    .swiper-button-prev {
+                        top: 22px;
+                        left: 0px; // Posiziona la freccia a sinistra del carosello delle immagini
+                    }
+        
+                    .swiper-button-next {
+                        top: 22px;
+                        right: 0px;
+                        
+                    }
+                    .swiper-button-next:after, .swiper-button-prev:after {
+                        
+                        font-size: 20px !important;
+                      
+                    }
+                }
+            }
+        }
+        .box-title-single {
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 20px;
+          .box-title{
+            flex-basis: 50%;
+          }
+          .title-single-prod {
+            text-align: left;
+            color: #222;
+            font-family: "Poppins", Sans-serif;
+            font-size: 29px;
+            font-weight: 600;
+            letter-spacing: 1.1px;
+          }
+        }
+      
+        .box-rating {
+          flex-basis: 50%; // utilizza l'intera larghezza disponibile all'interno del div
+          align-content: center;
+        }
+    
+    }
+    .div2 { grid-area: 2 / 1 / 4 / 2;
+    
+    
+    
+    }
+    .div3 { grid-area: 1 / 3 / 3 / 3; 
+        .cart-single-prod {
+            flex-shrink: 0;
+            width: 400px;
+            
+          }
+        
+          .box-cart {
+          
+            position: relative;
+            padding: 30px 20px;
+            padding-bottom: 0;
+            border-radius: 25px;
+            background-color: #fff;
+            box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            .title-desc-card{
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              padding: 10px;
+              text-align: center;
+              background-color: var(--e-global-color-primary);
+              border-radius: 25px 25px 0 0;
+              color: white;
+              font-size: 18px;
+              font-weight: 500;
+  
+            }
+          
+            .boxPrezzi.ovabrw-product-price {
+                margin-top: 25px;
+            }
+            .boxPrezzi.ovabrw-product-price .badge {
+            right: 20px;
+            }
+          
+          }
+          
+          .notice-message {
+            background-color: #f7f9fc; 
+            padding: 10px;  
+            border-radius: 10px;  
+            text-align: center;  
+            font-weight: bold;  
+            color: #2b4d66;  
+            font-size: 12px;  
+        }
+        .info-message {
+            background-color: #f7f9fc;  
+            padding: 10px;  
+            border-radius: 10px;  
+            text-align: center;  
+        
+            h2 {
+                font-size: 15px;  
+                color: #2b4d66;  
+                font-weight: bold;  
+                margin: 0 0 10px 0;  
+            }
+        
+            p {
+                font-size: 12px;  
+                color: #515151;  
+                margin: 0; 
+            }
+        }
+    
+    }
+    .div4 { grid-area: 3 / 1 / 4 / 4; 
+        .footer-product {
+            
+            max-width: 1600px;
+            display: flex;
+            margin: 0 auto;
+            background-color: #FFFFFF !important;
+            width: 100%;
+          }    
+          .review-slider {
+            width: 100%; // Occupa tutto lo spazio disponibile
+            padding: 20px 0;
+            position: relative;
+            overflow: hidden;
+        
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+                width: 33%;
+                margin-right: 10px;
+            }
+        
+            // Modifica per la paginazione
+            .swiper-pagination, .review-pagination { // Assicurati di stilare anche .review-pagination
+                display: flex;
+                justify-content: center; // Centra i pallini orizzontalmente
+                align-items: center;
+                position: absolute;
+                bottom: 10px; // Posiziona i pallini in basso rispetto al carosello
+                width: 100%; // Assicura che occupino tutta la larghezza del container
+                margin-top: 20px;
+            }
+        
+            .swiper-pagination-bullet, .review-pagination-bullet {
+                background-color: #ccc;
+                opacity: 0.5;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                margin: 0 5px; // Spazio tra i pallini
+                transition: opacity 0.3s;
+            }
+        
+            .swiper-pagination-bullet-active, .review-pagination-bullet-active {
+                background-color: #2b4d66; // Colore del pallino attivo
+                opacity: 1;
+            }
+        
+            .carousel-item {
+                background-color: #f7f9fc;
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                width: 450px; // Larghezza fissa
+                height: 300px; // Altezza fissa
+                display: flex;
+                flex-direction: column;
+                overflow: hidden; // Nascondi l'overflow extra
+                position: relative;
+            }
+        
+            // Aggiungere lo scroll per il contenuto interno
+            .carousel-item .review-description {
+                overflow-y: auto; // Abilita lo scroll verticale
+                height: 150px; // Altezza per il testo scrollabile
+                margin-bottom: 5px;
+                font-size: 14px;
+                line-height: 1.5;
+            }
+        
+            .review-header {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+        
+            .review-title {
+                font-weight: bold;
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+        
+            .review-source {
+                font-size: 12px;
+                color: #999;
+                margin-top: auto; // Spinge la fonte (es. Tripadvisor) verso il basso
+            }
+        
+            .review-button-next, .review-button-prev {
+                color: #2b4d66; // Colore delle frecce di navigazione
+            }
+        
+            .review-pagination-bullet-active {
+                background-color: #2b4d66; // Colore del punto attivo
+            }
+        }
+    }
+
+   
+
+    .section-heading {
+        position: relative;
+        font-size: 22px;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        
+        .text-mid{
+            position: absolute;
+            margin: 0;
+            top: -27px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            border-radius: 35px;
+            padding: 10px 20px;
+        }
+    }
+.section-background {
+    max-width: 1600px;
+    margin: auto;
+    background-color: #f7f9fc;
+    padding-top: 50px;
+}
+
+.section-container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.item-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; // Spazio tra i box
+}
+
+.item {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+    flex: 1;
+    margin-bottom: 20px;
+
+    a {
+        display: block; // Assicurati che l'immagine rimanga blocco e cliccabile
+        img {
+            height: auto;
+            max-width: 100%;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+        }
+    }
+
+    .item-tag {
+        background-color: #54AEF2;
+        color: #fff;
+        font-size: 12px;
+        font-weight: bold;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    .item-title {
+        margin: 15px 0;
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .item-description {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 10px;
+        padding: 0 10px;
+    }
+
+    .view-product {
+        font-size: 14px;
+        font-weight: bold;
+        padding: 10px;
+        background-color: #f3f4f6;
+        color: #1976d2;
+        border-top: 1px solid #E5E7EB;
+        transition: background-color 0.3s ease;
+    }
+}
+
+
+@media screen and (max-width: 1300px) {
+    .product-single{
+
+        max-width: 1300px;
+
+    }
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: auto;
+        }
+        
+        .div1 { grid-area: 1 / 1 / 2 / 3; 
+            .box-image-single {
+                width: auto;
+                margin: 0 auto;
+                
+            
+                .swiper-container {
+                    width: 100%;
+                   
+                    
+                    &.thumb-slider {
+                       
+
+                        // Modifica la posizione delle frecce in relazione al carosello thumb-slider
+                        .swiper-button-next,
+                        .swiper-button-prev {
+                        display: none;
+            
+                        }
+                    }
+                }
+            }
+             
+            
+        }
+        .div2 { grid-area: 2 / 1 / 3 / 2; }
+        .div3 { grid-area: 2 / 2 / 3 / 3; 
+            display: flex;
+            justify-content: flex-end;
+            .cart-single-prod{
+                width: 80%;
+            
+            }
+        }
+        .div4 { grid-area: 3 / 1 / 4 / 3; }
+
+        .section-heading {
+            font-size: 15px;
+    
+            .text-mid {
+                text-align: center;
+                padding: 10px 15px;
+                font-size: 18px;
+                top: -32px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: white;
+                border-radius: 35px;
+                margin: 10px auto;
+            }
+        }
+        .item-container {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+           
+        }
+        .product-single .review-slider .swiper-slide {
+            width: 100%;
+        }
+        .section-container{
+            max-width: 800px;
+        }
+}
+@media screen and (max-width: 600px) {
+    .product-single{
+        padding: 0;
+        max-width: 600px;
+
+    }
+    .parent > *:not(.div1) {
+        padding: 10px;
+    }
+    
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+
+        
+        .div1 { grid-area: 1 / 1 / 2 / 3; 
+            margin-bottom: 0px;
+            .box-image-single{
+                height: 370px;
+                .swiper-container{
+                    &.thumb-slider .swiper-slide {
+                        width: calc(20% - 15px) !important; 
+                    }
+                }
+            } 
+            .box-title-single {
+                flex-direction: column;
+                justify-content: flex-start;
+                margin-left: 15px;
+                
+                .box-rating .pdfTour{
+                    justify-content: flex-start;
+                }
+            }
+        }
+        .div2 { grid-area: 2 / 1 / 3 / 3; 
+             .ovabrw-product-short-description {
+                display: flex !important;
+                flex-direction: column;
+                transition: height 0.5s ease; 
+                position: relative;
+                background-color: #f7f9fc; /* Colore di sfondo */
+                padding: 20px;
+                border-radius: 25px;
+                max-width: 500px;
+                margin: 0 auto;
+                .text-content {
+                    max-height: 60px; /* Limita l'altezza del testo */
+                    overflow: hidden; /* Nasconde il testo extra */
+                    transition: max-height 0.3s ease; /* Effetto di apertura/chiusura */
+                }
+                .open .text-content {
+                    max-height: 1000px; /* Altezza massima per aprire tutto il testo */
+                }
+                .text-content-full {
+                    display: none; /* Nasconde il box di testo completo */
+                    margin-top: 40px;
+            
+                }
+               
+                .text-content-short {
+                    display: block; /* Mostra il riassunto di testo */
+                }
+                 .read-more-btn {
+                    
+                    background-color: transparent;
+                    border: none;
+                    color: #54AEF2; 
+                    cursor: pointer;
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    font-size: 16px;
+                    margin-top: 10px; /* Spazio sopra al bottone */
+                    padding: 0;
+                }
+                
+                .svg-read-more {
+                    display: inline-block;
+                    margin-left: 8px; /* Spazio tra il testo e l'icona */
+                    
+                    width: 25px;
+                    height: 25px;
+                    transition: transform 0.3s ease; /* Transizione per la rotazione dell'icona */
+                }
+                
+                .read-more-btn.open .svg-read-more {
+                    transform: rotate(180deg); /* Ruota l'icona verso l'alto quando il box è aperto */
+                }
+                
+                .pos-text{
+                    position: absolute;
+                    top: 6px;
+                    left: 0;
+                    padding: 0px 18px !important;
+            
+            
+                }
+            }
+              .box-desc {
+                display: none !important;
+            }
+        
+        }
+        .div3 { grid-area: 3 / 1 / 4 / 3; 
+        .cart-single-prod{
+            max-width: 500px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        }
+        .div4 { grid-area: 4 / 1 / 5 / 3; }
+        .section-heading .text-mid {
+            font-size: 15px;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            border-radius: 35px;
+            padding: 7px 10px;
+            width: 90%;
+            margin: 10px auto;
+         }
+         .section-container {
+            width: 100%;
+        }
+       
+}
