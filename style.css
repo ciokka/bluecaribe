@@ -8953,14 +8953,14 @@ ul.woocommerce-error li {
   margin: 0 auto;
   background-color: #FFFFFF !important; }
 
-.parent {
+.mainGrid {
   display: grid;
   margin: 0px auto;
   width: 1250px;
   justify-content: center;
   align-items: start;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 650px repeat(2, 1fr);
+  grid-template-rows: 650px 1fr auto;
   grid-column-gap: 50px;
   grid-row-gap: 20px; }
 
@@ -9261,7 +9261,7 @@ ul.woocommerce-error li {
   .product-single {
     max-width: 1300px; }
 
-  .parent {
+  .mainGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 0px;
@@ -9320,10 +9320,10 @@ ul.woocommerce-error li {
     padding: 0;
     max-width: 600px; }
 
-  .parent > *:not(.div1) {
+  .mainGrid > *:not(.div1) {
     padding: 15px; }
 
-  .parent {
+  .mainGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);

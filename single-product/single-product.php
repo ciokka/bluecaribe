@@ -14,7 +14,7 @@ if (post_password_required()) {
 
 <div id="product-<?php the_ID(); ?>" class="product-single ovabrw-modern-product">
 
-    <div class="parent">
+    <div class="mainGrid">
         <div class="div1">
 
             <div class="box-image-single">
