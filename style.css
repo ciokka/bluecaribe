@@ -9345,9 +9345,8 @@ ul.woocommerce-error li {
         .div1 .box-image-single .swiper-container.main-slider .swiper-slide {
           height: auto; }
           .div1 .box-image-single .swiper-container.main-slider .swiper-slide img {
-            width: auto;
             height: auto;
-            aspect-ratio: 5 / 4;
+            aspect-ratio: 7 / 6;
             /* Imposta il formato quadrato */
             object-fit: cover;
             /* Mantiene le immagini dentro il quadrato */ }

@@ -557,9 +557,8 @@ $red-alert: #b81c23;
                         .swiper-slide {
                             height: auto;
                             img {
-                                width: auto;
                                 height: auto;
-                                aspect-ratio: 5 / 4; /* Imposta il formato quadrato */
+                                aspect-ratio: 7 / 6; /* Imposta il formato quadrato */
                                 object-fit: cover; /* Mantiene le immagini dentro il quadrato */
                             }
                         }
