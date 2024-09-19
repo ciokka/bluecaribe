@@ -1313,12 +1313,14 @@ table.shop_table {
 	}
 }
 
+.ovabrw_booking_form {
+	padding: 12px 0px 30px 0px;
+}
 
 // SCHEDA PRODOTTO MOBILE FIX
-
 @media (max-width: 1600px) {
 	.ovabrw_booking_form {
-		padding: 30px 0px 30px 0px;
+		padding: 12px 0px 30px 0px;
 
 		.rental_item {
 			align-items: flex-start !important;

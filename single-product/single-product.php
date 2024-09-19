@@ -54,6 +54,7 @@ if (post_password_required()) {
         </div>
         <div class="div3">
             <div class="cart-single-prod">
+            <?php ovabrw_get_template( 'modern/single/detail/ovabrw-product-unavailable.php' ); ?>
                 <div class="box-cart">
                     <div id="cart-cont" class="">
                         <div id="card-custom">

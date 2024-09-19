@@ -64,6 +64,8 @@ $red-alert: #b81c23;
                     .swiper-wrapper {
                         width: 100%;
                         height: 100%;
+                        display: flex;
+                        transition: transform 300ms ease !important;
                     }
         
                     .swiper-slide {
@@ -80,6 +82,7 @@ $red-alert: #b81c23;
                 }
         
                 &.thumb-slider {
+                    overflow: hidden;
                     margin-top: 10px;             
                     display: flex;
                     flex-wrap: wrap;
@@ -119,6 +122,8 @@ $red-alert: #b81c23;
                         font-size: 16px !important;
                         color: #1010109d;
                         background-color: #ffffff92;
+                        background-image: url('');
+                        
         
                     }
         
@@ -544,6 +549,7 @@ $red-alert: #b81c23;
         .div1 { grid-area: 1 / 1 / 2 / 3; 
             margin-bottom: 0px;
             .box-image-single{
+                width: 100%;
                 height: 370px;
                 .swiper-container{
                     &.thumb-slider .swiper-slide {

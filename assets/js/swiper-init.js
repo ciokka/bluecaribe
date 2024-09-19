@@ -1,16 +1,20 @@
 document.addEventListener("DOMContentLoaded", function() {
     var thumbSlider, mainSlider, reviewSlider;
-
+  
        
     var thumbSliderEl = document.querySelector(".thumb-slider");
     if (thumbSliderEl) {
         thumbSlider = new Swiper(thumbSliderEl, {
             spaceBetween: 15,
             slidesPerView: 8,
-            freeMode: true,
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,
+            freeMode: true, // Attiva lo scorrimento libero
+            // freeModeMomentum: true,
+             watchSlidesVisibility: true,
+             watchSlidesProgress: true,
             slideToClickedSlide: true,
+            // freeModeMomentumRatio: 0.5, // Regola la velocità di inerzia
+            // freeModeSticky: true, // Blocca i slide alla fine dello scorrimento
+            // touchStartPreventDefault: false,
             breakpoints: {
                 600: {
                     slidesPerView: 3
@@ -24,13 +28,19 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
-
+    // thumbSliderEl.addEventListener('touchstart', function(e) {
+    //     e.stopPropagation();
+    // }, { passive: true });
+    
+    // thumbSliderEl.addEventListener('touchmove', function(e) {
+    //     e.stopPropagation();
+    // }, { passive: true });
     // Inizializzazione main-slider
     var mainSliderEl = document.querySelector(".main-slider");
     if (mainSliderEl && thumbSlider) {
         mainSlider = new Swiper(mainSliderEl, {
             loop: true,
-            spaceBetween: 10,
+            spaceBetween: 15,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",

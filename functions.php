@@ -1427,7 +1427,7 @@ function enqueue_custom_swiper_script() {
     // Swiper CSS e JS
     // wp_enqueue_style('swiper', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css');
     // wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js', array(), null, true);
-    wp_enqueue_script('swiper-js', get_stylesheet_directory_uri() . '/assets/js/swiper-bundle.min.js', array('jquery'), '', true);
+    //wp_enqueue_script('swiper-js', get_stylesheet_directory_uri() . '/assets/js/swiper-bundle.min.js', array('jquery'), '', true);
 
     // Aggiungi il tuo script personalizzato dal tema child
     wp_enqueue_script('custom-swiper-init', get_stylesheet_directory_uri() . '/assets/js/swiper-init.js', array('swiper'), null, true);
@@ -1544,16 +1544,103 @@ function filter_orders_by_alphanumeric_coupon_for_user_role_partner( $query ) {
         }
     }
 }
-function remove_photoswipe_from_woocommerce_product_pages() {
-    // Controlla se siamo su una pagina prodotto di WooCommerce
+add_action('wp_enqueue_scripts', 'debug_enqueue_scripts_styles', 99);
+function debug_enqueue_scripts_styles() {
+    global $wp_scripts;
+    global $wp_styles;
+    
+    echo '<!-- Scripts: ';
+    foreach( $wp_scripts->queue as $handle ) {
+        echo $handle . ' | ';
+    }
+    echo '-->';
+
+    echo '<!-- Styles: ';
+    foreach( $wp_styles->queue as $handle ) {
+        echo $handle . ' | ';
+    }
+    echo '-->';
+}
+
+function disable_woocommerce_gallery_photoswipe() {
     if (is_product()) {
-        // Rimuove lo script PhotoSwipe
+        // Rimuove la galleria di WooCommerce e PhotoSwipe
+        remove_theme_support('wc-product-gallery-zoom');
+        remove_theme_support('wc-product-gallery-lightbox');
+        remove_theme_support('wc-product-gallery-slider');
+
+        // Disabilita gli script e gli stili di PhotoSwipe
         wp_dequeue_script('photoswipe');
         wp_deregister_script('photoswipe');
+
+        wp_dequeue_script('photoswipe-ui-default');
+        wp_deregister_script('photoswipe-ui-default');
         
-        // Se PhotoSwipe ha anche uno stile associato, rimuovilo
-        wp_dequeue_style('photoswipe');
-        wp_deregister_style('photoswipe');
+        wp_dequeue_style('photoswipe-default-skin');
+        wp_deregister_style('photoswipe-default-skin');
     }
 }
-add_action('wp_enqueue_scripts', 'remove_photoswipe_from_woocommerce_product_pages', 100);
+add_action('wp', 'disable_woocommerce_gallery_photoswipe');
+
+// Rimuovere Flexslider dalle pagine prodotto di WooCommerce
+add_action('wp_enqueue_scripts', 'remove_flexslider_scripts', 100);
+function remove_flexslider_scripts() {
+    // Controlla se siamo su una pagina prodotto
+    if (is_product()) {
+        // Dequeue e deregistra lo script Flexslider
+        wp_dequeue_script('flexslider');
+        wp_deregister_script('flexslider');
+        
+        // Rimuovi anche eventuali stili associati
+        wp_dequeue_style('flexslider');
+        wp_deregister_style('flexslider');
+        
+        // Forzare la rimozione dallo script registrato
+        global $wp_scripts;
+        if (isset($wp_scripts->registered['flexslider'])) {
+            unset($wp_scripts->registered['flexslider']);
+        }
+    }
+}
+
+// Rimuovere carousel dalle pagine prodotto di WooCommerce
+add_action('wp_enqueue_scripts', 'remove_carousel_scripts', 101);
+function remove_carousel_scripts() {
+    // Controlla se siamo su una pagina prodotto
+    if (is_product()) {
+        // Dequeue e deregistra lo script carousel
+        wp_dequeue_script('carousel');
+        wp_deregister_script('carousel');
+        
+        // Rimuovi anche eventuali stili associati
+        wp_dequeue_style('carousel');
+        wp_deregister_style('carousel');
+        
+        // Forzare la rimozione dallo script registrato
+        global $wp_scripts;
+        if (isset($wp_scripts->registered['carousel'])) {
+            unset($wp_scripts->registered['carousel']);
+        }
+    }
+}
+
+// Rimuovere lottie-js dalle pagine prodotto di WooCommerce
+add_action('wp_enqueue_scripts', 'remove_lottiejs_scripts', 102);
+function remove_lottiejs_scripts() {
+    // Controlla se siamo su una pagina prodotto
+    if (is_product()) {
+        // Dequeue e deregistra lo script lottie-js
+        wp_dequeue_script('lottie-js');
+        wp_deregister_script('lottie-js');
+        
+        // Rimuovi anche eventuali stili associati
+        wp_dequeue_style('lottie-js');
+        wp_deregister_style('lottie-js');
+        
+        // Forzare la rimozione dallo script registrato
+        global $wp_scripts;
+        if (isset($wp_scripts->registered['lottie-js'])) {
+            unset($wp_scripts->registered['lottie-js']);
+        }
+    }
+}
