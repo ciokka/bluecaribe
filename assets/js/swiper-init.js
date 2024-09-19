@@ -1,40 +1,33 @@
 document.addEventListener("DOMContentLoaded", function() {
     var thumbSlider, mainSlider, reviewSlider;
-  
-       
+
+    // Inizializzazione thumb-slider
     var thumbSliderEl = document.querySelector(".thumb-slider");
     if (thumbSliderEl) {
         thumbSlider = new Swiper(thumbSliderEl, {
-            spaceBetween: 15,
-            slidesPerView: 8,
+            spaceBetween: 10,
+            slidesPerView: 5, // Mostra 6 thumbs sotto i 600px
             freeMode: true, // Attiva lo scorrimento libero
-            // freeModeMomentum: true,
-             watchSlidesVisibility: true,
-             watchSlidesProgress: true,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
             slideToClickedSlide: true,
-            // freeModeMomentumRatio: 0.5, // Regola la velocità di inerzia
-            // freeModeSticky: true, // Blocca i slide alla fine dello scorrimento
-            // touchStartPreventDefault: false,
             breakpoints: {
                 600: {
-                    slidesPerView: 3
+                    slidesPerView: 5, // Imposta 6 thumbs sotto i 600px
+                    spaceBetween: 15
                 },
                 601: {
-                    slidesPerView: 5
+                    slidesPerView: 6, // Imposta 5 thumbs tra 601px e 1100px
+                    spaceBetween: 15
                 },
                 1101: {
-                    slidesPerView: 8, // Mostra 8 immagini sopra i 1100px
+                    slidesPerView: 8, // Mostra 8 thumbs sopra i 1100px
+                    spaceBetween: 15
                 }
             }
         });
     }
-    // thumbSliderEl.addEventListener('touchstart', function(e) {
-    //     e.stopPropagation();
-    // }, { passive: true });
-    
-    // thumbSliderEl.addEventListener('touchmove', function(e) {
-    //     e.stopPropagation();
-    // }, { passive: true });
+
     // Inizializzazione main-slider
     var mainSliderEl = document.querySelector(".main-slider");
     if (mainSliderEl && thumbSlider) {
@@ -47,13 +40,18 @@ document.addEventListener("DOMContentLoaded", function() {
             },
             thumbs: {
                 swiper: thumbSlider, // Collega il thumb-slider al main-slider
+            },
+            zoom: {
+                maxRatio: 2,
+                minRatio: 1,
             }
         });
     }
-   
+
     // Inizializzazione review-slider
-    if (document.querySelector(".review-slider")) {
-        reviewSlider = new Swiper(".review-slider", {
+    var reviewSliderEl = document.querySelector(".review-slider");
+    if (reviewSliderEl) {
+        reviewSlider = new Swiper(reviewSliderEl, {
             loop: true,
             spaceBetween: 30,
             slidesPerView: 1,

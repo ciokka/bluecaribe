@@ -90,11 +90,9 @@ $red-alert: #b81c23;
                     justify-content: center;
                     align-items: center;
                     
-                     height: 70px;
-
         
                     .swiper-slide {
-                        width: calc(10% - 15px); // Calcola la larghezza per 8 immagini
+                        //width: calc(10% - 15px); // Calcola la larghezza per 8 immagini
                         // height: 100px;
                         cursor: pointer;
                         display: flex;
@@ -550,10 +548,21 @@ $red-alert: #b81c23;
             margin-bottom: 0px;
             .box-image-single{
                 width: 100%;
-                height: 370px;
                 .swiper-container{
                     &.thumb-slider .swiper-slide {
-                        width: calc(20% - 15px) !important; 
+                        // width: calc(20% - 15px) !important; 
+                    }
+                    &.main-slider {
+                        height: auto;
+                        .swiper-slide {
+                            height: auto;
+                            img {
+                                width: auto;
+                                height: auto;
+                                aspect-ratio: 5 / 4; /* Imposta il formato quadrato */
+                                object-fit: cover; /* Mantiene le immagini dentro il quadrato */
+                            }
+                        }
                     }
                 }
             } 
