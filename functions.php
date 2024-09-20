@@ -1644,3 +1644,24 @@ function remove_lottiejs_scripts() {
         }
     }
 }
+
+// Rimuovere woocommerce_stripe dalle pagine prodotto di WooCommerce
+add_action('wp_enqueue_scripts', 'remove_woocommercestripe_scripts', 98);
+function remove_woocommercestripe_scripts() {
+    // Controlla se siamo su una pagina prodotto
+    if (is_product()) {
+        // Dequeue e deregistra lo script woocommerce_stripe
+        wp_dequeue_script('woocommerce_stripe');
+        wp_deregister_script('woocommerce_stripe');
+        
+        // Rimuovi anche eventuali stili associati
+        wp_dequeue_style('woocommerce_stripe');
+        wp_deregister_style('woocommerce_stripe');
+        
+        // Forzare la rimozione dallo script registrato
+        global $wp_scripts;
+        if (isset($wp_scripts->registered['woocommerce_stripe'])) {
+            unset($wp_scripts->registered['woocommerce_stripe']);
+        }
+    }
+}
