@@ -244,99 +244,99 @@ jQuery(function ($) {
     //   }, 1000);
     // });
 
-    // const btnSearch = document.getElementById('btnSearch');
-    // const productsDropdown = document.getElementById('products_dropdown');
-    // const productTagsDropdown = document.getElementById('product_tags_dropdown');
+    const btnSearch = document.getElementById('btnSearch');
+    const productsDropdown = document.getElementById('products_dropdown');
+    const productTagsDropdown = document.getElementById('product_tags_dropdown');
     
-    // // Maximum number of characters to display in the select options
-    // // const maxChars = 20;
+    // Maximum number of characters to display in the select options
+    // const maxChars = 20;
     
-    // // Function to update products based on the selected tag
-    // function updateProducts(tagId) {
-    //     console.log("Selected tag:", tagId); // Logging the selected tag
-    //     const data = new FormData();
-    //     data.append('action', 'get_products_by_tag');
-    //     data.append('tag_id', tagId);
+    // Function to update products based on the selected tag
+    function updateProducts(tagId) {
+        console.log("Selected tag:", tagId); // Logging the selected tag
+        const data = new FormData();
+        data.append('action', 'get_products_by_tag');
+        data.append('tag_id', tagId);
     
-    //     // Show loading option and disable the select
-    //     productsDropdown.innerHTML = '<option value="">Loading...</option>';
-    //     productsDropdown.disabled = true;
+        // Show loading option and disable the select
+        productsDropdown.innerHTML = '<option value="">Loading...</option>';
+        productsDropdown.disabled = true;
     
-    //     fetch(window.FetchTagsUrl, {
-    //         method: 'POST',
-    //         body: data
-    //     })
-    //     .then(response => response.json())
-    //     .then(response => {
-    //         console.log("Server response:", response); // Logging server response
-    //         productsDropdown.innerHTML = ''; // Clear current options
-    //         const defaultOption = document.createElement('option');
-    //         defaultOption.value = '';
-    //         defaultOption.textContent = 'Select a tour';
-    //         productsDropdown.appendChild(defaultOption);
-    //         if (response.success) {
-    //             response.data.forEach(product => {
-    //                 const option = document.createElement('option');
-    //                 option.value = product.url;
-    //                 const cleanCategories = product.categories.replace(/-/g, ' ');
-    //                 const fullText = `${product.title} - ${cleanCategories}`;
-    //                 option.textContent = fullText;
-    //                 option.setAttribute('data-full-text', fullText); // Store full text as attribute
-    //                 productsDropdown.appendChild(option);
-    //             });
-    //         } else {
-    //             console.error("Server error:", response.data);
-    //             productsDropdown.innerHTML = '<option value="">No tours available</option>';
-    //         }
-    //         // Re-enable the select
-    //         productsDropdown.disabled = false;
-    //     })
-    //     .catch(error => {
-    //         console.error('Error:', error);
-    //         productsDropdown.innerHTML = '<option value="">Error loading</option>';
-    //         productsDropdown.disabled = false;
-    //     });
-    // }
+        fetch(window.FetchTagsUrl, {
+            method: 'POST',
+            body: data
+        })
+        .then(response => response.json())
+        .then(response => {
+            console.log("Server response:", response); // Logging server response
+            productsDropdown.innerHTML = ''; // Clear current options
+            const defaultOption = document.createElement('option');
+            defaultOption.value = '';
+            defaultOption.textContent = 'Select a tour';
+            productsDropdown.appendChild(defaultOption);
+            if (response.success) {
+                response.data.forEach(product => {
+                    const option = document.createElement('option');
+                    option.value = product.url;
+                    const cleanCategories = product.categories.replace(/-/g, ' ');
+                    const fullText = `${product.title} - ${cleanCategories}`;
+                    option.textContent = fullText;
+                    option.setAttribute('data-full-text', fullText); // Store full text as attribute
+                    productsDropdown.appendChild(option);
+                });
+            } else {
+                console.error("Server error:", response.data);
+                productsDropdown.innerHTML = '<option value="">No tours available</option>';
+            }
+            // Re-enable the select
+            productsDropdown.disabled = false;
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            productsDropdown.innerHTML = '<option value="">Error loading</option>';
+            productsDropdown.disabled = false;
+        });
+    }
     
-    // // Function to load all products initially
-    // function loadAllProducts() {
-    //   productsDropdown.innerHTML = '<option value="">Select a tour</option>';
+    // Function to load all products initially
+    function loadAllProducts() {
+      productsDropdown.innerHTML = '<option value="">Select a tour</option>';
 
-    //     updateProducts(0); // Load all products
+        updateProducts(0); // Load all products
 
-    // }
+    }
     
-    // // Event listener for change in product tags dropdown
-    // productTagsDropdown.addEventListener('change', function() {
-    //     const selectedTag = this.value;
-    //     const tagId = this.options[this.selectedIndex].getAttribute('data-tag-id');
-    //     console.log("Selected tag URL:", selectedTag); // Log the selected tag URL
+    // Event listener for change in product tags dropdown
+    productTagsDropdown.addEventListener('change', function() {
+        const selectedTag = this.value;
+        const tagId = this.options[this.selectedIndex].getAttribute('data-tag-id');
+        console.log("Selected tag URL:", selectedTag); // Log the selected tag URL
     
-    //     if (selectedTag === "0") {
-    //         console.log("Reloading page to show all products"); // Log reloading page
-    //         window.location.reload(); // Reload the page
-    //     } else {
-    //         // Extract the tag ID from the tag URL
-    //         console.log("Derived tag ID:", tagId); // Log the derived tag ID
-    //         if (tagId) {
-    //             updateProducts(tagId);
-    //         }
-    //     }
-    // });
+        if (selectedTag === "0") {
+            console.log("Reloading page to show all products"); // Log reloading page
+            window.location.reload(); // Reload the page
+        } else {
+            // Extract the tag ID from the tag URL
+            console.log("Derived tag ID:", tagId); // Log the derived tag ID
+            if (tagId) {
+                updateProducts(tagId);
+            }
+        }
+    });
     
-    // // Event listener to show full text when select is opened
-    // productsDropdown.addEventListener('focus', function() {
-    //     const options = this.options;
-    //     Array.from(options).forEach(option => {
-    //         const fullText = option.getAttribute('data-full-text');
-    //         if (fullText) {
-    //             option.textContent = fullText;
+    // Event listener to show full text when select is opened
+    productsDropdown.addEventListener('focus', function() {
+        const options = this.options;
+        Array.from(options).forEach(option => {
+            const fullText = option.getAttribute('data-full-text');
+            if (fullText) {
+                option.textContent = fullText;
                
-    //         }
+            }
         
-    //     });
+        });
 
-    // });
+    });
 
     const form = jQuery('form.ovabrw_search');
 
