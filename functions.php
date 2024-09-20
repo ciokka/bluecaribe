@@ -1432,7 +1432,7 @@ function enqueue_custom_swiper_script() {
     // Aggiungi il tuo script personalizzato dal tema child
     wp_enqueue_script('custom-swiper-init', get_stylesheet_directory_uri() . '/assets/js/swiper-init.js', array('swiper'), null, true);
 }
-add_action('wp_enqueue_scripts', 'enqueue_custom_swiper_script');
+add_action('wp_enqueue_scripts', 'enqueue_custom_swiper_script', 12);
 
 function custom_image_carousel_shortcode($atts)
 {
