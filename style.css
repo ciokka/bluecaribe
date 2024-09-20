@@ -9011,7 +9011,6 @@ ul.woocommerce-error li {
           align-items: center;
           position: relative; }
           .div1 .box-image-single .swiper-container.thumb-slider .swiper-slide img {
-            width: 100%;
             height: 100%;
             object-fit: cover; }
         .div1 .box-image-single .swiper-container.thumb-slider .swiper-button-next,
