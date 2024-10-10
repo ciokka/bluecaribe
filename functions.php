@@ -1665,3 +1665,20 @@ function remove_woocommercestripe_scripts() {
         }
     }
 }
+
+// Aggiungi i coupon usati nelle email dell'ordine
+add_action('woocommerce_email_order_meta', 'aggiungi_coupon_email', 20, 4);
+
+function aggiungi_coupon_email($order, $sent_to_admin, $plain_text, $email) {
+    // Ottieni i coupon utilizzati nell'ordine
+    $coupons = $order->get_coupon_codes();
+
+    // Verifica se ci sono coupon nell'ordine
+    if (!empty($coupons)) {
+        if ($plain_text) {
+            echo "Coupon utilizzato: " . implode(', ', $coupons) . "\n"; // Email in testo semplice
+        } else {
+            echo '<p><strong>Coupon utilizzato:</strong> ' . implode(', ', $coupons) . '</p>'; // Email in HTML
+        }
+    }
+}
