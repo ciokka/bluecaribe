@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 $bg        = get_option( 'woocommerce_email_background_color' );
 $body      = get_option( 'woocommerce_email_body_background_color' );
 $base      = get_option( 'woocommerce_email_base_color' );
-$base_text = wc_light_or_dark( $base, '#202020', '#44aef2' );
+$base_text = wc_light_or_dark( $base, '#202020', '#608DB7' );
 $text      = get_option( '#515151' );
 
 // Pick a contrasting color for links.
@@ -131,20 +131,20 @@ body {
 	background-color: #fff;
 }
 #body_content table.td thead tr {
-	background-color:#44aef2
+	background-color:#608DB7
 }
 #body_content table.td thead th.first {
 	border-radius: 15px 0 0 0;
 	border: none;
 	border-spacing: 0;
-	background-color:#44aef2;
+	background-color:#608DB7;
 	padding: 10px 20px;
 }
 #body_content table.td thead th.last {
 	border-radius: 0 15px 0 0;
 	border: none;
 	border-spacing: 0;
-	background-color:#44aef2;
+	background-color:#608DB7;
 	padding: 10px 20px;
 }
 

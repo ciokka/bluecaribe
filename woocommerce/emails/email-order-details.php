@@ -42,7 +42,7 @@ do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plai
 
 <div style="margin-bottom: 40px; margin-top: 40px">
 	<table class="td" cellspacing="0" cellpadding="6" style="width: 100%; font-family: 'Poppins', sans-serif; border=1">
-		<thead style="background-color:#44aef2">
+		<thead style="background-color:#608DB7">
 			<tr>
 				<th class="td first" colspan="2" scope="col" style="text-align:<?php echo esc_attr( $text_align ); ?>; color: #ffffff"><?php esc_html_e( 'Product', 'woocommerce' ); ?></th>
 				<th class="td last" scope="col" style="color: #ffffff; text-align:<?php echo esc_attr( $text_align_end ); ?>;"><?php esc_html_e( 'Price', 'woocommerce' ); ?></th>
