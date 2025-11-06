@@ -165,7 +165,7 @@
 				<svg xmlns="http://www.w3.org/2000/svg" width="20.146" height="26.861" viewBox="0 0 20.146 26.861">
 					<path id="Icon_awesome-map-marker-alt" data-name="Icon awesome-map-marker-alt"
 						d="M9.038,26.319C1.415,15.268,0,14.134,0,10.073a10.073,10.073,0,0,1,20.146,0c0,4.061-1.415,5.2-9.038,16.246a1.26,1.26,0,0,1-2.07,0ZM10.073,14.27a4.2,4.2,0,1,0-4.2-4.2A4.2,4.2,0,0,0,10.073,14.27Z"
-						fill="#104b71" />
+						fill="#152C48" />
 				</svg>
 
 				<?php esc_html_e('Pick up location', 'hello-elementor-child'); ?>
@@ -545,7 +545,7 @@
 			<svg xmlns="http://www.w3.org/2000/svg" width="27.219" height="17.321" viewBox="0 0 27.219 17.321">
 				<path id="Icon_material-people" data-name="Icon material-people"
 					d="M20.059,14.923a3.712,3.712,0,1,0-3.712-3.712A3.7,3.7,0,0,0,20.059,14.923Zm-9.9,0a3.712,3.712,0,1,0-3.712-3.712A3.7,3.7,0,0,0,10.161,14.923Zm0,2.474c-2.883,0-8.661,1.448-8.661,4.33v3.093H18.821V21.728C18.821,18.845,13.043,17.4,10.161,17.4Zm9.9,0c-.359,0-.767.025-1.2.062A5.221,5.221,0,0,1,21.3,21.728v3.093h7.423V21.728C28.719,18.845,22.941,17.4,20.059,17.4Z"
-					transform="translate(-1.5 -7.5)" fill="#104b71" />
+					transform="translate(-1.5 -7.5)" fill="#152C48" />
 			</svg>
 			<?php esc_html_e('Quantity', 'hello-elementor-child'); ?>
 		</div>

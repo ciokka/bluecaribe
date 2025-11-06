@@ -328,7 +328,7 @@ img {
 }
 .payment-text a {
     font-weight: normal;
-    background-color: #54aef2;
+    background-color: #608DB7;
     border-radius: 30px 30px 30px 30px;
     padding: 12px 22px 12px 22px;
     color: #fff;

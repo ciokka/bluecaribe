@@ -1,7 +1,7 @@
-$color-primary: #54AEF2;
-$color-secondary: #104B71;
+$color-primary: #608DB7;
+$color-secondary: #152C48;
 $color-text: #515151;
-$color-accent: #FBDC03;
+$color-accent: #DCC97B;
 $color-white: #FFFFFF;
 $color-black: #000000;
 $typography-primary-font-family: "Poppins";
@@ -219,7 +219,7 @@ $red-alert: #b81c23;
             border-radius: 10px;  
             text-align: center;  
             font-weight: bold;  
-            color: #2b4d66;  
+            color: #22364F;  
             font-size: 12px;  
         }
         .info-message {
@@ -230,7 +230,7 @@ $red-alert: #b81c23;
         
             h2 {
                 font-size: 15px;  
-                color: #2b4d66;  
+                color: #22364F;  
                 font-weight: bold;  
                 margin: 0 0 10px 0;  
             }
@@ -291,7 +291,7 @@ $red-alert: #b81c23;
             }
         
             .swiper-pagination-bullet-active, .review-pagination-bullet-active {
-                background-color: #2b4d66; // Colore del pallino attivo
+                background-color: #22364F; // Colore del pallino attivo
                 opacity: 1;
             }
         
@@ -336,11 +336,11 @@ $red-alert: #b81c23;
             }
         
             .review-button-next, .review-button-prev {
-                color: #2b4d66; // Colore delle frecce di navigazione
+                color: #22364F; // Colore delle frecce di navigazione
             }
         
             .review-pagination-bullet-active {
-                background-color: #2b4d66; // Colore del punto attivo
+                background-color: #22364F; // Colore del punto attivo
             }
         }
     }
@@ -403,7 +403,7 @@ $red-alert: #b81c23;
     }
 
     .item-tag {
-        background-color: #54AEF2;
+        background-color: #608DB7;
         color: #fff;
         font-size: 12px;
         font-weight: bold;
@@ -609,7 +609,7 @@ $red-alert: #b81c23;
                     
                     background-color: transparent;
                     border: none;
-                    color: #54AEF2; 
+                    color: #608DB7; 
                     cursor: pointer;
                     text-decoration: none;
                     display: flex;

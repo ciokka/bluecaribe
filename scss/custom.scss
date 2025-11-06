@@ -1,7 +1,7 @@
-$color-primary: #54AEF2;
-$color-secondary: #104B71;
+$color-primary: #608DB7;
+$color-secondary: #152C48;
 $color-text: #515151;
-$color-accent: #FBDC03;
+$color-accent: #DCC97B;
 $color-white: #FFFFFF;
 $color-black: #000000;
 $typography-primary-font-family: "Poppins";
@@ -2169,7 +2169,7 @@ ul {
 			margin: 0;
 			text-transform: uppercase;
 			color: #FFFFFF;
-			background-color: #104B71;
+			background-color: #152C48;
 			padding: 6px;
 			border: none;
 			border-radius: 21px;
@@ -2178,8 +2178,8 @@ ul {
 			width: 100%;
 
 			&:hover {
-				background-color: #FBDC03;
-				color: #104B71;
+				background-color: #DCC97B;
+				color: #152C48;
 			}
 		}
 	}
