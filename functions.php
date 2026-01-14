@@ -1682,3 +1682,32 @@ function aggiungi_coupon_email($order, $sent_to_admin, $plain_text, $email) {
         }
     }
 }
+
+/**
+ * INOL3 — Template Elementor globale per tutti i post + widgets custom
+ */
+define('INOL3_SINGLE_POST_ELEMENTOR_TEMPLATE_ID', 12119);
+
+/**
+ * Carica bootstrap dei widget Elementor (child theme)
+ */
+add_action('after_setup_theme', function () {
+    $base = get_stylesheet_directory() . '/elementor/elementor-init.php';
+    if (file_exists($base)) {
+        require_once $base;
+    }
+});
+
+/**
+ * Forza un template PHP custom per tutti i post (single post)
+ * Così dentro mettiamo il rendering del template Elementor #12119
+ */
+add_filter('single_template', function ($single) {
+
+    if (!is_singular('post')) return $single;
+
+    $custom = get_stylesheet_directory() . '/single-inol3-elementor.php';
+    if (file_exists($custom)) return $custom;
+
+    return $single;
+});
