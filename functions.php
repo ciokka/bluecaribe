@@ -1686,7 +1686,7 @@ function aggiungi_coupon_email($order, $sent_to_admin, $plain_text, $email) {
 /**
  * INOL3 — Template Elementor globale per tutti i post + widgets custom
  */
-define('INOL3_SINGLE_POST_ELEMENTOR_TEMPLATE_ID', 12119);
+define('INOL3_SINGLE_POST_ELEMENTOR_TEMPLATE_ID', 13337);
 
 /**
  * Carica bootstrap dei widget Elementor (child theme)
@@ -1700,7 +1700,8 @@ add_action('after_setup_theme', function () {
 
 /**
  * Forza un template PHP custom per tutti i post (single post)
- * Così dentro mettiamo il rendering del template Elementor #12119
+ * Così dentro mettiamo il rendering del template Elementor #13337
+ * https://bluecaribe.inol3.com/wp-admin/post.php?post=12119&action=elementor&inol3_preview_post=12124 esempio
  */
 add_filter('single_template', function ($single) {
 
