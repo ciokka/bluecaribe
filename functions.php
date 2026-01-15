@@ -1544,23 +1544,21 @@ function filter_orders_by_alphanumeric_coupon_for_user_role_partner( $query ) {
         }
     }
 }
-add_action('wp_enqueue_scripts', 'debug_enqueue_scripts_styles', 99);
-function debug_enqueue_scripts_styles() {
-    global $wp_scripts;
-    global $wp_styles;
-    
-    echo '<!-- Scripts: ';
-    foreach( $wp_scripts->queue as $handle ) {
-        echo $handle . ' | ';
-    }
-    echo '-->';
+add_action('wp_footer', function () {
+    if (!isset($_GET['inol3_debug']) || $_GET['inol3_debug'] != '1') return;
+    if (!current_user_can('manage_options')) return;
 
-    echo '<!-- Styles: ';
-    foreach( $wp_styles->queue as $handle ) {
-        echo $handle . ' | ';
-    }
-    echo '-->';
-}
+    global $wp_scripts, $wp_styles;
+
+    echo "\n<!-- INOL3 DEBUG Scripts: ";
+    foreach ((array) $wp_scripts->queue as $h) echo $h . ' | ';
+    echo "-->\n";
+
+    echo "\n<!-- INOL3 DEBUG Styles: ";
+    foreach ((array) $wp_styles->queue as $h) echo $h . ' | ';
+    echo "-->\n";
+}, 99999);
+
 
 function disable_woocommerce_gallery_photoswipe() {
     if (is_product()) {
@@ -1703,12 +1701,17 @@ add_action('after_setup_theme', function () {
  * Così dentro mettiamo il rendering del template Elementor #13337
  * https://bluecaribe.inol3.com/wp-admin/post.php?post=12119&action=elementor&inol3_preview_post=12124 esempio
  */
-add_filter('single_template', function ($single) {
 
-    if (!is_singular('post')) return $single;
+add_filter('template_include', function ($template) {
 
-    $custom = get_stylesheet_directory() . '/single-inol3-elementor.php';
-    if (file_exists($custom)) return $custom;
+    if (is_singular('post')) {
+        $custom = get_stylesheet_directory() . '/single-inol3-elementor.php';
+        if (is_readable($custom)) {
+            return $custom;
+        }
+    }
 
-    return $single;
-});
+    return $template;
+
+}, 99999);
+
