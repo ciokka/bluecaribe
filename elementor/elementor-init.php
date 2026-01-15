@@ -83,10 +83,12 @@ add_action('elementor/widgets/register', function ($widgets_manager) {
     require_once __DIR__ . '/widgets/class-inol3-post-title.php';
     require_once __DIR__ . '/widgets/class-inol3-featured-image.php';
     require_once __DIR__ . '/widgets/class-inol3-post-content.php';
+    require_once __DIR__ . '/widgets/class-inol3-post-navigation.php';
 
     $widgets_manager->register(new \Inol3_Post_Title_Widget());
     $widgets_manager->register(new \Inol3_Featured_Image_Widget());
     $widgets_manager->register(new \Inol3_Post_Content_Widget());
+    $widgets_manager->register(new \Inol3_Post_Navigation_Widget());
 });
 
 

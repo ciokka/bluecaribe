@@ -3,7 +3,7 @@ if (!defined('ABSPATH')) exit;
 
 get_header();
 
-echo '<main id="content" class="site-main">';
+echo '<main id="content" class="site-main page type-page single-post mw-100">';
 
 if (have_posts()) :
     while (have_posts()) : the_post();
