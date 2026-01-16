@@ -93,14 +93,26 @@ class Inol3_Post_Navigation_Widget extends Widget_Base {
             'condition' => ['show_next' => 'yes'],
         ]);
 
-        $this->add_control('icon_position', [
-            'label' => 'Posizione icona',
+        $this->add_control('prev_icon_position', [
+            'label' => 'Posizione icona (precedente)',
             'type' => Controls_Manager::SELECT,
             'default' => 'before',
             'options' => [
                 'before' => 'Prima del testo',
                 'after'  => 'Dopo il testo',
             ],
+            'condition' => ['show_prev' => 'yes'],
+        ]);
+
+        $this->add_control('next_icon_position', [
+            'label' => 'Posizione icona (successivo)',
+            'type' => Controls_Manager::SELECT,
+            'default' => 'after',
+            'options' => [
+                'before' => 'Prima del testo',
+                'after'  => 'Dopo il testo',
+            ],
+            'condition' => ['show_next' => 'yes'],
         ]);
 
         $this->end_controls_section();
@@ -246,7 +258,9 @@ class Inol3_Post_Navigation_Widget extends Widget_Base {
             global $post;
             $old_post = $post ?? null;
             $post = get_post($preview_id);
-            if ($post) setup_postdata($post);
+            if ($post instanceof \WP_Post) {
+                setup_postdata($post);
+            }
         }
 
         // Globali su tutti i post: in_same_term = false
@@ -255,14 +269,14 @@ class Inol3_Post_Navigation_Widget extends Widget_Base {
 
         if ($preview_id) {
             wp_reset_postdata();
-            if ($old_post) {
+            if ($old_post instanceof \WP_Post) {
                 global $post;
                 $post = $old_post;
                 setup_postdata($post);
             }
         }
 
-        if ($s['hide_if_none'] === 'yes' && !$prev && !$next) {
+        if (($s['hide_if_none'] ?? '') === 'yes' && !$prev && !$next) {
             return;
         }
 
@@ -273,20 +287,22 @@ class Inol3_Post_Navigation_Widget extends Widget_Base {
             $url = get_permalink($prev->ID);
             echo '<a class="inol3-prev" rel="prev" href="' . esc_url($url) . '" style="display:inline-flex;align-items:center;gap:10px;text-decoration:none;">';
 
-            if ($s['icon_position'] === 'before') {
+            $prev_pos = $s['prev_icon_position'] ?? 'before';
+
+            if ($prev_pos === 'before') {
                 echo '<span class="inol3-ico" aria-hidden="true">';
                 Icons_Manager::render_icon($s['prev_icon'], ['class' => 'inol3-ico'], 'i');
                 echo '</span>';
             }
 
             echo '<span class="inol3-label">';
-            echo esc_html($s['prev_text']);
-            if ($s['show_titles']) {
+            echo esc_html($s['prev_text'] ?? '');
+            if (($s['show_titles'] ?? '') === 'yes') {
                 echo '<span class="inol3-title" style="display:block;opacity:.85;">' . esc_html(get_the_title($prev->ID)) . '</span>';
             }
             echo '</span>';
 
-            if ($s['icon_position'] === 'after') {
+            if ($prev_pos === 'after') {
                 echo '<span class="inol3-ico" aria-hidden="true">';
                 Icons_Manager::render_icon($s['prev_icon'], ['class' => 'inol3-ico'], 'i');
                 echo '</span>';
@@ -302,26 +318,30 @@ class Inol3_Post_Navigation_Widget extends Widget_Base {
             $url = get_permalink($next->ID);
             echo '<a class="inol3-next" rel="next" href="' . esc_url($url) . '" style="display:inline-flex;align-items:center;gap:10px;text-decoration:none;">';
 
-            if ($s['icon_position'] === 'before') {
+            $next_pos = $s['next_icon_position'] ?? 'after';
+
+            if ($next_pos === 'before') {
                 echo '<span class="inol3-ico" aria-hidden="true">';
                 Icons_Manager::render_icon($s['next_icon'], ['class' => 'inol3-ico'], 'i');
                 echo '</span>';
             }
 
             echo '<span class="inol3-label" style="text-align:right;">';
-            echo esc_html($s['next_text']);
-            if ($s['show_titles']) {
+            echo esc_html($s['next_text'] ?? '');
+            if (($s['show_titles'] ?? '') === 'yes') {
                 echo '<span class="inol3-title" style="display:block;opacity:.85;">' . esc_html(get_the_title($next->ID)) . '</span>';
             }
             echo '</span>';
 
-            if ($s['icon_position'] === 'after') {
+            if ($next_pos === 'after') {
                 echo '<span class="inol3-ico" aria-hidden="true">';
                 Icons_Manager::render_icon($s['next_icon'], ['class' => 'inol3-ico'], 'i');
                 echo '</span>';
             }
 
             echo '</a>';
+        } else {
+            echo '<div></div>';
         }
 
         echo '</div>';
