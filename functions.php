@@ -1715,3 +1715,44 @@ add_filter('template_include', function ($template) {
 
 }, 99999);
 
+add_action('init', function () {
+
+    // 1) Chiude commenti e pingback sui nuovi contenuti + sui post esistenti (front-end)
+    add_filter('comments_open', function ($open, $post_id) {
+        $post = get_post($post_id);
+        return ($post && $post->post_type === 'post') ? false : $open;
+    }, 20, 2);
+
+    add_filter('pings_open', function ($open, $post_id) {
+        $post = get_post($post_id);
+        return ($post && $post->post_type === 'post') ? false : $open;
+    }, 20, 2);
+
+    // 2) Nasconde eventuali commenti già presenti sotto gli articoli
+    add_filter('comments_array', function ($comments, $post_id) {
+        $post = get_post($post_id);
+        return ($post && $post->post_type === 'post') ? [] : $comments;
+    }, 20, 2);
+
+    // 3) Rimuove la metabox "Discussione" e "Commenti" in edit post
+    remove_post_type_support('post', 'comments');
+    remove_post_type_support('post', 'trackbacks');
+});
+
+/**
+ * 4) Rimuove la pagina "Commenti" dal menu admin.
+ */
+add_action('admin_menu', function () {
+    remove_menu_page('edit-comments.php');
+});
+
+/**
+ * 5) Se qualcuno prova ad aprire direttamente la pagina commenti, lo rimanda in bacheca.
+ */
+add_action('admin_init', function () {
+    global $pagenow;
+    if ($pagenow === 'edit-comments.php') {
+        wp_safe_redirect(admin_url());
+        exit;
+    }
+});
